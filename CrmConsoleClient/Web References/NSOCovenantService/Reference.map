@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://adbcrm.apphb.com/NSOCovenantService.svc?xsd=xsd0" filename="NSOCovenantService.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://adbcrm.apphb.com/NSOCovenantService.svc?xsd=xsd1" filename="NSOCovenantService0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://adbcrm.apphb.com/NSOCovenantService.svc?wsdl" filename="NSOCovenantService.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://adbcrm.apphb.com/NSOCovenantService.svc?xsd=xsd2" filename="NSOCovenantService1.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

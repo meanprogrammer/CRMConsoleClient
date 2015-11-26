@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/WebAppWalkthrough" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WebAppWalkthrough" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://adbcrm.apphb.com/BaselineProjectionService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfCustomBaselineProjection">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CustomBaselineProjection" nillable="true" type="tns:CustomBaselineProjection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCustomBaselineProjection" nillable="true" type="tns:ArrayOfCustomBaselineProjection" />
+  <xs:complexType name="CustomBaselineProjection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomBaselineProjection" nillable="true" type="tns:CustomBaselineProjection" />
+</xs:schema>

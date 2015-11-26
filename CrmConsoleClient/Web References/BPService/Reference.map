@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://adbcrm.apphb.com/BaselineProjectionService.svc?wsdl" filename="BaselineProjectionService.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://adbcrm.apphb.com/BaselineProjectionService.svc?xsd=xsd2" filename="BaselineProjectionService.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://adbcrm.apphb.com/BaselineProjectionService.svc?xsd=xsd1" filename="BaselineProjectionService0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://adbcrm.apphb.com/BaselineProjectionService.svc?xsd=xsd0" filename="BaselineProjectionService1.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

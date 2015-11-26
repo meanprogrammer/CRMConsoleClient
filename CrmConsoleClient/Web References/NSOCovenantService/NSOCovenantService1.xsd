@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/WebAppWalkthrough" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WebAppWalkthrough" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://adbcrm.apphb.com/NSOCovenantService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfCustomNSOCovenant">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CustomNSOCovenant" nillable="true" type="tns:CustomNSOCovenant" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCustomNSOCovenant" nillable="true" type="tns:ArrayOfCustomNSOCovenant" />
+  <xs:complexType name="CustomNSOCovenant">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CovenantDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CovenantID" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParentID" type="ser:guid" />
+      <xs:element minOccurs="0" name="ParentIDString" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomNSOCovenant" nillable="true" type="tns:CustomNSOCovenant" />
+</xs:schema>
