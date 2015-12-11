@@ -200,21 +200,144 @@ namespace CrmConsoleClient.OpportunityService {
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity")]
     public partial class ProxyOpportunity {
         
+        private string additionalFinancingField;
+        
+        private string approvalLevelField;
+        
+        private string borrowerField;
+        
+        private decimal budgetAmountField;
+        
+        private bool budgetAmountFieldSpecified;
+        
+        private string categoryTypeField;
+        
+        private string countryField;
+        
+        private string currencyField;
+        
         private string descriptionField;
+        
+        private string expectedApprovalYearField;
+        
+        private KeyValuePairOfstringstring[] fakeField;
+        
+        private string guaranteeField;
         
         private string idField;
         
-        private ProxyNSOCovenant[] nSOCovenantsField;
+        private string modeOfFinancialAssistanceField;
         
         private string nameField;
         
         private string opportunityIdField;
         
+        private string processingCategoryField;
+        
         private string projectDescriptionField;
         
         private string projectRationaleField;
         
+        private string projectStageField;
+        
+        private string projectStatusField;
+        
+        private string regionField;
+        
         private ProxySOVCovenant[] sOVCovenantsField;
+        
+        private string sectorField;
+        
+        private string subSectorField;
+        
+        private string processingScenarioField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string AdditionalFinancing {
+            get {
+                return this.additionalFinancingField;
+            }
+            set {
+                this.additionalFinancingField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ApprovalLevel {
+            get {
+                return this.approvalLevelField;
+            }
+            set {
+                this.approvalLevelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Borrower {
+            get {
+                return this.borrowerField;
+            }
+            set {
+                this.borrowerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal BudgetAmount {
+            get {
+                return this.budgetAmountField;
+            }
+            set {
+                this.budgetAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool BudgetAmountSpecified {
+            get {
+                return this.budgetAmountFieldSpecified;
+            }
+            set {
+                this.budgetAmountFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string CategoryType {
+            get {
+                return this.categoryTypeField;
+            }
+            set {
+                this.categoryTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Country {
+            get {
+                return this.countryField;
+            }
+            set {
+                this.countryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Currency {
+            get {
+                return this.currencyField;
+            }
+            set {
+                this.currencyField = value;
+            }
+        }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -224,6 +347,40 @@ namespace CrmConsoleClient.OpportunityService {
             }
             set {
                 this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ExpectedApprovalYear {
+            get {
+                return this.expectedApprovalYearField;
+            }
+            set {
+                this.expectedApprovalYearField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts", IsNullable=false)]
+        public KeyValuePairOfstringstring[] Fake {
+            get {
+                return this.fakeField;
+            }
+            set {
+                this.fakeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Guarantee {
+            get {
+                return this.guaranteeField;
+            }
+            set {
+                this.guaranteeField = value;
             }
         }
         
@@ -238,13 +395,13 @@ namespace CrmConsoleClient.OpportunityService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        public ProxyNSOCovenant[] NSOCovenants {
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ModeOfFinancialAssistance {
             get {
-                return this.nSOCovenantsField;
+                return this.modeOfFinancialAssistanceField;
             }
             set {
-                this.nSOCovenantsField = value;
+                this.modeOfFinancialAssistanceField = value;
             }
         }
         
@@ -271,6 +428,17 @@ namespace CrmConsoleClient.OpportunityService {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ProcessingCategory {
+            get {
+                return this.processingCategoryField;
+            }
+            set {
+                this.processingCategoryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string ProjectDescription {
             get {
                 return this.projectDescriptionField;
@@ -292,6 +460,39 @@ namespace CrmConsoleClient.OpportunityService {
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ProjectStage {
+            get {
+                return this.projectStageField;
+            }
+            set {
+                this.projectStageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ProjectStatus {
+            get {
+                return this.projectStatusField;
+            }
+            set {
+                this.projectStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Region {
+            get {
+                return this.regionField;
+            }
+            set {
+                this.regionField = value;
+            }
+        }
+        
+        /// <remarks/>
         [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         public ProxySOVCovenant[] SOVCovenants {
             get {
@@ -301,6 +502,39 @@ namespace CrmConsoleClient.OpportunityService {
                 this.sOVCovenantsField = value;
             }
         }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Sector {
+            get {
+                return this.sectorField;
+            }
+            set {
+                this.sectorField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string SubSector {
+            get {
+                return this.subSectorField;
+            }
+            set {
+                this.subSectorField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string processingScenario {
+            get {
+                return this.processingScenarioField;
+            }
+            set {
+                this.processingScenarioField = value;
+            }
+        }
     }
     
     /// <remarks/>
@@ -308,69 +542,32 @@ namespace CrmConsoleClient.OpportunityService {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity")]
-    public partial class ProxyNSOCovenant {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic")]
+    public partial class KeyValuePairOfstringstring {
         
-        private string covenantDescriptionField;
+        private string keyField;
         
-        private string covenantIDField;
-        
-        private string nameField;
-        
-        private string parentIDField;
-        
-        private string parentIDStringField;
+        private string valueField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string CovenantDescription {
+        public string key {
             get {
-                return this.covenantDescriptionField;
+                return this.keyField;
             }
             set {
-                this.covenantDescriptionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string CovenantID {
-            get {
-                return this.covenantIDField;
-            }
-            set {
-                this.covenantIDField = value;
+                this.keyField = value;
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string Name {
+        public string value {
             get {
-                return this.nameField;
+                return this.valueField;
             }
             set {
-                this.nameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ParentID {
-            get {
-                return this.parentIDField;
-            }
-            set {
-                this.parentIDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string ParentIDString {
-            get {
-                return this.parentIDStringField;
-            }
-            set {
-                this.parentIDStringField = value;
+                this.valueField = value;
             }
         }
     }

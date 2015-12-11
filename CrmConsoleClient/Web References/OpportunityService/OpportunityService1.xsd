@@ -1,46 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" />
-  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-  <xs:element name="GetAllOpportunity">
-    <xs:complexType>
-      <xs:sequence />
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="GetAllOpportunityResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" minOccurs="0" name="GetAllOpportunityResult" nillable="true" type="q1:ArrayOfProxyOpportunity" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="GetOneOpportunity">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q2:guid" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="GetOneOpportunityResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" minOccurs="0" name="GetOneOpportunityResult" nillable="true" type="q3:ProxyOpportunity" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="UpdateOpportunity">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="id" type="q4:guid" />
-        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" minOccurs="0" name="opp" nillable="true" type="q5:ProxyOpportunity" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="UpdateOpportunityResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="UpdateOpportunityResult" type="xs:boolean" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
+<xs:schema xmlns:tns="http://schemas.microsoft.com/xrm/2011/Contracts" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/xrm/2011/Contracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+  <xs:complexType name="FormattedValueCollection">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" maxOccurs="unbounded" name="KeyValuePairOfstringstring" type="q1:KeyValuePairOfstringstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FormattedValueCollection" nillable="true" type="tns:FormattedValueCollection" />
 </xs:schema>

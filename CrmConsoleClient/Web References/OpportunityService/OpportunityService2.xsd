@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/xrm/2011/Contracts" />
+  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfProxyOpportunity">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProxyOpportunity" nillable="true" type="tns:ProxyOpportunity" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProxyOpportunity" nillable="true" type="tns:ArrayOfProxyOpportunity" />
+  <xs:complexType name="ProxyOpportunity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AdditionalFinancing" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ApprovalLevel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Borrower" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BudgetAmount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CategoryType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Currency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ExpectedApprovalYear" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/xrm/2011/Contracts" minOccurs="0" name="Fake" nillable="true" type="q1:FormattedValueCollection" />
+      <xs:element minOccurs="0" name="Guarantee" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="ModeOfFinancialAssistance" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OpportunityId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ProcessingCategory" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProjectDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProjectRationale" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProjectStage" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProjectStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Region" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SOVCovenants" nillable="true" type="tns:ArrayOfProxySOVCovenant" />
+      <xs:element minOccurs="0" name="Sector" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SubSector" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="processingScenario" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProxyOpportunity" nillable="true" type="tns:ProxyOpportunity" />
+  <xs:complexType name="ArrayOfProxySOVCovenant">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProxySOVCovenant" nillable="true" type="tns:ProxySOVCovenant" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProxySOVCovenant" nillable="true" type="tns:ArrayOfProxySOVCovenant" />
+  <xs:complexType name="ProxySOVCovenant">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CovenantDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CovenantID" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParentID" type="ser:guid" />
+      <xs:element minOccurs="0" name="ParentIDString" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProxySOVCovenant" nillable="true" type="tns:ProxySOVCovenant" />
+</xs:schema>

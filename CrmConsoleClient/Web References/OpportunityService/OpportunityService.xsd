@@ -1,55 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-  <xs:complexType name="ArrayOfProxyOpportunity">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProxyOpportunity" nillable="true" type="tns:ProxyOpportunity" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ArrayOfProxyOpportunity" nillable="true" type="tns:ArrayOfProxyOpportunity" />
-  <xs:complexType name="ProxyOpportunity">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="Id" type="ser:guid" />
-      <xs:element minOccurs="0" name="NSOCovenants" nillable="true" type="tns:ArrayOfProxyNSOCovenant" />
-      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="OpportunityId" type="ser:guid" />
-      <xs:element minOccurs="0" name="ProjectDescription" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="ProjectRationale" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="SOVCovenants" nillable="true" type="tns:ArrayOfProxySOVCovenant" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ProxyOpportunity" nillable="true" type="tns:ProxyOpportunity" />
-  <xs:complexType name="ArrayOfProxyNSOCovenant">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProxyNSOCovenant" nillable="true" type="tns:ProxyNSOCovenant" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ArrayOfProxyNSOCovenant" nillable="true" type="tns:ArrayOfProxyNSOCovenant" />
-  <xs:complexType name="ProxyNSOCovenant">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="CovenantDescription" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="CovenantID" type="ser:guid" />
-      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="ParentID" type="ser:guid" />
-      <xs:element minOccurs="0" name="ParentIDString" nillable="true" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ProxyNSOCovenant" nillable="true" type="tns:ProxyNSOCovenant" />
-  <xs:complexType name="ArrayOfProxySOVCovenant">
-    <xs:sequence>
-      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProxySOVCovenant" nillable="true" type="tns:ProxySOVCovenant" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ArrayOfProxySOVCovenant" nillable="true" type="tns:ArrayOfProxySOVCovenant" />
-  <xs:complexType name="ProxySOVCovenant">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="CovenantDescription" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="CovenantID" type="ser:guid" />
-      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="ParentID" type="ser:guid" />
-      <xs:element minOccurs="0" name="ParentIDString" nillable="true" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="ProxySOVCovenant" nillable="true" type="tns:ProxySOVCovenant" />
+<xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="anyType" nillable="true" type="xs:anyType" />
+  <xs:element name="anyURI" nillable="true" type="xs:anyURI" />
+  <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />
+  <xs:element name="boolean" nillable="true" type="xs:boolean" />
+  <xs:element name="byte" nillable="true" type="xs:byte" />
+  <xs:element name="dateTime" nillable="true" type="xs:dateTime" />
+  <xs:element name="decimal" nillable="true" type="xs:decimal" />
+  <xs:element name="double" nillable="true" type="xs:double" />
+  <xs:element name="float" nillable="true" type="xs:float" />
+  <xs:element name="int" nillable="true" type="xs:int" />
+  <xs:element name="long" nillable="true" type="xs:long" />
+  <xs:element name="QName" nillable="true" type="xs:QName" />
+  <xs:element name="short" nillable="true" type="xs:short" />
+  <xs:element name="string" nillable="true" type="xs:string" />
+  <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" />
+  <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" />
+  <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" />
+  <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" />
+  <xs:element name="char" nillable="true" type="tns:char" />
+  <xs:simpleType name="char">
+    <xs:restriction base="xs:int" />
+  </xs:simpleType>
+  <xs:element name="duration" nillable="true" type="tns:duration" />
+  <xs:simpleType name="duration">
+    <xs:restriction base="xs:duration">
+      <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" />
+      <xs:minInclusive value="-P10675199DT2H48M5.4775808S" />
+      <xs:maxInclusive value="P10675199DT2H48M5.4775807S" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="guid" nillable="true" type="tns:guid" />
+  <xs:simpleType name="guid">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:attribute name="FactoryType" type="xs:QName" />
+  <xs:attribute name="Id" type="xs:ID" />
+  <xs:attribute name="Ref" type="xs:IDREF" />
 </xs:schema>

@@ -14,10 +14,34 @@ namespace CrmConsoleClient
             try
             {
                 var result = service.GetOneOpportunity("573b99ed-bf50-e511-80ee-3863bb2eb8d8");
+
+                Console.WriteLine(string.Format("Project Name : {0}", result.Name));
+                Console.WriteLine(string.Format("Region : {0}", result.Region));
+                Console.WriteLine(string.Format("Sector : {0}", result.Sector));
+                Console.WriteLine(string.Format("Sub Sector : {0}", result.SubSector));
+                Console.WriteLine(string.Format("Country : {0}", result.Country));
+                Console.WriteLine(string.Format("Currency : {0}", result.Currency));
+                Console.WriteLine(string.Format("Financing Cost : {0}", result.BudgetAmount));
+                Console.WriteLine(string.Format("Approval Level : {0}", result.ApprovalLevel));
+                Console.WriteLine(string.Format("Guarantee : {0}", result.Guarantee));
+                Console.WriteLine(string.Format("Borrower : {0}", result.Borrower));
+                Console.WriteLine(string.Format("Category Type : {0}", result.CategoryType));
+                Console.WriteLine(string.Format("Model of Financial Ass : {0}", result.ModeOfFinancialAssistance));
+                Console.WriteLine(string.Format("Processing Category : {0}", result.ProcessingCategory));
+                Console.WriteLine(string.Format("Processing Scenario : {0}", result.processingScenario));
+                Console.WriteLine(string.Format("Expected Approval Year : {0}", result.ExpectedApprovalYear));
+                Console.WriteLine(string.Format("Additional Financing : {0}", result.AdditionalFinancing));
+                Console.WriteLine(string.Format("Project Stage : {0}", result.ProjectStage));
+                Console.WriteLine(string.Format("Project Status : {0}", result.ProjectStatus));
+                Console.WriteLine("==============================");
+                Console.WriteLine(string.Format("Department : {0}", result.Department));
+                Console.WriteLine(string.Format("Division : {0}", result.Division));
+                Console.ReadLine();
             }
             catch (Exception e)
-            { 
-
+            {
+                Console.WriteLine(e.Message);
+                Console.ReadLine();
             }
         }
     }
