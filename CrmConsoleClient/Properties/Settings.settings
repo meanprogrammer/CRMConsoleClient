@@ -8,5 +8,8 @@
     <Setting Name="CrmConsoleClient_BPService_BaselineProjectionService" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">http://adbcrm.apphb.com/BaselineProjectionService.svc</Value>
     </Setting>
+    <Setting Name="CrmConsoleClient_OpportunityService_OpportunityService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

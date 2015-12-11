@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OpportunityExecutor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
@@ -56,6 +57,11 @@
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
     <Compile Include="Web References\NSOCovenantService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\OpportunityService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
@@ -101,6 +107,23 @@
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Web References\OpportunityService\OpportunityService.wsdl" />
+    <None Include="Web References\OpportunityService\OpportunityService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OpportunityService\OpportunityService0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OpportunityService\OpportunityService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OpportunityService\ProxyOpportunity.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OpportunityService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WebReferences Include="Web References\" />
@@ -128,9 +151,23 @@
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>CrmConsoleClient_NSOCovenantService_NSOCovenantService</CachedSettingsPropName>
     </WebReferenceUrl>
+    <WebReferenceUrl Include="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\OpportunityService\</RelPath>
+      <UpdateFromURL>http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CrmConsoleClient_OpportunityService_OpportunityService</CachedSettingsPropName>
+    </WebReferenceUrl>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\OpportunityService\OpportunityService.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -11,6 +11,11 @@ namespace CrmConsoleClient
     {
         static void Main(string[] args)
         {
+
+            OpportunityExecutor ex = new OpportunityExecutor();
+            ex.GetOpportunity();
+
+            /*
             BPService.BaselineProjectionService client = new BPService.BaselineProjectionService();
             var bps = client.GetAllBaselineProjection();
             
@@ -23,14 +28,14 @@ namespace CrmConsoleClient
             }
 
             File.WriteAllText(@"C:\Users\vd2\dumpfile.txt", builder.ToString());
-            */
+            
 
             //533c17a0-7666-e511-80f8-3863bb2e7cd8
 
             BPService.CustomBaselineProjection filter = new BPService.CustomBaselineProjection();
             filter.Id = "533c17a0-7666-e511-80f8-3863bb2e7cd8";
 
-            client.UpdateBaselineProjection(filter);
+            client.UpdateBaselineProjection(filter);*/
         }
     }
 }
