@@ -42,7 +42,7 @@ namespace CrmConsoleClient
                 Console.WriteLine("==============================");
                 foreach (ProxyAccount item in result.Agencies)
                 {
-                    Console.WriteLine(string.Format("{0}    {1}", item.EntityRole, item.AccountName));
+                    Console.WriteLine(string.Format("{0}    {1}     {2}", item.EntityRole, item.AccountName, item.Country));
                 }
                 Console.ReadLine();
             }

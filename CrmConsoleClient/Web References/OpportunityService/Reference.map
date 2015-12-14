@@ -6,7 +6,6 @@
     <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd3" filename="OpportunityService1.xsd" />
     <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd2" filename="OpportunityService2.xsd" />
     <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd4" filename="OpportunityService3.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?disco" filename="OpportunityService.disco" />
     <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?wsdl" filename="OpportunityService.wsdl" />
   </Results>
 </DiscoveryClientResultsFile>

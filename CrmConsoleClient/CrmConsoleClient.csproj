@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccountExecutor.cs" />
     <Compile Include="OpportunityExecutor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -50,6 +51,11 @@
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\AccountService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
     </Compile>
     <Compile Include="Web References\BPService\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -72,6 +78,23 @@
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\AccountService\AccountService.wsdl" />
+    <None Include="Web References\AccountService\AccountService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\AccountService\AccountService0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\AccountService\AccountService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\AccountService\ProxyAccount.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\AccountService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <None Include="Web References\BPService\BaselineProjectionService.wsdl" />
     <None Include="Web References\BPService\BaselineProjectionService.xsd">
@@ -157,10 +180,21 @@
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>CrmConsoleClient_NSOCovenantService_NSOCovenantService</CachedSettingsPropName>
     </WebReferenceUrl>
-    <WebReferenceUrl Include="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc">
+    <WebReferenceUrl Include="http://dynamicscrmproxy.apphb.com/Services/AccountService.svc">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\AccountService\</RelPath>
+      <UpdateFromURL>http://dynamicscrmproxy.apphb.com/Services/AccountService.svc</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CrmConsoleClient_AccountService_AccountService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc%3fwsdl">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\OpportunityService\</RelPath>
-      <UpdateFromURL>http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc</UpdateFromURL>
+      <UpdateFromURL>http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc%3fwsdl</UpdateFromURL>
       <ServiceLocationURL>
       </ServiceLocationURL>
       <CachedDynamicPropName>
@@ -173,7 +207,7 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Web References\OpportunityService\OpportunityService.disco" />
+    <None Include="Web References\AccountService\AccountService.disco" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
