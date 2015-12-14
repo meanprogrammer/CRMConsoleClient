@@ -200,7 +200,13 @@ namespace CrmConsoleClient.OpportunityService {
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity")]
     public partial class ProxyOpportunity {
         
+        private decimal aDBFinancingField;
+        
+        private bool aDBFinancingFieldSpecified;
+        
         private string additionalFinancingField;
+        
+        private ProxyAccount[] agenciesField;
         
         private string approvalLevelField;
         
@@ -212,11 +218,21 @@ namespace CrmConsoleClient.OpportunityService {
         
         private string categoryTypeField;
         
+        private System.DateTime closingDateField;
+        
+        private bool closingDateFieldSpecified;
+        
         private string countryField;
         
         private string currencyField;
         
+        private string departmentField;
+        
         private string descriptionField;
+        
+        private string divisionField;
+        
+        private string divisionRoleField;
         
         private string expectedApprovalYearField;
         
@@ -253,6 +269,27 @@ namespace CrmConsoleClient.OpportunityService {
         private string processingScenarioField;
         
         /// <remarks/>
+        public decimal ADBFinancing {
+            get {
+                return this.aDBFinancingField;
+            }
+            set {
+                this.aDBFinancingField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ADBFinancingSpecified {
+            get {
+                return this.aDBFinancingFieldSpecified;
+            }
+            set {
+                this.aDBFinancingFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string AdditionalFinancing {
             get {
@@ -260,6 +297,17 @@ namespace CrmConsoleClient.OpportunityService {
             }
             set {
                 this.additionalFinancingField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        public ProxyAccount[] Agencies {
+            get {
+                return this.agenciesField;
+            }
+            set {
+                this.agenciesField = value;
             }
         }
         
@@ -318,6 +366,27 @@ namespace CrmConsoleClient.OpportunityService {
         }
         
         /// <remarks/>
+        public System.DateTime ClosingDate {
+            get {
+                return this.closingDateField;
+            }
+            set {
+                this.closingDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ClosingDateSpecified {
+            get {
+                return this.closingDateFieldSpecified;
+            }
+            set {
+                this.closingDateFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string Country {
             get {
@@ -341,12 +410,45 @@ namespace CrmConsoleClient.OpportunityService {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Department {
+            get {
+                return this.departmentField;
+            }
+            set {
+                this.departmentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string Description {
             get {
                 return this.descriptionField;
             }
             set {
                 this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Division {
+            get {
+                return this.divisionField;
+            }
+            set {
+                this.divisionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string DivisionRole {
+            get {
+                return this.divisionRoleField;
+            }
+            set {
+                this.divisionRoleField = value;
             }
         }
         
@@ -542,32 +644,97 @@ namespace CrmConsoleClient.OpportunityService {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic")]
-    public partial class KeyValuePairOfstringstring {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity")]
+    public partial class ProxyAccount {
         
-        private string keyField;
+        private string accountNameField;
         
-        private string valueField;
+        private string addressField;
+        
+        private string countryField;
+        
+        private string entityRoleField;
+        
+        private string faxField;
+        
+        private string phoneField;
+        
+        private string websiteField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string key {
+        public string AccountName {
             get {
-                return this.keyField;
+                return this.accountNameField;
             }
             set {
-                this.keyField = value;
+                this.accountNameField = value;
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string value {
+        public string Address {
             get {
-                return this.valueField;
+                return this.addressField;
             }
             set {
-                this.valueField = value;
+                this.addressField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Country {
+            get {
+                return this.countryField;
+            }
+            set {
+                this.countryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string EntityRole {
+            get {
+                return this.entityRoleField;
+            }
+            set {
+                this.entityRoleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Fax {
+            get {
+                return this.faxField;
+            }
+            set {
+                this.faxField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Phone {
+            get {
+                return this.phoneField;
+            }
+            set {
+                this.phoneField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Website {
+            get {
+                return this.websiteField;
+            }
+            set {
+                this.websiteField = value;
             }
         }
     }
@@ -640,6 +807,41 @@ namespace CrmConsoleClient.OpportunityService {
             }
             set {
                 this.parentIDStringField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic")]
+    public partial class KeyValuePairOfstringstring {
+        
+        private string keyField;
+        
+        private string valueField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string key {
+            get {
+                return this.keyField;
+            }
+            set {
+                this.keyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
             }
         }
     }

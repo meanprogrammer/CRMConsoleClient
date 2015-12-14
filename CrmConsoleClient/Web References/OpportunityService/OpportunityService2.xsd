@@ -10,14 +10,20 @@
   <xs:element name="ArrayOfProxyOpportunity" nillable="true" type="tns:ArrayOfProxyOpportunity" />
   <xs:complexType name="ProxyOpportunity">
     <xs:sequence>
+      <xs:element minOccurs="0" name="ADBFinancing" type="xs:decimal" />
       <xs:element minOccurs="0" name="AdditionalFinancing" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Agencies" nillable="true" type="tns:ArrayOfProxyAccount" />
       <xs:element minOccurs="0" name="ApprovalLevel" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Borrower" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="BudgetAmount" type="xs:decimal" />
       <xs:element minOccurs="0" name="CategoryType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClosingDate" type="xs:dateTime" />
       <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Currency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Department" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Division" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DivisionRole" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ExpectedApprovalYear" nillable="true" type="xs:string" />
       <xs:element xmlns:q1="http://schemas.microsoft.com/xrm/2011/Contracts" minOccurs="0" name="Fake" nillable="true" type="q1:FormattedValueCollection" />
       <xs:element minOccurs="0" name="Guarantee" nillable="true" type="xs:string" />
@@ -38,6 +44,24 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ProxyOpportunity" nillable="true" type="tns:ProxyOpportunity" />
+  <xs:complexType name="ArrayOfProxyAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProxyAccount" nillable="true" type="tns:ProxyAccount" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProxyAccount" nillable="true" type="tns:ArrayOfProxyAccount" />
+  <xs:complexType name="ProxyAccount">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EntityRole" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Website" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProxyAccount" nillable="true" type="tns:ProxyAccount" />
   <xs:complexType name="ArrayOfProxySOVCovenant">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="ProxySOVCovenant" nillable="true" type="tns:ProxySOVCovenant" />

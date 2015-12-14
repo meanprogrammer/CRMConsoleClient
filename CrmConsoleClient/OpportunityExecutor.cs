@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CrmConsoleClient.OpportunityService;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,8 +35,15 @@ namespace CrmConsoleClient
                 Console.WriteLine(string.Format("Project Stage : {0}", result.ProjectStage));
                 Console.WriteLine(string.Format("Project Status : {0}", result.ProjectStatus));
                 Console.WriteLine("==============================");
-                Console.WriteLine(string.Format("Department : {0}", result.Department));
                 Console.WriteLine(string.Format("Division : {0}", result.Division));
+                Console.WriteLine(string.Format("Division Role : {0}", result.DivisionRole));
+                Console.WriteLine("==============================");
+                Console.WriteLine("ACCOUNTS");
+                Console.WriteLine("==============================");
+                foreach (ProxyAccount item in result.Agencies)
+                {
+                    Console.WriteLine(string.Format("{0}    {1}", item.EntityRole, item.AccountName));
+                }
                 Console.ReadLine();
             }
             catch (Exception e)
