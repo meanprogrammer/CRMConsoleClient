@@ -13,7 +13,7 @@
 // 
 #pragma warning disable 1591
 
-namespace CrmConsoleClient.OpportunityService {
+namespace CrmConsoleClient.LocalOpportunityService {
     using System;
     using System.Web.Services;
     using System.Diagnostics;
@@ -39,7 +39,7 @@ namespace CrmConsoleClient.OpportunityService {
         
         /// <remarks/>
         public OpportunityService() {
-            this.Url = global::CrmConsoleClient.Properties.Settings.Default.CrmConsoleClient_OpportunityService_OpportunityService;
+            this.Url = global::CrmConsoleClient.Properties.Settings.Default.CrmConsoleClient_LocalOpportunityService_OpportunityService;
             if ((this.IsLocalFileSystemWebService(this.Url) == true)) {
                 this.UseDefaultCredentials = true;
                 this.useDefaultCredentialsSetExplicitly = false;

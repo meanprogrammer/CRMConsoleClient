@@ -62,5 +62,15 @@ namespace CrmConsoleClient.Properties {
                 return ((string)(this["CrmConsoleClient_AccountService_AccountService"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:57324/Services/OpportunityService.svc")]
+        public string CrmConsoleClient_LocalOpportunityService_OpportunityService {
+            get {
+                return ((string)(this["CrmConsoleClient_LocalOpportunityService_OpportunityService"]));
+            }
+        }
     }
 }

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Results>
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd1" filename="OpportunityService.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd0" filename="OpportunityService0.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd3" filename="OpportunityService1.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd2" filename="OpportunityService2.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd4" filename="OpportunityService3.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd2" filename="OpportunityService.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd1" filename="OpportunityService0.xsd" />
     <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?wsdl" filename="OpportunityService.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd0" filename="OpportunityService1.xsd" />
   </Results>
 </DiscoveryClientResultsFile>

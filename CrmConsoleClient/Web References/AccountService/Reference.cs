@@ -31,6 +31,8 @@ namespace CrmConsoleClient.AccountService {
         
         private System.Threading.SendOrPostCallback GetAllAccountsOperationCompleted;
         
+        private System.Threading.SendOrPostCallback GetOneAccountOperationCompleted;
+        
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
@@ -73,6 +75,9 @@ namespace CrmConsoleClient.AccountService {
         public event GetAllAccountsCompletedEventHandler GetAllAccountsCompleted;
         
         /// <remarks/>
+        public event GetOneAccountCompletedEventHandler GetOneAccountCompleted;
+        
+        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IAccountService/GetAllAccounts", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity")]
@@ -98,6 +103,36 @@ namespace CrmConsoleClient.AccountService {
             if ((this.GetAllAccountsCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.GetAllAccountsCompleted(this, new GetAllAccountsCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IAccountService/GetOneAccount", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public ProxyAccount GetOneAccount(string id) {
+            object[] results = this.Invoke("GetOneAccount", new object[] {
+                        id});
+            return ((ProxyAccount)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetOneAccountAsync(string id) {
+            this.GetOneAccountAsync(id, null);
+        }
+        
+        /// <remarks/>
+        public void GetOneAccountAsync(string id, object userState) {
+            if ((this.GetOneAccountOperationCompleted == null)) {
+                this.GetOneAccountOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetOneAccountOperationCompleted);
+            }
+            this.InvokeAsync("GetOneAccount", new object[] {
+                        id}, this.GetOneAccountOperationCompleted, userState);
+        }
+        
+        private void OnGetOneAccountOperationCompleted(object arg) {
+            if ((this.GetOneAccountCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetOneAccountCompleted(this, new GetOneAccountCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -137,6 +172,12 @@ namespace CrmConsoleClient.AccountService {
         private string entityRoleField;
         
         private string faxField;
+        
+        private string idField;
+        
+        private string iDstringField;
+        
+        private string parentIDField;
         
         private string phoneField;
         
@@ -198,6 +239,38 @@ namespace CrmConsoleClient.AccountService {
         }
         
         /// <remarks/>
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string IDstring {
+            get {
+                return this.iDstringField;
+            }
+            set {
+                this.iDstringField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ParentID {
+            get {
+                return this.parentIDField;
+            }
+            set {
+                this.parentIDField = value;
+            }
+        }
+        
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string Phone {
             get {
@@ -242,6 +315,32 @@ namespace CrmConsoleClient.AccountService {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((ProxyAccount[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.34209")]
+    public delegate void GetOneAccountCompletedEventHandler(object sender, GetOneAccountCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.34209")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetOneAccountCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetOneAccountCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public ProxyAccount Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ProxyAccount)(this.results[0]));
             }
         }
     }
