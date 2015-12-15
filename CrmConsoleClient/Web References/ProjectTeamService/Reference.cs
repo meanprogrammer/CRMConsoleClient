@@ -163,9 +163,23 @@ namespace CrmConsoleClient.ProjectTeamService {
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity")]
     public partial class ProxyConnection {
         
+        private string idField;
+        
         private string nameField;
         
         private string opportunityIdField;
+        
+        private string roleField;
+        
+        /// <remarks/>
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -186,6 +200,17 @@ namespace CrmConsoleClient.ProjectTeamService {
             }
             set {
                 this.opportunityIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Role {
+            get {
+                return this.roleField;
+            }
+            set {
+                this.roleField = value;
             }
         }
     }
