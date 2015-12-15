@@ -46,16 +46,6 @@ namespace CrmConsoleClient.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc")]
-        public string CrmConsoleClient_OpportunityService_OpportunityService {
-            get {
-                return ((string)(this["CrmConsoleClient_OpportunityService_OpportunityService"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
         [global::System.Configuration.DefaultSettingValueAttribute("http://dynamicscrmproxy.apphb.com/Services/AccountService.svc")]
         public string CrmConsoleClient_AccountService_AccountService {
             get {
@@ -70,6 +60,16 @@ namespace CrmConsoleClient.Properties {
         public string CrmConsoleClient_LocalOpportunityService_OpportunityService {
             get {
                 return ((string)(this["CrmConsoleClient_LocalOpportunityService_OpportunityService"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc")]
+        public string CrmConsoleClient_OpportunityService_OpportunityService {
+            get {
+                return ((string)(this["CrmConsoleClient_OpportunityService_OpportunityService"]));
             }
         }
     }

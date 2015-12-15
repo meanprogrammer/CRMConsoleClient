@@ -162,6 +162,48 @@
     <None Include="Web References\OpportunityService\OpportunityService1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Web References\OpportunityService\OpportunityService10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OpportunityService\OpportunityService11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OpportunityService\OpportunityService12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OpportunityService\OpportunityService13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OpportunityService\OpportunityService14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OpportunityService\OpportunityService15.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OpportunityService\OpportunityService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OpportunityService\OpportunityService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OpportunityService\OpportunityService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OpportunityService\OpportunityService5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OpportunityService\OpportunityService6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OpportunityService\OpportunityService7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OpportunityService\OpportunityService8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OpportunityService\OpportunityService9.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web References\OpportunityService\ProxyOpportunity.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>

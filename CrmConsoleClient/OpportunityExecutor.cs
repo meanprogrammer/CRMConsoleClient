@@ -14,9 +14,9 @@ namespace CrmConsoleClient
             OpportunityService.OpportunityService service = new OpportunityService.OpportunityService();
             try
             {
-                /*
+                
                 var result = service.GetOneOpportunity("573b99ed-bf50-e511-80ee-3863bb2eb8d8");
-
+                
                 Console.WriteLine(string.Format("Project Name : {0}", result.Name));
                 Console.WriteLine(string.Format("Region : {0}", result.Region));
                 Console.WriteLine(string.Format("Sector : {0}", result.Sector));
@@ -38,8 +38,8 @@ namespace CrmConsoleClient
                 Console.WriteLine("==============================");
                 Console.WriteLine(string.Format("Division : {0}", result.Division));
                 Console.WriteLine(string.Format("Division Role : {0}", result.DivisionRole));
-                */
 
+                /*
                 var result = service.GetAllOpportunity();
 
                 foreach (var r in result)
@@ -66,7 +66,7 @@ namespace CrmConsoleClient
                     Console.WriteLine(string.Format("Division : {0}", r.Division));
                     Console.WriteLine(string.Format("Division Role : {0}", r.DivisionRole));
                 }
-
+                */
 
 
 

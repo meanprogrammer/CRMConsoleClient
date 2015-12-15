@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Xrm" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Xrm" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/xrm/2011/Contracts" />
+  <xs:complexType name="Opportunity">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.microsoft.com/xrm/2011/Contracts" base="q1:CrmEntity">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Opportunity" nillable="true" type="tns:Opportunity" />
+  <xs:complexType name="ArrayOfConnection">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Connection" nillable="true" type="tns:Connection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConnection" nillable="true" type="tns:ArrayOfConnection" />
+  <xs:complexType name="Connection">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.microsoft.com/xrm/2011/Contracts" base="q2:CrmEntity">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Connection" nillable="true" type="tns:Connection" />
+  <xs:complexType name="ArrayOfTeam">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Team" nillable="true" type="tns:Team" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTeam" nillable="true" type="tns:ArrayOfTeam" />
+  <xs:complexType name="Team">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.microsoft.com/xrm/2011/Contracts" base="q3:CrmEntity">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Team" nillable="true" type="tns:Team" />
+</xs:schema>
