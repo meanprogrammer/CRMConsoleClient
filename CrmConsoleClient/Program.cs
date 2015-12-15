@@ -11,17 +11,20 @@ namespace CrmConsoleClient
     {
         static void Main(string[] args)
         {
-            
+            /*
             OpportunityExecutor ex = new OpportunityExecutor();
             ex.GetOpportunity();
-            
+            */
 
             
-            /*            
+            /*      
             AccountExecutor aex = new AccountExecutor();
             aex.GetAllAccounts();
             */
-            
+
+            ProjectTeamExecutor pte = new ProjectTeamExecutor();
+            pte.GetAllTeamMembers();
+
 
             /*
             BPService.BaselineProjectionService client = new BPService.BaselineProjectionService();

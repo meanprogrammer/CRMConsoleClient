@@ -28,22 +28,33 @@ namespace CrmConsoleClient.OpportunityService {
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Web.Services.WebServiceBindingAttribute(Name="BasicHttpBinding_IOpportunityService", Namespace="http://tempuri.org/")]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ExecuteMultipleSettings))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(OrganizationDetail))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(MetadataQueryBase))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(BaseServiceFault))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AliasedValue))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(RemovedOrDeletedItem))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(NewOrUpdatedItem))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BusinessEntityChanges))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(MetadataQueryBase))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(OrganizationDetail))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ConstantsBase))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ManagedPropertyAttributeRequiredLevel))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ManagedPropertyboolean))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(MetadataBase))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ConstantsBase))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AttributeTypeDisplayName[]))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ProxyOpportunity[]))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(EntityKeyMetadata[]))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(KeyValuePairOfDeletedMetadataFiltersArrayOfguidPlUv_PKtF[]))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(RemovedOrDeletedItem))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(NewOrUpdatedItem))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BusinessEntityChanges))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(OrganizationResponse[]))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(MailboxTrackingFolderMapping[]))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(KeyValuePairOfstringArrayOfanyTypety7Ep6D1[]))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ExportDynamicToExcelType[][]))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(KeyValuePairOfstringanyType[]))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Money[]))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(OptionSetValue[]))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(EntityReference[]))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(QueryExpression[]))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(LocalizedLabel[]))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AttributePrivilege[]))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(KeyValuePairOfRelationshipQueryBaseX_PsK4FkN[]))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(EntityMetadata[]))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(QuickFindResult[]))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AttributeMapping[]))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(KeyValuePairOfDeletedMetadataFiltersArrayOfguidPlUv_PKtF[]))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(RelationshipMetadataBase[]))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(OptionSetMetadataBase[]))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ManagedPropertyMetadata[]))]
@@ -60,25 +71,15 @@ namespace CrmConsoleClient.OpportunityService {
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(OwnershipTypes[]))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ImeMode[]))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(RelationshipType[]))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ProxyOpportunity[]))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(bool[]))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(string[][]))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(double[]))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(decimal[]))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(System.DateTime[]))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(OrganizationResponse[]))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(MailboxTrackingFolderMapping[]))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(KeyValuePairOfstringArrayOfanyTypety7Ep6D1[]))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ExportDynamicToExcelType[][]))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(KeyValuePairOfstringanyType[]))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Money[]))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(OptionSetValue[]))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(EntityReference[]))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(QueryExpression[]))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(LocalizedLabel[]))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AttributePrivilege[]))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(KeyValuePairOfRelationshipQueryBaseX_PsK4FkN[]))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(QuickFindResult[]))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AttributeMapping[]))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AttributeTypeDisplayName[]))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(OrganizationRequest[]))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ExecuteMultipleResponseItem[]))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AppointmentProposal[][]))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(SearchDirection[][]))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AppointmentRequest[][]))]
@@ -120,8 +121,6 @@ namespace CrmConsoleClient.OpportunityService {
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(UserAccessAuditDetail[][]))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ValidationResult[][]))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(QuickFindConfiguration[]))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(OrganizationRequest[]))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ExecuteMultipleResponseItem[]))]
     public partial class OpportunityService : System.Web.Services.Protocols.SoapHttpClientProtocol {
         
         private System.Threading.SendOrPostCallback GetAllOpportunityOperationCompleted;
@@ -934,342 +933,6 @@ namespace CrmConsoleClient.OpportunityService {
             }
             set {
                 this.valueField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2012/Contracts")]
-    public partial class ExecuteMultipleResponseItem {
-        
-        private OrganizationServiceFault faultField;
-        
-        private int requestIndexField;
-        
-        private bool requestIndexFieldSpecified;
-        
-        private OrganizationResponse responseField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public OrganizationServiceFault Fault {
-            get {
-                return this.faultField;
-            }
-            set {
-                this.faultField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int RequestIndex {
-            get {
-                return this.requestIndexField;
-            }
-            set {
-                this.requestIndexField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool RequestIndexSpecified {
-            get {
-                return this.requestIndexFieldSpecified;
-            }
-            set {
-                this.requestIndexFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public OrganizationResponse Response {
-            get {
-                return this.responseField;
-            }
-            set {
-                this.responseField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ExecuteTransactionFault))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public partial class OrganizationServiceFault : BaseServiceFault {
-        
-        private OrganizationServiceFault innerFaultField;
-        
-        private string traceTextField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public OrganizationServiceFault InnerFault {
-            get {
-                return this.innerFaultField;
-            }
-            set {
-                this.innerFaultField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string TraceText {
-            get {
-                return this.traceTextField;
-            }
-            set {
-                this.traceTextField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DiscoveryServiceFault))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(OrganizationServiceFault))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ExecuteTransactionFault))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public partial class BaseServiceFault {
-        
-        private int errorCodeField;
-        
-        private bool errorCodeFieldSpecified;
-        
-        private KeyValuePairOfstringanyType[] errorDetailsField;
-        
-        private string messageField;
-        
-        private System.DateTime timestampField;
-        
-        private bool timestampFieldSpecified;
-        
-        /// <remarks/>
-        public int ErrorCode {
-            get {
-                return this.errorCodeField;
-            }
-            set {
-                this.errorCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ErrorCodeSpecified {
-            get {
-                return this.errorCodeFieldSpecified;
-            }
-            set {
-                this.errorCodeFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        [System.Xml.Serialization.XmlArrayItemAttribute(IsNullable=false)]
-        public KeyValuePairOfstringanyType[] ErrorDetails {
-            get {
-                return this.errorDetailsField;
-            }
-            set {
-                this.errorDetailsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string Message {
-            get {
-                return this.messageField;
-            }
-            set {
-                this.messageField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime Timestamp {
-            get {
-                return this.timestampField;
-            }
-            set {
-                this.timestampField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool TimestampSpecified {
-            get {
-                return this.timestampFieldSpecified;
-            }
-            set {
-                this.timestampFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public partial class DiscoveryServiceFault : BaseServiceFault {
-        
-        private DiscoveryServiceFault innerFaultField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public DiscoveryServiceFault InnerFault {
-            get {
-                return this.innerFaultField;
-            }
-            set {
-                this.innerFaultField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/7.1/Contracts")]
-    public partial class ExecuteTransactionFault : OrganizationServiceFault {
-        
-        private int faultedRequestIndexField;
-        
-        private bool faultedRequestIndexFieldSpecified;
-        
-        /// <remarks/>
-        public int FaultedRequestIndex {
-            get {
-                return this.faultedRequestIndexField;
-            }
-            set {
-                this.faultedRequestIndexField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool FaultedRequestIndexSpecified {
-            get {
-                return this.faultedRequestIndexFieldSpecified;
-            }
-            set {
-                this.faultedRequestIndexFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public partial class OrganizationResponse {
-        
-        private string responseNameField;
-        
-        private KeyValuePairOfstringanyType[] resultsField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string ResponseName {
-            get {
-                return this.responseNameField;
-            }
-            set {
-                this.responseNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        [System.Xml.Serialization.XmlArrayItemAttribute(IsNullable=false)]
-        public KeyValuePairOfstringanyType[] Results {
-            get {
-                return this.resultsField;
-            }
-            set {
-                this.resultsField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2012/Contracts")]
-    public partial class ExecuteMultipleSettings {
-        
-        private bool continueOnErrorField;
-        
-        private bool continueOnErrorFieldSpecified;
-        
-        private bool returnResponsesField;
-        
-        private bool returnResponsesFieldSpecified;
-        
-        /// <remarks/>
-        public bool ContinueOnError {
-            get {
-                return this.continueOnErrorField;
-            }
-            set {
-                this.continueOnErrorField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ContinueOnErrorSpecified {
-            get {
-                return this.continueOnErrorFieldSpecified;
-            }
-            set {
-                this.continueOnErrorFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool ReturnResponses {
-            get {
-                return this.returnResponsesField;
-            }
-            set {
-                this.returnResponsesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ReturnResponsesSpecified {
-            get {
-                return this.returnResponsesFieldSpecified;
-            }
-            set {
-                this.returnResponsesFieldSpecified = value;
             }
         }
     }
@@ -2568,6 +2231,67 @@ namespace CrmConsoleClient.OpportunityService {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/crm/2011/Contracts")]
+    public partial class BusinessNotification {
+        
+        private string messageField;
+        
+        private BusinessNotificationParameter[] parametersField;
+        
+        private BusinessNotificationSeverity severityField;
+        
+        private bool severityFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Message {
+            get {
+                return this.messageField;
+            }
+            set {
+                this.messageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/Microsoft.Crm.Sdk.Messages")]
+        public BusinessNotificationParameter[] Parameters {
+            get {
+                return this.parametersField;
+            }
+            set {
+                this.parametersField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public BusinessNotificationSeverity Severity {
+            get {
+                return this.severityField;
+            }
+            set {
+                this.severityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool SeveritySpecified {
+            get {
+                return this.severityFieldSpecified;
+            }
+            set {
+                this.severityFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/Microsoft.Crm.Sdk.Messages")]
     public partial class BusinessNotificationParameter {
         
@@ -2624,67 +2348,6 @@ namespace CrmConsoleClient.OpportunityService {
         
         /// <remarks/>
         Attribute,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/crm/2011/Contracts")]
-    public partial class BusinessNotification {
-        
-        private string messageField;
-        
-        private BusinessNotificationParameter[] parametersField;
-        
-        private BusinessNotificationSeverity severityField;
-        
-        private bool severityFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string Message {
-            get {
-                return this.messageField;
-            }
-            set {
-                this.messageField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/Microsoft.Crm.Sdk.Messages")]
-        public BusinessNotificationParameter[] Parameters {
-            get {
-                return this.parametersField;
-            }
-            set {
-                this.parametersField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public BusinessNotificationSeverity Severity {
-            get {
-                return this.severityField;
-            }
-            set {
-                this.severityField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool SeveritySpecified {
-            get {
-                return this.severityFieldSpecified;
-            }
-            set {
-                this.severityFieldSpecified = value;
-            }
-        }
     }
     
     /// <remarks/>
@@ -3890,6 +3553,1115 @@ namespace CrmConsoleClient.OpportunityService {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2012/Contracts")]
+    public partial class ExecuteMultipleResponseItem {
+        
+        private OrganizationServiceFault faultField;
+        
+        private int requestIndexField;
+        
+        private bool requestIndexFieldSpecified;
+        
+        private OrganizationResponse responseField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public OrganizationServiceFault Fault {
+            get {
+                return this.faultField;
+            }
+            set {
+                this.faultField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int RequestIndex {
+            get {
+                return this.requestIndexField;
+            }
+            set {
+                this.requestIndexField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool RequestIndexSpecified {
+            get {
+                return this.requestIndexFieldSpecified;
+            }
+            set {
+                this.requestIndexFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public OrganizationResponse Response {
+            get {
+                return this.responseField;
+            }
+            set {
+                this.responseField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ExecuteTransactionFault))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public partial class OrganizationServiceFault : BaseServiceFault {
+        
+        private OrganizationServiceFault innerFaultField;
+        
+        private string traceTextField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public OrganizationServiceFault InnerFault {
+            get {
+                return this.innerFaultField;
+            }
+            set {
+                this.innerFaultField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string TraceText {
+            get {
+                return this.traceTextField;
+            }
+            set {
+                this.traceTextField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DiscoveryServiceFault))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(OrganizationServiceFault))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ExecuteTransactionFault))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public partial class BaseServiceFault {
+        
+        private int errorCodeField;
+        
+        private bool errorCodeFieldSpecified;
+        
+        private KeyValuePairOfstringanyType[] errorDetailsField;
+        
+        private string messageField;
+        
+        private System.DateTime timestampField;
+        
+        private bool timestampFieldSpecified;
+        
+        /// <remarks/>
+        public int ErrorCode {
+            get {
+                return this.errorCodeField;
+            }
+            set {
+                this.errorCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ErrorCodeSpecified {
+            get {
+                return this.errorCodeFieldSpecified;
+            }
+            set {
+                this.errorCodeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [System.Xml.Serialization.XmlArrayItemAttribute(IsNullable=false)]
+        public KeyValuePairOfstringanyType[] ErrorDetails {
+            get {
+                return this.errorDetailsField;
+            }
+            set {
+                this.errorDetailsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Message {
+            get {
+                return this.messageField;
+            }
+            set {
+                this.messageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime Timestamp {
+            get {
+                return this.timestampField;
+            }
+            set {
+                this.timestampField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TimestampSpecified {
+            get {
+                return this.timestampFieldSpecified;
+            }
+            set {
+                this.timestampFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public partial class DiscoveryServiceFault : BaseServiceFault {
+        
+        private DiscoveryServiceFault innerFaultField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public DiscoveryServiceFault InnerFault {
+            get {
+                return this.innerFaultField;
+            }
+            set {
+                this.innerFaultField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/7.1/Contracts")]
+    public partial class ExecuteTransactionFault : OrganizationServiceFault {
+        
+        private int faultedRequestIndexField;
+        
+        private bool faultedRequestIndexFieldSpecified;
+        
+        /// <remarks/>
+        public int FaultedRequestIndex {
+            get {
+                return this.faultedRequestIndexField;
+            }
+            set {
+                this.faultedRequestIndexField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool FaultedRequestIndexSpecified {
+            get {
+                return this.faultedRequestIndexFieldSpecified;
+            }
+            set {
+                this.faultedRequestIndexFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public partial class OrganizationResponse {
+        
+        private string responseNameField;
+        
+        private KeyValuePairOfstringanyType[] resultsField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ResponseName {
+            get {
+                return this.responseNameField;
+            }
+            set {
+                this.responseNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [System.Xml.Serialization.XmlArrayItemAttribute(IsNullable=false)]
+        public KeyValuePairOfstringanyType[] Results {
+            get {
+                return this.resultsField;
+            }
+            set {
+                this.resultsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2012/Contracts")]
+    public partial class ExecuteMultipleSettings {
+        
+        private bool continueOnErrorField;
+        
+        private bool continueOnErrorFieldSpecified;
+        
+        private bool returnResponsesField;
+        
+        private bool returnResponsesFieldSpecified;
+        
+        /// <remarks/>
+        public bool ContinueOnError {
+            get {
+                return this.continueOnErrorField;
+            }
+            set {
+                this.continueOnErrorField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ContinueOnErrorSpecified {
+            get {
+                return this.continueOnErrorFieldSpecified;
+            }
+            set {
+                this.continueOnErrorFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool ReturnResponses {
+            get {
+                return this.returnResponsesField;
+            }
+            set {
+                this.returnResponsesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ReturnResponsesSpecified {
+            get {
+                return this.returnResponsesFieldSpecified;
+            }
+            set {
+                this.returnResponsesFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2014/Contracts")]
+    public partial class OrganizationDetail {
+        
+        private KeyValuePairOfEndpointTypestringyDL0RVHi[] endpointsField;
+        
+        private string friendlyNameField;
+        
+        private string organizationIdField;
+        
+        private string organizationVersionField;
+        
+        private OrganizationState stateField;
+        
+        private bool stateFieldSpecified;
+        
+        private string uniqueNameField;
+        
+        private string urlNameField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [System.Xml.Serialization.XmlArrayItemAttribute(IsNullable=false)]
+        public KeyValuePairOfEndpointTypestringyDL0RVHi[] Endpoints {
+            get {
+                return this.endpointsField;
+            }
+            set {
+                this.endpointsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string FriendlyName {
+            get {
+                return this.friendlyNameField;
+            }
+            set {
+                this.friendlyNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string OrganizationId {
+            get {
+                return this.organizationIdField;
+            }
+            set {
+                this.organizationIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string OrganizationVersion {
+            get {
+                return this.organizationVersionField;
+            }
+            set {
+                this.organizationVersionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public OrganizationState State {
+            get {
+                return this.stateField;
+            }
+            set {
+                this.stateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool StateSpecified {
+            get {
+                return this.stateFieldSpecified;
+            }
+            set {
+                this.stateFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string UniqueName {
+            get {
+                return this.uniqueNameField;
+            }
+            set {
+                this.uniqueNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string UrlName {
+            get {
+                return this.urlNameField;
+            }
+            set {
+                this.urlNameField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic")]
+    public partial class KeyValuePairOfEndpointTypestringyDL0RVHi {
+        
+        private EndpointType keyField;
+        
+        private string valueField;
+        
+        /// <remarks/>
+        public EndpointType key {
+            get {
+                return this.keyField;
+            }
+            set {
+                this.keyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2014/Contracts")]
+    public enum EndpointType {
+        
+        /// <remarks/>
+        OrganizationService,
+        
+        /// <remarks/>
+        OrganizationDataService,
+        
+        /// <remarks/>
+        WebApplication,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2014/Contracts")]
+    public enum OrganizationState {
+        
+        /// <remarks/>
+        Enabled,
+        
+        /// <remarks/>
+        Disabled,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
+    public partial class MetadataPropertiesExpression {
+        
+        private bool allPropertiesField;
+        
+        private bool allPropertiesFieldSpecified;
+        
+        private string[] propertyNamesField;
+        
+        /// <remarks/>
+        public bool AllProperties {
+            get {
+                return this.allPropertiesField;
+            }
+            set {
+                this.allPropertiesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool AllPropertiesSpecified {
+            get {
+                return this.allPropertiesFieldSpecified;
+            }
+            set {
+                this.allPropertiesFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays")]
+        public string[] PropertyNames {
+            get {
+                return this.propertyNamesField;
+            }
+            set {
+                this.propertyNamesField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(LabelQueryExpression))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(MetadataQueryExpression))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AttributeQueryExpression))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(EntityQueryExpression))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(RelationshipQueryExpression))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
+    public partial class MetadataQueryBase {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
+    public partial class LabelQueryExpression : MetadataQueryBase {
+        
+        private int[] filterLanguagesField;
+        
+        private System.Nullable<int> missingLabelBehaviorField;
+        
+        private bool missingLabelBehaviorFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays", IsNullable=false)]
+        public int[] FilterLanguages {
+            get {
+                return this.filterLanguagesField;
+            }
+            set {
+                this.filterLanguagesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<int> MissingLabelBehavior {
+            get {
+                return this.missingLabelBehaviorField;
+            }
+            set {
+                this.missingLabelBehaviorField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MissingLabelBehaviorSpecified {
+            get {
+                return this.missingLabelBehaviorFieldSpecified;
+            }
+            set {
+                this.missingLabelBehaviorFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AttributeQueryExpression))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(EntityQueryExpression))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(RelationshipQueryExpression))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
+    public partial class MetadataQueryExpression : MetadataQueryBase {
+        
+        private MetadataFilterExpression criteriaField;
+        
+        private MetadataPropertiesExpression propertiesField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public MetadataFilterExpression Criteria {
+            get {
+                return this.criteriaField;
+            }
+            set {
+                this.criteriaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public MetadataPropertiesExpression Properties {
+            get {
+                return this.propertiesField;
+            }
+            set {
+                this.propertiesField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
+    public partial class MetadataFilterExpression {
+        
+        private MetadataConditionExpression[] conditionsField;
+        
+        private LogicalOperator filterOperatorField;
+        
+        private bool filterOperatorFieldSpecified;
+        
+        private MetadataFilterExpression[] filtersField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        public MetadataConditionExpression[] Conditions {
+            get {
+                return this.conditionsField;
+            }
+            set {
+                this.conditionsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public LogicalOperator FilterOperator {
+            get {
+                return this.filterOperatorField;
+            }
+            set {
+                this.filterOperatorField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool FilterOperatorSpecified {
+            get {
+                return this.filterOperatorFieldSpecified;
+            }
+            set {
+                this.filterOperatorFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        public MetadataFilterExpression[] Filters {
+            get {
+                return this.filtersField;
+            }
+            set {
+                this.filtersField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
+    public partial class MetadataConditionExpression {
+        
+        private MetadataConditionOperator conditionOperatorField;
+        
+        private bool conditionOperatorFieldSpecified;
+        
+        private string propertyNameField;
+        
+        private object valueField;
+        
+        /// <remarks/>
+        public MetadataConditionOperator ConditionOperator {
+            get {
+                return this.conditionOperatorField;
+            }
+            set {
+                this.conditionOperatorField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ConditionOperatorSpecified {
+            get {
+                return this.conditionOperatorFieldSpecified;
+            }
+            set {
+                this.conditionOperatorFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string PropertyName {
+            get {
+                return this.propertyNameField;
+            }
+            set {
+                this.propertyNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public object Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
+    public enum MetadataConditionOperator {
+        
+        /// <remarks/>
+        Equals,
+        
+        /// <remarks/>
+        NotEquals,
+        
+        /// <remarks/>
+        In,
+        
+        /// <remarks/>
+        NotIn,
+        
+        /// <remarks/>
+        GreaterThan,
+        
+        /// <remarks/>
+        LessThan,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public enum LogicalOperator {
+        
+        /// <remarks/>
+        And,
+        
+        /// <remarks/>
+        Or,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
+    public partial class AttributeQueryExpression : MetadataQueryExpression {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
+    public partial class EntityQueryExpression : MetadataQueryExpression {
+        
+        private AttributeQueryExpression attributeQueryField;
+        
+        private LabelQueryExpression labelQueryField;
+        
+        private RelationshipQueryExpression relationshipQueryField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public AttributeQueryExpression AttributeQuery {
+            get {
+                return this.attributeQueryField;
+            }
+            set {
+                this.attributeQueryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public LabelQueryExpression LabelQuery {
+            get {
+                return this.labelQueryField;
+            }
+            set {
+                this.labelQueryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public RelationshipQueryExpression RelationshipQuery {
+            get {
+                return this.relationshipQueryField;
+            }
+            set {
+                this.relationshipQueryField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
+    public partial class RelationshipQueryExpression : MetadataQueryExpression {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2014/Contracts")]
+    public partial class AttributeMapping {
+        
+        private int allowedSyncDirectionField;
+        
+        private bool allowedSyncDirectionFieldSpecified;
+        
+        private string attributeCrmDisplayNameField;
+        
+        private string attributeCrmNameField;
+        
+        private string attributeExchangeDisplayNameField;
+        
+        private string attributeExchangeNameField;
+        
+        private string attributeMappingIdField;
+        
+        private string[] computedPropertiesField;
+        
+        private int defaultSyncDirectionField;
+        
+        private bool defaultSyncDirectionFieldSpecified;
+        
+        private int entityTypeCodeField;
+        
+        private bool entityTypeCodeFieldSpecified;
+        
+        private bool isComputedField;
+        
+        private bool isComputedFieldSpecified;
+        
+        private string mappingNameField;
+        
+        private int syncDirectionField;
+        
+        private bool syncDirectionFieldSpecified;
+        
+        /// <remarks/>
+        public int AllowedSyncDirection {
+            get {
+                return this.allowedSyncDirectionField;
+            }
+            set {
+                this.allowedSyncDirectionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool AllowedSyncDirectionSpecified {
+            get {
+                return this.allowedSyncDirectionFieldSpecified;
+            }
+            set {
+                this.allowedSyncDirectionFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string AttributeCrmDisplayName {
+            get {
+                return this.attributeCrmDisplayNameField;
+            }
+            set {
+                this.attributeCrmDisplayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string AttributeCrmName {
+            get {
+                return this.attributeCrmNameField;
+            }
+            set {
+                this.attributeCrmNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string AttributeExchangeDisplayName {
+            get {
+                return this.attributeExchangeDisplayNameField;
+            }
+            set {
+                this.attributeExchangeDisplayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string AttributeExchangeName {
+            get {
+                return this.attributeExchangeNameField;
+            }
+            set {
+                this.attributeExchangeNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string AttributeMappingId {
+            get {
+                return this.attributeMappingIdField;
+            }
+            set {
+                this.attributeMappingIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays")]
+        public string[] ComputedProperties {
+            get {
+                return this.computedPropertiesField;
+            }
+            set {
+                this.computedPropertiesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int DefaultSyncDirection {
+            get {
+                return this.defaultSyncDirectionField;
+            }
+            set {
+                this.defaultSyncDirectionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DefaultSyncDirectionSpecified {
+            get {
+                return this.defaultSyncDirectionFieldSpecified;
+            }
+            set {
+                this.defaultSyncDirectionFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int EntityTypeCode {
+            get {
+                return this.entityTypeCodeField;
+            }
+            set {
+                this.entityTypeCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool EntityTypeCodeSpecified {
+            get {
+                return this.entityTypeCodeFieldSpecified;
+            }
+            set {
+                this.entityTypeCodeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsComputed {
+            get {
+                return this.isComputedField;
+            }
+            set {
+                this.isComputedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool IsComputedSpecified {
+            get {
+                return this.isComputedFieldSpecified;
+            }
+            set {
+                this.isComputedFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string MappingName {
+            get {
+                return this.mappingNameField;
+            }
+            set {
+                this.mappingNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int SyncDirection {
+            get {
+                return this.syncDirectionField;
+            }
+            set {
+                this.syncDirectionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool SyncDirectionSpecified {
+            get {
+                return this.syncDirectionFieldSpecified;
+            }
+            set {
+                this.syncDirectionFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
     public partial class QuickFindResult {
         
@@ -4271,2495 +5043,6 @@ namespace CrmConsoleClient.OpportunityService {
             }
             set {
                 this.valueField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public partial class OptionSetValue {
-        
-        private int valueField;
-        
-        private bool valueFieldSpecified;
-        
-        /// <remarks/>
-        public int Value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ValueSpecified {
-            get {
-                return this.valueFieldSpecified;
-            }
-            set {
-                this.valueFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public partial class Money {
-        
-        private decimal valueField;
-        
-        private bool valueFieldSpecified;
-        
-        /// <remarks/>
-        public decimal Value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ValueSpecified {
-            get {
-                return this.valueFieldSpecified;
-            }
-            set {
-                this.valueFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/7.1/Contracts")]
-    public partial class RemovedOrDeletedItem {
-        
-        private EntityReference removedItemField;
-        
-        private ChangeType typeField;
-        
-        private bool typeFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public EntityReference RemovedItem {
-            get {
-                return this.removedItemField;
-            }
-            set {
-                this.removedItemField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public ChangeType Type {
-            get {
-                return this.typeField;
-            }
-            set {
-                this.typeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool TypeSpecified {
-            get {
-                return this.typeFieldSpecified;
-            }
-            set {
-                this.typeFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/7.1/Contracts")]
-    public enum ChangeType {
-        
-        /// <remarks/>
-        NewOrUpdated,
-        
-        /// <remarks/>
-        RemoveOrDeleted,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/7.1/Contracts")]
-    public partial class NewOrUpdatedItem {
-        
-        private Entity newOrUpdatedEntityField;
-        
-        private ChangeType typeField;
-        
-        private bool typeFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public Entity NewOrUpdatedEntity {
-            get {
-                return this.newOrUpdatedEntityField;
-            }
-            set {
-                this.newOrUpdatedEntityField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public ChangeType Type {
-            get {
-                return this.typeField;
-            }
-            set {
-                this.typeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool TypeSpecified {
-            get {
-                return this.typeFieldSpecified;
-            }
-            set {
-                this.typeFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/7.1/Contracts")]
-    public partial class BusinessEntityChanges {
-        
-        private object[] changesField;
-        
-        private string dataTokenField;
-        
-        private bool moreRecordsField;
-        
-        private bool moreRecordsFieldSpecified;
-        
-        private string pagingCookieField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        public object[] Changes {
-            get {
-                return this.changesField;
-            }
-            set {
-                this.changesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string DataToken {
-            get {
-                return this.dataTokenField;
-            }
-            set {
-                this.dataTokenField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool MoreRecords {
-            get {
-                return this.moreRecordsField;
-            }
-            set {
-                this.moreRecordsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool MoreRecordsSpecified {
-            get {
-                return this.moreRecordsFieldSpecified;
-            }
-            set {
-                this.moreRecordsFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string PagingCookie {
-            get {
-                return this.pagingCookieField;
-            }
-            set {
-                this.pagingCookieField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/7.1/Contracts")]
-    public partial class MailboxTrackingFolderMapping {
-        
-        private string exchangeFolderIdField;
-        
-        private string exchangeFolderNameField;
-        
-        private bool isFolderOnboardedField;
-        
-        private bool isFolderOnboardedFieldSpecified;
-        
-        private string regardingObjectIdField;
-        
-        private string regardingObjectNameField;
-        
-        private int regardingObjectTypeCodeField;
-        
-        private bool regardingObjectTypeCodeFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string ExchangeFolderId {
-            get {
-                return this.exchangeFolderIdField;
-            }
-            set {
-                this.exchangeFolderIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string ExchangeFolderName {
-            get {
-                return this.exchangeFolderNameField;
-            }
-            set {
-                this.exchangeFolderNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool IsFolderOnboarded {
-            get {
-                return this.isFolderOnboardedField;
-            }
-            set {
-                this.isFolderOnboardedField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool IsFolderOnboardedSpecified {
-            get {
-                return this.isFolderOnboardedFieldSpecified;
-            }
-            set {
-                this.isFolderOnboardedFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RegardingObjectId {
-            get {
-                return this.regardingObjectIdField;
-            }
-            set {
-                this.regardingObjectIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string RegardingObjectName {
-            get {
-                return this.regardingObjectNameField;
-            }
-            set {
-                this.regardingObjectNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int RegardingObjectTypeCode {
-            get {
-                return this.regardingObjectTypeCodeField;
-            }
-            set {
-                this.regardingObjectTypeCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool RegardingObjectTypeCodeSpecified {
-            get {
-                return this.regardingObjectTypeCodeFieldSpecified;
-            }
-            set {
-                this.regardingObjectTypeCodeFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
-    public partial class MetadataPropertiesExpression {
-        
-        private bool allPropertiesField;
-        
-        private bool allPropertiesFieldSpecified;
-        
-        private string[] propertyNamesField;
-        
-        /// <remarks/>
-        public bool AllProperties {
-            get {
-                return this.allPropertiesField;
-            }
-            set {
-                this.allPropertiesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool AllPropertiesSpecified {
-            get {
-                return this.allPropertiesFieldSpecified;
-            }
-            set {
-                this.allPropertiesFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays")]
-        public string[] PropertyNames {
-            get {
-                return this.propertyNamesField;
-            }
-            set {
-                this.propertyNamesField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(LabelQueryExpression))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(MetadataQueryExpression))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AttributeQueryExpression))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(EntityQueryExpression))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(RelationshipQueryExpression))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
-    public partial class MetadataQueryBase {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
-    public partial class LabelQueryExpression : MetadataQueryBase {
-        
-        private int[] filterLanguagesField;
-        
-        private System.Nullable<int> missingLabelBehaviorField;
-        
-        private bool missingLabelBehaviorFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays", IsNullable=false)]
-        public int[] FilterLanguages {
-            get {
-                return this.filterLanguagesField;
-            }
-            set {
-                this.filterLanguagesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<int> MissingLabelBehavior {
-            get {
-                return this.missingLabelBehaviorField;
-            }
-            set {
-                this.missingLabelBehaviorField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool MissingLabelBehaviorSpecified {
-            get {
-                return this.missingLabelBehaviorFieldSpecified;
-            }
-            set {
-                this.missingLabelBehaviorFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(AttributeQueryExpression))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(EntityQueryExpression))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(RelationshipQueryExpression))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
-    public partial class MetadataQueryExpression : MetadataQueryBase {
-        
-        private MetadataFilterExpression criteriaField;
-        
-        private MetadataPropertiesExpression propertiesField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public MetadataFilterExpression Criteria {
-            get {
-                return this.criteriaField;
-            }
-            set {
-                this.criteriaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public MetadataPropertiesExpression Properties {
-            get {
-                return this.propertiesField;
-            }
-            set {
-                this.propertiesField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
-    public partial class MetadataFilterExpression {
-        
-        private MetadataConditionExpression[] conditionsField;
-        
-        private LogicalOperator filterOperatorField;
-        
-        private bool filterOperatorFieldSpecified;
-        
-        private MetadataFilterExpression[] filtersField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        public MetadataConditionExpression[] Conditions {
-            get {
-                return this.conditionsField;
-            }
-            set {
-                this.conditionsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public LogicalOperator FilterOperator {
-            get {
-                return this.filterOperatorField;
-            }
-            set {
-                this.filterOperatorField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool FilterOperatorSpecified {
-            get {
-                return this.filterOperatorFieldSpecified;
-            }
-            set {
-                this.filterOperatorFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        public MetadataFilterExpression[] Filters {
-            get {
-                return this.filtersField;
-            }
-            set {
-                this.filtersField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
-    public partial class MetadataConditionExpression {
-        
-        private MetadataConditionOperator conditionOperatorField;
-        
-        private bool conditionOperatorFieldSpecified;
-        
-        private string propertyNameField;
-        
-        private object valueField;
-        
-        /// <remarks/>
-        public MetadataConditionOperator ConditionOperator {
-            get {
-                return this.conditionOperatorField;
-            }
-            set {
-                this.conditionOperatorField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ConditionOperatorSpecified {
-            get {
-                return this.conditionOperatorFieldSpecified;
-            }
-            set {
-                this.conditionOperatorFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string PropertyName {
-            get {
-                return this.propertyNameField;
-            }
-            set {
-                this.propertyNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public object Value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
-    public enum MetadataConditionOperator {
-        
-        /// <remarks/>
-        Equals,
-        
-        /// <remarks/>
-        NotEquals,
-        
-        /// <remarks/>
-        In,
-        
-        /// <remarks/>
-        NotIn,
-        
-        /// <remarks/>
-        GreaterThan,
-        
-        /// <remarks/>
-        LessThan,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public enum LogicalOperator {
-        
-        /// <remarks/>
-        And,
-        
-        /// <remarks/>
-        Or,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
-    public partial class AttributeQueryExpression : MetadataQueryExpression {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
-    public partial class EntityQueryExpression : MetadataQueryExpression {
-        
-        private AttributeQueryExpression attributeQueryField;
-        
-        private LabelQueryExpression labelQueryField;
-        
-        private RelationshipQueryExpression relationshipQueryField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public AttributeQueryExpression AttributeQuery {
-            get {
-                return this.attributeQueryField;
-            }
-            set {
-                this.attributeQueryField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public LabelQueryExpression LabelQuery {
-            get {
-                return this.labelQueryField;
-            }
-            set {
-                this.labelQueryField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public RelationshipQueryExpression RelationshipQuery {
-            get {
-                return this.relationshipQueryField;
-            }
-            set {
-                this.relationshipQueryField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
-    public partial class RelationshipQueryExpression : MetadataQueryExpression {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic")]
-    public partial class KeyValuePairOfRelationshipEntityCollectionX_PsK4FkN {
-        
-        private Relationship keyField;
-        
-        private EntityCollection valueField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public Relationship key {
-            get {
-                return this.keyField;
-            }
-            set {
-                this.keyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public EntityCollection value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public partial class Relationship {
-        
-        private System.Nullable<EntityRole> primaryEntityRoleField;
-        
-        private bool primaryEntityRoleFieldSpecified;
-        
-        private string schemaNameField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<EntityRole> PrimaryEntityRole {
-            get {
-                return this.primaryEntityRoleField;
-            }
-            set {
-                this.primaryEntityRoleField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool PrimaryEntityRoleSpecified {
-            get {
-                return this.primaryEntityRoleFieldSpecified;
-            }
-            set {
-                this.primaryEntityRoleFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string SchemaName {
-            get {
-                return this.schemaNameField;
-            }
-            set {
-                this.schemaNameField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public enum EntityRole {
-        
-        /// <remarks/>
-        Referencing,
-        
-        /// <remarks/>
-        Referenced,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic")]
-    public partial class KeyValuePairOfstringstring {
-        
-        private string keyField;
-        
-        private string valueField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string key {
-            get {
-                return this.keyField;
-            }
-            set {
-                this.keyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic")]
-    public partial class KeyValuePairOfstringArrayOfanyTypety7Ep6D1 {
-        
-        private string keyField;
-        
-        private object[] valueField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string key {
-            get {
-                return this.keyField;
-            }
-            set {
-                this.keyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays")]
-        public object[] value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic")]
-    public partial class KeyValuePairOfDeletedMetadataFiltersArrayOfguidPlUv_PKtF {
-        
-        private DeletedMetadataFilters keyField;
-        
-        private string[] valueField;
-        
-        /// <remarks/>
-        public DeletedMetadataFilters key {
-            get {
-                return this.keyField;
-            }
-            set {
-                this.keyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        [System.Xml.Serialization.XmlArrayItemAttribute("guid", Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays", IsNullable=false)]
-        public string[] value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.FlagsAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
-    public enum DeletedMetadataFilters {
-        
-        /// <remarks/>
-        Entity = 1,
-        
-        /// <remarks/>
-        Attribute = 2,
-        
-        /// <remarks/>
-        Relationship = 4,
-        
-        /// <remarks/>
-        Label = 8,
-        
-        /// <remarks/>
-        OptionSet = 16,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public partial class LinkEntity {
-        
-        private ColumnSet columnsField;
-        
-        private string entityAliasField;
-        
-        private JoinOperator joinOperatorField;
-        
-        private bool joinOperatorFieldSpecified;
-        
-        private FilterExpression linkCriteriaField;
-        
-        private LinkEntity[] linkEntitiesField;
-        
-        private string linkFromAttributeNameField;
-        
-        private string linkFromEntityNameField;
-        
-        private string linkToAttributeNameField;
-        
-        private string linkToEntityNameField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public ColumnSet Columns {
-            get {
-                return this.columnsField;
-            }
-            set {
-                this.columnsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string EntityAlias {
-            get {
-                return this.entityAliasField;
-            }
-            set {
-                this.entityAliasField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public JoinOperator JoinOperator {
-            get {
-                return this.joinOperatorField;
-            }
-            set {
-                this.joinOperatorField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool JoinOperatorSpecified {
-            get {
-                return this.joinOperatorFieldSpecified;
-            }
-            set {
-                this.joinOperatorFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public FilterExpression LinkCriteria {
-            get {
-                return this.linkCriteriaField;
-            }
-            set {
-                this.linkCriteriaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        public LinkEntity[] LinkEntities {
-            get {
-                return this.linkEntitiesField;
-            }
-            set {
-                this.linkEntitiesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string LinkFromAttributeName {
-            get {
-                return this.linkFromAttributeNameField;
-            }
-            set {
-                this.linkFromAttributeNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string LinkFromEntityName {
-            get {
-                return this.linkFromEntityNameField;
-            }
-            set {
-                this.linkFromEntityNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string LinkToAttributeName {
-            get {
-                return this.linkToAttributeNameField;
-            }
-            set {
-                this.linkToAttributeNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string LinkToEntityName {
-            get {
-                return this.linkToEntityNameField;
-            }
-            set {
-                this.linkToEntityNameField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public partial class ColumnSet {
-        
-        private bool allColumnsField;
-        
-        private bool allColumnsFieldSpecified;
-        
-        private string[] columnsField;
-        
-        /// <remarks/>
-        public bool AllColumns {
-            get {
-                return this.allColumnsField;
-            }
-            set {
-                this.allColumnsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool AllColumnsSpecified {
-            get {
-                return this.allColumnsFieldSpecified;
-            }
-            set {
-                this.allColumnsFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays")]
-        public string[] Columns {
-            get {
-                return this.columnsField;
-            }
-            set {
-                this.columnsField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public enum JoinOperator {
-        
-        /// <remarks/>
-        Inner,
-        
-        /// <remarks/>
-        LeftOuter,
-        
-        /// <remarks/>
-        Natural,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public partial class FilterExpression {
-        
-        private ConditionExpression[] conditionsField;
-        
-        private LogicalOperator filterOperatorField;
-        
-        private bool filterOperatorFieldSpecified;
-        
-        private FilterExpression[] filtersField;
-        
-        private bool isQuickFindFilterField;
-        
-        private bool isQuickFindFilterFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        public ConditionExpression[] Conditions {
-            get {
-                return this.conditionsField;
-            }
-            set {
-                this.conditionsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public LogicalOperator FilterOperator {
-            get {
-                return this.filterOperatorField;
-            }
-            set {
-                this.filterOperatorField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool FilterOperatorSpecified {
-            get {
-                return this.filterOperatorFieldSpecified;
-            }
-            set {
-                this.filterOperatorFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        public FilterExpression[] Filters {
-            get {
-                return this.filtersField;
-            }
-            set {
-                this.filtersField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool IsQuickFindFilter {
-            get {
-                return this.isQuickFindFilterField;
-            }
-            set {
-                this.isQuickFindFilterField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool IsQuickFindFilterSpecified {
-            get {
-                return this.isQuickFindFilterFieldSpecified;
-            }
-            set {
-                this.isQuickFindFilterFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public partial class ConditionExpression {
-        
-        private string attributeNameField;
-        
-        private ConditionOperator operatorField;
-        
-        private bool operatorFieldSpecified;
-        
-        private object[] valuesField;
-        
-        private string entityNameField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string AttributeName {
-            get {
-                return this.attributeNameField;
-            }
-            set {
-                this.attributeNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public ConditionOperator Operator {
-            get {
-                return this.operatorField;
-            }
-            set {
-                this.operatorField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool OperatorSpecified {
-            get {
-                return this.operatorFieldSpecified;
-            }
-            set {
-                this.operatorFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays")]
-        public object[] Values {
-            get {
-                return this.valuesField;
-            }
-            set {
-                this.valuesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string EntityName {
-            get {
-                return this.entityNameField;
-            }
-            set {
-                this.entityNameField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public enum ConditionOperator {
-        
-        /// <remarks/>
-        Equal,
-        
-        /// <remarks/>
-        NotEqual,
-        
-        /// <remarks/>
-        GreaterThan,
-        
-        /// <remarks/>
-        LessThan,
-        
-        /// <remarks/>
-        GreaterEqual,
-        
-        /// <remarks/>
-        LessEqual,
-        
-        /// <remarks/>
-        Like,
-        
-        /// <remarks/>
-        NotLike,
-        
-        /// <remarks/>
-        In,
-        
-        /// <remarks/>
-        NotIn,
-        
-        /// <remarks/>
-        Between,
-        
-        /// <remarks/>
-        NotBetween,
-        
-        /// <remarks/>
-        Null,
-        
-        /// <remarks/>
-        NotNull,
-        
-        /// <remarks/>
-        Yesterday,
-        
-        /// <remarks/>
-        Today,
-        
-        /// <remarks/>
-        Tomorrow,
-        
-        /// <remarks/>
-        Last7Days,
-        
-        /// <remarks/>
-        Next7Days,
-        
-        /// <remarks/>
-        LastWeek,
-        
-        /// <remarks/>
-        ThisWeek,
-        
-        /// <remarks/>
-        NextWeek,
-        
-        /// <remarks/>
-        LastMonth,
-        
-        /// <remarks/>
-        ThisMonth,
-        
-        /// <remarks/>
-        NextMonth,
-        
-        /// <remarks/>
-        On,
-        
-        /// <remarks/>
-        OnOrBefore,
-        
-        /// <remarks/>
-        OnOrAfter,
-        
-        /// <remarks/>
-        LastYear,
-        
-        /// <remarks/>
-        ThisYear,
-        
-        /// <remarks/>
-        NextYear,
-        
-        /// <remarks/>
-        LastXHours,
-        
-        /// <remarks/>
-        NextXHours,
-        
-        /// <remarks/>
-        LastXDays,
-        
-        /// <remarks/>
-        NextXDays,
-        
-        /// <remarks/>
-        LastXWeeks,
-        
-        /// <remarks/>
-        NextXWeeks,
-        
-        /// <remarks/>
-        LastXMonths,
-        
-        /// <remarks/>
-        NextXMonths,
-        
-        /// <remarks/>
-        LastXYears,
-        
-        /// <remarks/>
-        NextXYears,
-        
-        /// <remarks/>
-        EqualUserId,
-        
-        /// <remarks/>
-        NotEqualUserId,
-        
-        /// <remarks/>
-        EqualBusinessId,
-        
-        /// <remarks/>
-        NotEqualBusinessId,
-        
-        /// <remarks/>
-        ChildOf,
-        
-        /// <remarks/>
-        Mask,
-        
-        /// <remarks/>
-        NotMask,
-        
-        /// <remarks/>
-        MasksSelect,
-        
-        /// <remarks/>
-        Contains,
-        
-        /// <remarks/>
-        DoesNotContain,
-        
-        /// <remarks/>
-        EqualUserLanguage,
-        
-        /// <remarks/>
-        NotOn,
-        
-        /// <remarks/>
-        OlderThanXMonths,
-        
-        /// <remarks/>
-        BeginsWith,
-        
-        /// <remarks/>
-        DoesNotBeginWith,
-        
-        /// <remarks/>
-        EndsWith,
-        
-        /// <remarks/>
-        DoesNotEndWith,
-        
-        /// <remarks/>
-        ThisFiscalYear,
-        
-        /// <remarks/>
-        ThisFiscalPeriod,
-        
-        /// <remarks/>
-        NextFiscalYear,
-        
-        /// <remarks/>
-        NextFiscalPeriod,
-        
-        /// <remarks/>
-        LastFiscalYear,
-        
-        /// <remarks/>
-        LastFiscalPeriod,
-        
-        /// <remarks/>
-        LastXFiscalYears,
-        
-        /// <remarks/>
-        LastXFiscalPeriods,
-        
-        /// <remarks/>
-        NextXFiscalYears,
-        
-        /// <remarks/>
-        NextXFiscalPeriods,
-        
-        /// <remarks/>
-        InFiscalYear,
-        
-        /// <remarks/>
-        InFiscalPeriod,
-        
-        /// <remarks/>
-        InFiscalPeriodAndYear,
-        
-        /// <remarks/>
-        InOrBeforeFiscalPeriodAndYear,
-        
-        /// <remarks/>
-        InOrAfterFiscalPeriodAndYear,
-        
-        /// <remarks/>
-        EqualUserTeams,
-        
-        /// <remarks/>
-        EqualUserOrUserTeams,
-        
-        /// <remarks/>
-        Under,
-        
-        /// <remarks/>
-        NotUnder,
-        
-        /// <remarks/>
-        UnderOrEqual,
-        
-        /// <remarks/>
-        Above,
-        
-        /// <remarks/>
-        AboveOrEqual,
-        
-        /// <remarks/>
-        EqualUserOrUserHierarchy,
-        
-        /// <remarks/>
-        EqualUserOrUserHierarchyAndTeams,
-        
-        /// <remarks/>
-        OlderThanXYears,
-        
-        /// <remarks/>
-        OlderThanXWeeks,
-        
-        /// <remarks/>
-        OlderThanXDays,
-        
-        /// <remarks/>
-        OlderThanXHours,
-        
-        /// <remarks/>
-        OlderThanXMinutes,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public partial class PagingInfo {
-        
-        private int countField;
-        
-        private bool countFieldSpecified;
-        
-        private int pageNumberField;
-        
-        private bool pageNumberFieldSpecified;
-        
-        private string pagingCookieField;
-        
-        private bool returnTotalRecordCountField;
-        
-        private bool returnTotalRecordCountFieldSpecified;
-        
-        /// <remarks/>
-        public int Count {
-            get {
-                return this.countField;
-            }
-            set {
-                this.countField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool CountSpecified {
-            get {
-                return this.countFieldSpecified;
-            }
-            set {
-                this.countFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int PageNumber {
-            get {
-                return this.pageNumberField;
-            }
-            set {
-                this.pageNumberField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool PageNumberSpecified {
-            get {
-                return this.pageNumberFieldSpecified;
-            }
-            set {
-                this.pageNumberFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string PagingCookie {
-            get {
-                return this.pagingCookieField;
-            }
-            set {
-                this.pagingCookieField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool ReturnTotalRecordCount {
-            get {
-                return this.returnTotalRecordCountField;
-            }
-            set {
-                this.returnTotalRecordCountField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ReturnTotalRecordCountSpecified {
-            get {
-                return this.returnTotalRecordCountFieldSpecified;
-            }
-            set {
-                this.returnTotalRecordCountFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public partial class OrderExpression {
-        
-        private string attributeNameField;
-        
-        private OrderType orderTypeField;
-        
-        private bool orderTypeFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string AttributeName {
-            get {
-                return this.attributeNameField;
-            }
-            set {
-                this.attributeNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public OrderType OrderType {
-            get {
-                return this.orderTypeField;
-            }
-            set {
-                this.orderTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool OrderTypeSpecified {
-            get {
-                return this.orderTypeFieldSpecified;
-            }
-            set {
-                this.orderTypeFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public enum OrderType {
-        
-        /// <remarks/>
-        Ascending,
-        
-        /// <remarks/>
-        Descending,
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(QueryExpression))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(QueryByAttribute))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(FetchExpression))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public partial class QueryBase {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public partial class QueryExpression : QueryBase {
-        
-        private ColumnSet columnSetField;
-        
-        private FilterExpression criteriaField;
-        
-        private bool distinctField;
-        
-        private bool distinctFieldSpecified;
-        
-        private string entityNameField;
-        
-        private LinkEntity[] linkEntitiesField;
-        
-        private OrderExpression[] ordersField;
-        
-        private PagingInfo pageInfoField;
-        
-        private bool noLockField;
-        
-        private bool noLockFieldSpecified;
-        
-        private System.Nullable<int> topCountField;
-        
-        private bool topCountFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public ColumnSet ColumnSet {
-            get {
-                return this.columnSetField;
-            }
-            set {
-                this.columnSetField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public FilterExpression Criteria {
-            get {
-                return this.criteriaField;
-            }
-            set {
-                this.criteriaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool Distinct {
-            get {
-                return this.distinctField;
-            }
-            set {
-                this.distinctField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool DistinctSpecified {
-            get {
-                return this.distinctFieldSpecified;
-            }
-            set {
-                this.distinctFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string EntityName {
-            get {
-                return this.entityNameField;
-            }
-            set {
-                this.entityNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        public LinkEntity[] LinkEntities {
-            get {
-                return this.linkEntitiesField;
-            }
-            set {
-                this.linkEntitiesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        public OrderExpression[] Orders {
-            get {
-                return this.ordersField;
-            }
-            set {
-                this.ordersField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public PagingInfo PageInfo {
-            get {
-                return this.pageInfoField;
-            }
-            set {
-                this.pageInfoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool NoLock {
-            get {
-                return this.noLockField;
-            }
-            set {
-                this.noLockField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool NoLockSpecified {
-            get {
-                return this.noLockFieldSpecified;
-            }
-            set {
-                this.noLockFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<int> TopCount {
-            get {
-                return this.topCountField;
-            }
-            set {
-                this.topCountField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool TopCountSpecified {
-            get {
-                return this.topCountFieldSpecified;
-            }
-            set {
-                this.topCountFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public partial class QueryByAttribute : QueryBase {
-        
-        private string[] attributesField;
-        
-        private ColumnSet columnSetField;
-        
-        private string entityNameField;
-        
-        private OrderExpression[] ordersField;
-        
-        private PagingInfo pageInfoField;
-        
-        private object[] valuesField;
-        
-        private System.Nullable<int> topCountField;
-        
-        private bool topCountFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays")]
-        public string[] Attributes {
-            get {
-                return this.attributesField;
-            }
-            set {
-                this.attributesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public ColumnSet ColumnSet {
-            get {
-                return this.columnSetField;
-            }
-            set {
-                this.columnSetField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string EntityName {
-            get {
-                return this.entityNameField;
-            }
-            set {
-                this.entityNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        public OrderExpression[] Orders {
-            get {
-                return this.ordersField;
-            }
-            set {
-                this.ordersField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public PagingInfo PageInfo {
-            get {
-                return this.pageInfoField;
-            }
-            set {
-                this.pageInfoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays")]
-        public object[] Values {
-            get {
-                return this.valuesField;
-            }
-            set {
-                this.valuesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<int> TopCount {
-            get {
-                return this.topCountField;
-            }
-            set {
-                this.topCountField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool TopCountSpecified {
-            get {
-                return this.topCountFieldSpecified;
-            }
-            set {
-                this.topCountFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public partial class FetchExpression : QueryBase {
-        
-        private string queryField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string Query {
-            get {
-                return this.queryField;
-            }
-            set {
-                this.queryField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic")]
-    public partial class KeyValuePairOfRelationshipQueryBaseX_PsK4FkN {
-        
-        private Relationship keyField;
-        
-        private QueryBase valueField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public Relationship key {
-            get {
-                return this.keyField;
-            }
-            set {
-                this.keyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public QueryBase value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic")]
-    public partial class KeyValuePairOfEndpointTypestringyDL0RVHi {
-        
-        private EndpointType keyField;
-        
-        private string valueField;
-        
-        /// <remarks/>
-        public EndpointType key {
-            get {
-                return this.keyField;
-            }
-            set {
-                this.keyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2014/Contracts")]
-    public enum EndpointType {
-        
-        /// <remarks/>
-        OrganizationService,
-        
-        /// <remarks/>
-        OrganizationDataService,
-        
-        /// <remarks/>
-        WebApplication,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2014/Contracts")]
-    public partial class OrganizationDetail {
-        
-        private KeyValuePairOfEndpointTypestringyDL0RVHi[] endpointsField;
-        
-        private string friendlyNameField;
-        
-        private string organizationIdField;
-        
-        private string organizationVersionField;
-        
-        private OrganizationState stateField;
-        
-        private bool stateFieldSpecified;
-        
-        private string uniqueNameField;
-        
-        private string urlNameField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        [System.Xml.Serialization.XmlArrayItemAttribute(IsNullable=false)]
-        public KeyValuePairOfEndpointTypestringyDL0RVHi[] Endpoints {
-            get {
-                return this.endpointsField;
-            }
-            set {
-                this.endpointsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string FriendlyName {
-            get {
-                return this.friendlyNameField;
-            }
-            set {
-                this.friendlyNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string OrganizationId {
-            get {
-                return this.organizationIdField;
-            }
-            set {
-                this.organizationIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string OrganizationVersion {
-            get {
-                return this.organizationVersionField;
-            }
-            set {
-                this.organizationVersionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public OrganizationState State {
-            get {
-                return this.stateField;
-            }
-            set {
-                this.stateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool StateSpecified {
-            get {
-                return this.stateFieldSpecified;
-            }
-            set {
-                this.stateFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string UniqueName {
-            get {
-                return this.uniqueNameField;
-            }
-            set {
-                this.uniqueNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string UrlName {
-            get {
-                return this.urlNameField;
-            }
-            set {
-                this.urlNameField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2014/Contracts")]
-    public enum OrganizationState {
-        
-        /// <remarks/>
-        Enabled,
-        
-        /// <remarks/>
-        Disabled,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2014/Contracts")]
-    public partial class AttributeMapping {
-        
-        private int allowedSyncDirectionField;
-        
-        private bool allowedSyncDirectionFieldSpecified;
-        
-        private string attributeCrmDisplayNameField;
-        
-        private string attributeCrmNameField;
-        
-        private string attributeExchangeDisplayNameField;
-        
-        private string attributeExchangeNameField;
-        
-        private string attributeMappingIdField;
-        
-        private string[] computedPropertiesField;
-        
-        private int defaultSyncDirectionField;
-        
-        private bool defaultSyncDirectionFieldSpecified;
-        
-        private int entityTypeCodeField;
-        
-        private bool entityTypeCodeFieldSpecified;
-        
-        private bool isComputedField;
-        
-        private bool isComputedFieldSpecified;
-        
-        private string mappingNameField;
-        
-        private int syncDirectionField;
-        
-        private bool syncDirectionFieldSpecified;
-        
-        /// <remarks/>
-        public int AllowedSyncDirection {
-            get {
-                return this.allowedSyncDirectionField;
-            }
-            set {
-                this.allowedSyncDirectionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool AllowedSyncDirectionSpecified {
-            get {
-                return this.allowedSyncDirectionFieldSpecified;
-            }
-            set {
-                this.allowedSyncDirectionFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string AttributeCrmDisplayName {
-            get {
-                return this.attributeCrmDisplayNameField;
-            }
-            set {
-                this.attributeCrmDisplayNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string AttributeCrmName {
-            get {
-                return this.attributeCrmNameField;
-            }
-            set {
-                this.attributeCrmNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string AttributeExchangeDisplayName {
-            get {
-                return this.attributeExchangeDisplayNameField;
-            }
-            set {
-                this.attributeExchangeDisplayNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string AttributeExchangeName {
-            get {
-                return this.attributeExchangeNameField;
-            }
-            set {
-                this.attributeExchangeNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string AttributeMappingId {
-            get {
-                return this.attributeMappingIdField;
-            }
-            set {
-                this.attributeMappingIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays")]
-        public string[] ComputedProperties {
-            get {
-                return this.computedPropertiesField;
-            }
-            set {
-                this.computedPropertiesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int DefaultSyncDirection {
-            get {
-                return this.defaultSyncDirectionField;
-            }
-            set {
-                this.defaultSyncDirectionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool DefaultSyncDirectionSpecified {
-            get {
-                return this.defaultSyncDirectionFieldSpecified;
-            }
-            set {
-                this.defaultSyncDirectionFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int EntityTypeCode {
-            get {
-                return this.entityTypeCodeField;
-            }
-            set {
-                this.entityTypeCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool EntityTypeCodeSpecified {
-            get {
-                return this.entityTypeCodeFieldSpecified;
-            }
-            set {
-                this.entityTypeCodeFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool IsComputed {
-            get {
-                return this.isComputedField;
-            }
-            set {
-                this.isComputedField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool IsComputedSpecified {
-            get {
-                return this.isComputedFieldSpecified;
-            }
-            set {
-                this.isComputedFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string MappingName {
-            get {
-                return this.mappingNameField;
-            }
-            set {
-                this.mappingNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int SyncDirection {
-            get {
-                return this.syncDirectionField;
-            }
-            set {
-                this.syncDirectionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool SyncDirectionSpecified {
-            get {
-                return this.syncDirectionFieldSpecified;
-            }
-            set {
-                this.syncDirectionFieldSpecified = value;
             }
         }
     }
@@ -7392,10 +5675,13 @@ namespace CrmConsoleClient.OpportunityService {
     
     /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ManagedPropertyMetadata))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(EntityKeyMetadata))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(RelationshipMetadataBase))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ManyToManyRelationshipMetadata))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(OneToManyRelationshipMetadata))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AttributeMetadata))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ImageAttributeMetadata))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(UniqueIdentifierAttributeMetadata))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(BigIntAttributeMetadata))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DateTimeAttributeMetadata))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ManagedPropertyAttributeMetadata))]
@@ -7412,8 +5698,6 @@ namespace CrmConsoleClient.OpportunityService {
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DoubleAttributeMetadata))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DecimalAttributeMetadata))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(BooleanAttributeMetadata))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(UniqueIdentifierAttributeMetadata))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ImageAttributeMetadata))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(EntityMetadata))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(OptionMetadata))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(StateOptionMetadata))]
@@ -7422,7 +5706,6 @@ namespace CrmConsoleClient.OpportunityService {
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(BooleanOptionSetMetadata))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(OptionSetMetadata))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(LocalizedLabel))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(EntityKeyMetadata))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -7783,6 +6066,272 @@ namespace CrmConsoleClient.OpportunityService {
     }
     
     /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/7.1/Metadata")]
+    public partial class EntityKeyMetadata : MetadataBase {
+        
+        private EntityReference asyncJobField;
+        
+        private Label displayNameField;
+        
+        private EntityKeyIndexStatus entityKeyIndexStatusField;
+        
+        private bool entityKeyIndexStatusFieldSpecified;
+        
+        private string entityLogicalNameField;
+        
+        private string introducedVersionField;
+        
+        private BooleanManagedProperty isCustomizableField;
+        
+        private System.Nullable<bool> isManagedField;
+        
+        private bool isManagedFieldSpecified;
+        
+        private string[] keyAttributesField;
+        
+        private string logicalNameField;
+        
+        private string schemaNameField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public EntityReference AsyncJob {
+            get {
+                return this.asyncJobField;
+            }
+            set {
+                this.asyncJobField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public Label DisplayName {
+            get {
+                return this.displayNameField;
+            }
+            set {
+                this.displayNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EntityKeyIndexStatus EntityKeyIndexStatus {
+            get {
+                return this.entityKeyIndexStatusField;
+            }
+            set {
+                this.entityKeyIndexStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool EntityKeyIndexStatusSpecified {
+            get {
+                return this.entityKeyIndexStatusFieldSpecified;
+            }
+            set {
+                this.entityKeyIndexStatusFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string EntityLogicalName {
+            get {
+                return this.entityLogicalNameField;
+            }
+            set {
+                this.entityLogicalNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string IntroducedVersion {
+            get {
+                return this.introducedVersionField;
+            }
+            set {
+                this.introducedVersionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public BooleanManagedProperty IsCustomizable {
+            get {
+                return this.isCustomizableField;
+            }
+            set {
+                this.isCustomizableField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<bool> IsManaged {
+            get {
+                return this.isManagedField;
+            }
+            set {
+                this.isManagedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool IsManagedSpecified {
+            get {
+                return this.isManagedFieldSpecified;
+            }
+            set {
+                this.isManagedFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays")]
+        public string[] KeyAttributes {
+            get {
+                return this.keyAttributesField;
+            }
+            set {
+                this.keyAttributesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string LogicalName {
+            get {
+                return this.logicalNameField;
+            }
+            set {
+                this.logicalNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string SchemaName {
+            get {
+                return this.schemaNameField;
+            }
+            set {
+                this.schemaNameField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/7.1/Contracts")]
+    public enum EntityKeyIndexStatus {
+        
+        /// <remarks/>
+        Pending,
+        
+        /// <remarks/>
+        InProgress,
+        
+        /// <remarks/>
+        Active,
+        
+        /// <remarks/>
+        Failed,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public partial class BooleanManagedProperty : ManagedPropertyboolean {
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BooleanManagedProperty))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public partial class ManagedPropertyboolean {
+        
+        private bool canBeChangedField;
+        
+        private bool canBeChangedFieldSpecified;
+        
+        private string managedPropertyLogicalNameField;
+        
+        private bool valueField;
+        
+        private bool valueFieldSpecified;
+        
+        /// <remarks/>
+        public bool CanBeChanged {
+            get {
+                return this.canBeChangedField;
+            }
+            set {
+                this.canBeChangedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CanBeChangedSpecified {
+            get {
+                return this.canBeChangedFieldSpecified;
+            }
+            set {
+                this.canBeChangedFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ManagedPropertyLogicalName {
+            get {
+                return this.managedPropertyLogicalNameField;
+            }
+            set {
+                this.managedPropertyLogicalNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ValueSpecified {
+            get {
+                return this.valueFieldSpecified;
+            }
+            set {
+                this.valueFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ManyToManyRelationshipMetadata))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(OneToManyRelationshipMetadata))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
@@ -7957,88 +6506,6 @@ namespace CrmConsoleClient.OpportunityService {
             }
             set {
                 this.relationshipTypeFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public partial class BooleanManagedProperty : ManagedPropertyboolean {
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BooleanManagedProperty))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
-    public partial class ManagedPropertyboolean {
-        
-        private bool canBeChangedField;
-        
-        private bool canBeChangedFieldSpecified;
-        
-        private string managedPropertyLogicalNameField;
-        
-        private bool valueField;
-        
-        private bool valueFieldSpecified;
-        
-        /// <remarks/>
-        public bool CanBeChanged {
-            get {
-                return this.canBeChangedField;
-            }
-            set {
-                this.canBeChangedField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool CanBeChangedSpecified {
-            get {
-                return this.canBeChangedFieldSpecified;
-            }
-            set {
-                this.canBeChangedFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string ManagedPropertyLogicalName {
-            get {
-                return this.managedPropertyLogicalNameField;
-            }
-            set {
-                this.managedPropertyLogicalNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool Value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool ValueSpecified {
-            get {
-                return this.valueFieldSpecified;
-            }
-            set {
-                this.valueFieldSpecified = value;
             }
         }
     }
@@ -8293,6 +6760,8 @@ namespace CrmConsoleClient.OpportunityService {
     }
     
     /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ImageAttributeMetadata))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(UniqueIdentifierAttributeMetadata))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(BigIntAttributeMetadata))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DateTimeAttributeMetadata))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(ManagedPropertyAttributeMetadata))]
@@ -8309,8 +6778,6 @@ namespace CrmConsoleClient.OpportunityService {
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DoubleAttributeMetadata))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(DecimalAttributeMetadata))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(BooleanAttributeMetadata))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(UniqueIdentifierAttributeMetadata))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ImageAttributeMetadata))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -9098,9 +7565,9 @@ namespace CrmConsoleClient.OpportunityService {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DateTimeBehavior))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(StringFormatName))]
     [System.Xml.Serialization.XmlIncludeAttribute(typeof(AttributeTypeDisplayName))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DateTimeBehavior))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -9127,6 +7594,15 @@ namespace CrmConsoleClient.OpportunityService {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2013/Metadata")]
+    public partial class StringFormatName : ConstantsBase {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/7.1/Metadata")]
     public partial class DateTimeBehavior : ConstantsBase {
     }
@@ -9137,7 +7613,94 @@ namespace CrmConsoleClient.OpportunityService {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2013/Metadata")]
-    public partial class StringFormatName : ConstantsBase {
+    public partial class ImageAttributeMetadata : AttributeMetadata {
+        
+        private System.Nullable<bool> isPrimaryImageField;
+        
+        private bool isPrimaryImageFieldSpecified;
+        
+        private System.Nullable<short> maxHeightField;
+        
+        private bool maxHeightFieldSpecified;
+        
+        private System.Nullable<short> maxWidthField;
+        
+        private bool maxWidthFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<bool> IsPrimaryImage {
+            get {
+                return this.isPrimaryImageField;
+            }
+            set {
+                this.isPrimaryImageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool IsPrimaryImageSpecified {
+            get {
+                return this.isPrimaryImageFieldSpecified;
+            }
+            set {
+                this.isPrimaryImageFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<short> MaxHeight {
+            get {
+                return this.maxHeightField;
+            }
+            set {
+                this.maxHeightField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MaxHeightSpecified {
+            get {
+                return this.maxHeightFieldSpecified;
+            }
+            set {
+                this.maxHeightFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<short> MaxWidth {
+            get {
+                return this.maxWidthField;
+            }
+            set {
+                this.maxWidthField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MaxWidthSpecified {
+            get {
+                return this.maxWidthFieldSpecified;
+            }
+            set {
+                this.maxWidthFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/7.1/Metadata")]
+    public partial class UniqueIdentifierAttributeMetadata : AttributeMetadata {
     }
     
     /// <remarks/>
@@ -11080,102 +9643,6 @@ namespace CrmConsoleClient.OpportunityService {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/7.1/Metadata")]
-    public partial class UniqueIdentifierAttributeMetadata : AttributeMetadata {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2013/Metadata")]
-    public partial class ImageAttributeMetadata : AttributeMetadata {
-        
-        private System.Nullable<bool> isPrimaryImageField;
-        
-        private bool isPrimaryImageFieldSpecified;
-        
-        private System.Nullable<short> maxHeightField;
-        
-        private bool maxHeightFieldSpecified;
-        
-        private System.Nullable<short> maxWidthField;
-        
-        private bool maxWidthFieldSpecified;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<bool> IsPrimaryImage {
-            get {
-                return this.isPrimaryImageField;
-            }
-            set {
-                this.isPrimaryImageField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool IsPrimaryImageSpecified {
-            get {
-                return this.isPrimaryImageFieldSpecified;
-            }
-            set {
-                this.isPrimaryImageFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<short> MaxHeight {
-            get {
-                return this.maxHeightField;
-            }
-            set {
-                this.maxHeightField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool MaxHeightSpecified {
-            get {
-                return this.maxHeightFieldSpecified;
-            }
-            set {
-                this.maxHeightFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<short> MaxWidth {
-            get {
-                return this.maxWidthField;
-            }
-            set {
-                this.maxWidthField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool MaxWidthSpecified {
-            get {
-                return this.maxWidthFieldSpecified;
-            }
-            set {
-                this.maxWidthFieldSpecified = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata")]
     public partial class EntityMetadata : MetadataBase {
         
@@ -12538,151 +11005,427 @@ namespace CrmConsoleClient.OpportunityService {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/7.1/Metadata")]
-    public partial class EntityKeyMetadata : MetadataBase {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public partial class OptionSetValue {
         
-        private EntityReference asyncJobField;
+        private int valueField;
         
-        private Label displayNameField;
+        private bool valueFieldSpecified;
         
-        private EntityKeyIndexStatus entityKeyIndexStatusField;
+        /// <remarks/>
+        public int Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
         
-        private bool entityKeyIndexStatusFieldSpecified;
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ValueSpecified {
+            get {
+                return this.valueFieldSpecified;
+            }
+            set {
+                this.valueFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public partial class Money {
         
-        private string entityLogicalNameField;
+        private decimal valueField;
         
-        private string introducedVersionField;
+        private bool valueFieldSpecified;
         
-        private BooleanManagedProperty isCustomizableField;
+        /// <remarks/>
+        public decimal Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
         
-        private System.Nullable<bool> isManagedField;
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ValueSpecified {
+            get {
+                return this.valueFieldSpecified;
+            }
+            set {
+                this.valueFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/7.1/Contracts")]
+    public partial class RemovedOrDeletedItem {
         
-        private bool isManagedFieldSpecified;
+        private EntityReference removedItemField;
         
-        private string[] keyAttributesField;
+        private ChangeType typeField;
         
-        private string logicalNameField;
+        private bool typeFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public EntityReference RemovedItem {
+            get {
+                return this.removedItemField;
+            }
+            set {
+                this.removedItemField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public ChangeType Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TypeSpecified {
+            get {
+                return this.typeFieldSpecified;
+            }
+            set {
+                this.typeFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/7.1/Contracts")]
+    public enum ChangeType {
+        
+        /// <remarks/>
+        NewOrUpdated,
+        
+        /// <remarks/>
+        RemoveOrDeleted,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/7.1/Contracts")]
+    public partial class NewOrUpdatedItem {
+        
+        private Entity newOrUpdatedEntityField;
+        
+        private ChangeType typeField;
+        
+        private bool typeFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public Entity NewOrUpdatedEntity {
+            get {
+                return this.newOrUpdatedEntityField;
+            }
+            set {
+                this.newOrUpdatedEntityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public ChangeType Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TypeSpecified {
+            get {
+                return this.typeFieldSpecified;
+            }
+            set {
+                this.typeFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/7.1/Contracts")]
+    public partial class BusinessEntityChanges {
+        
+        private object[] changesField;
+        
+        private string dataTokenField;
+        
+        private bool moreRecordsField;
+        
+        private bool moreRecordsFieldSpecified;
+        
+        private string pagingCookieField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        public object[] Changes {
+            get {
+                return this.changesField;
+            }
+            set {
+                this.changesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string DataToken {
+            get {
+                return this.dataTokenField;
+            }
+            set {
+                this.dataTokenField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool MoreRecords {
+            get {
+                return this.moreRecordsField;
+            }
+            set {
+                this.moreRecordsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool MoreRecordsSpecified {
+            get {
+                return this.moreRecordsFieldSpecified;
+            }
+            set {
+                this.moreRecordsFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string PagingCookie {
+            get {
+                return this.pagingCookieField;
+            }
+            set {
+                this.pagingCookieField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/7.1/Contracts")]
+    public partial class MailboxTrackingFolderMapping {
+        
+        private string exchangeFolderIdField;
+        
+        private string exchangeFolderNameField;
+        
+        private bool isFolderOnboardedField;
+        
+        private bool isFolderOnboardedFieldSpecified;
+        
+        private string regardingObjectIdField;
+        
+        private string regardingObjectNameField;
+        
+        private int regardingObjectTypeCodeField;
+        
+        private bool regardingObjectTypeCodeFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ExchangeFolderId {
+            get {
+                return this.exchangeFolderIdField;
+            }
+            set {
+                this.exchangeFolderIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ExchangeFolderName {
+            get {
+                return this.exchangeFolderNameField;
+            }
+            set {
+                this.exchangeFolderNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsFolderOnboarded {
+            get {
+                return this.isFolderOnboardedField;
+            }
+            set {
+                this.isFolderOnboardedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool IsFolderOnboardedSpecified {
+            get {
+                return this.isFolderOnboardedFieldSpecified;
+            }
+            set {
+                this.isFolderOnboardedFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RegardingObjectId {
+            get {
+                return this.regardingObjectIdField;
+            }
+            set {
+                this.regardingObjectIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string RegardingObjectName {
+            get {
+                return this.regardingObjectNameField;
+            }
+            set {
+                this.regardingObjectNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int RegardingObjectTypeCode {
+            get {
+                return this.regardingObjectTypeCodeField;
+            }
+            set {
+                this.regardingObjectTypeCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool RegardingObjectTypeCodeSpecified {
+            get {
+                return this.regardingObjectTypeCodeFieldSpecified;
+            }
+            set {
+                this.regardingObjectTypeCodeFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic")]
+    public partial class KeyValuePairOfRelationshipEntityCollectionX_PsK4FkN {
+        
+        private Relationship keyField;
+        
+        private EntityCollection valueField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public Relationship key {
+            get {
+                return this.keyField;
+            }
+            set {
+                this.keyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public EntityCollection value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public partial class Relationship {
+        
+        private System.Nullable<EntityRole> primaryEntityRoleField;
+        
+        private bool primaryEntityRoleFieldSpecified;
         
         private string schemaNameField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public EntityReference AsyncJob {
+        public System.Nullable<EntityRole> PrimaryEntityRole {
             get {
-                return this.asyncJobField;
+                return this.primaryEntityRoleField;
             }
             set {
-                this.asyncJobField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public Label DisplayName {
-            get {
-                return this.displayNameField;
-            }
-            set {
-                this.displayNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EntityKeyIndexStatus EntityKeyIndexStatus {
-            get {
-                return this.entityKeyIndexStatusField;
-            }
-            set {
-                this.entityKeyIndexStatusField = value;
+                this.primaryEntityRoleField = value;
             }
         }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool EntityKeyIndexStatusSpecified {
+        public bool PrimaryEntityRoleSpecified {
             get {
-                return this.entityKeyIndexStatusFieldSpecified;
+                return this.primaryEntityRoleFieldSpecified;
             }
             set {
-                this.entityKeyIndexStatusFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string EntityLogicalName {
-            get {
-                return this.entityLogicalNameField;
-            }
-            set {
-                this.entityLogicalNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string IntroducedVersion {
-            get {
-                return this.introducedVersionField;
-            }
-            set {
-                this.introducedVersionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public BooleanManagedProperty IsCustomizable {
-            get {
-                return this.isCustomizableField;
-            }
-            set {
-                this.isCustomizableField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<bool> IsManaged {
-            get {
-                return this.isManagedField;
-            }
-            set {
-                this.isManagedField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlIgnoreAttribute()]
-        public bool IsManagedSpecified {
-            get {
-                return this.isManagedFieldSpecified;
-            }
-            set {
-                this.isManagedFieldSpecified = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays")]
-        public string[] KeyAttributes {
-            get {
-                return this.keyAttributesField;
-            }
-            set {
-                this.keyAttributesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string LogicalName {
-            get {
-                return this.logicalNameField;
-            }
-            set {
-                this.logicalNameField = value;
+                this.primaryEntityRoleFieldSpecified = value;
             }
         }
         
@@ -12701,20 +11444,1276 @@ namespace CrmConsoleClient.OpportunityService {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/7.1/Contracts")]
-    public enum EntityKeyIndexStatus {
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public enum EntityRole {
         
         /// <remarks/>
-        Pending,
+        Referencing,
         
         /// <remarks/>
-        InProgress,
+        Referenced,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic")]
+    public partial class KeyValuePairOfstringstring {
+        
+        private string keyField;
+        
+        private string valueField;
         
         /// <remarks/>
-        Active,
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string key {
+            get {
+                return this.keyField;
+            }
+            set {
+                this.keyField = value;
+            }
+        }
         
         /// <remarks/>
-        Failed,
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic")]
+    public partial class KeyValuePairOfstringArrayOfanyTypety7Ep6D1 {
+        
+        private string keyField;
+        
+        private object[] valueField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string key {
+            get {
+                return this.keyField;
+            }
+            set {
+                this.keyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays")]
+        public object[] value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic")]
+    public partial class KeyValuePairOfDeletedMetadataFiltersArrayOfguidPlUv_PKtF {
+        
+        private DeletedMetadataFilters keyField;
+        
+        private string[] valueField;
+        
+        /// <remarks/>
+        public DeletedMetadataFilters key {
+            get {
+                return this.keyField;
+            }
+            set {
+                this.keyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [System.Xml.Serialization.XmlArrayItemAttribute("guid", Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays", IsNullable=false)]
+        public string[] value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.FlagsAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query")]
+    public enum DeletedMetadataFilters {
+        
+        /// <remarks/>
+        Entity = 1,
+        
+        /// <remarks/>
+        Attribute = 2,
+        
+        /// <remarks/>
+        Relationship = 4,
+        
+        /// <remarks/>
+        Label = 8,
+        
+        /// <remarks/>
+        OptionSet = 16,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public partial class LinkEntity {
+        
+        private ColumnSet columnsField;
+        
+        private string entityAliasField;
+        
+        private JoinOperator joinOperatorField;
+        
+        private bool joinOperatorFieldSpecified;
+        
+        private FilterExpression linkCriteriaField;
+        
+        private LinkEntity[] linkEntitiesField;
+        
+        private string linkFromAttributeNameField;
+        
+        private string linkFromEntityNameField;
+        
+        private string linkToAttributeNameField;
+        
+        private string linkToEntityNameField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public ColumnSet Columns {
+            get {
+                return this.columnsField;
+            }
+            set {
+                this.columnsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string EntityAlias {
+            get {
+                return this.entityAliasField;
+            }
+            set {
+                this.entityAliasField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public JoinOperator JoinOperator {
+            get {
+                return this.joinOperatorField;
+            }
+            set {
+                this.joinOperatorField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool JoinOperatorSpecified {
+            get {
+                return this.joinOperatorFieldSpecified;
+            }
+            set {
+                this.joinOperatorFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public FilterExpression LinkCriteria {
+            get {
+                return this.linkCriteriaField;
+            }
+            set {
+                this.linkCriteriaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        public LinkEntity[] LinkEntities {
+            get {
+                return this.linkEntitiesField;
+            }
+            set {
+                this.linkEntitiesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string LinkFromAttributeName {
+            get {
+                return this.linkFromAttributeNameField;
+            }
+            set {
+                this.linkFromAttributeNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string LinkFromEntityName {
+            get {
+                return this.linkFromEntityNameField;
+            }
+            set {
+                this.linkFromEntityNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string LinkToAttributeName {
+            get {
+                return this.linkToAttributeNameField;
+            }
+            set {
+                this.linkToAttributeNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string LinkToEntityName {
+            get {
+                return this.linkToEntityNameField;
+            }
+            set {
+                this.linkToEntityNameField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public partial class ColumnSet {
+        
+        private bool allColumnsField;
+        
+        private bool allColumnsFieldSpecified;
+        
+        private string[] columnsField;
+        
+        /// <remarks/>
+        public bool AllColumns {
+            get {
+                return this.allColumnsField;
+            }
+            set {
+                this.allColumnsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool AllColumnsSpecified {
+            get {
+                return this.allColumnsFieldSpecified;
+            }
+            set {
+                this.allColumnsFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays")]
+        public string[] Columns {
+            get {
+                return this.columnsField;
+            }
+            set {
+                this.columnsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public enum JoinOperator {
+        
+        /// <remarks/>
+        Inner,
+        
+        /// <remarks/>
+        LeftOuter,
+        
+        /// <remarks/>
+        Natural,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public partial class FilterExpression {
+        
+        private ConditionExpression[] conditionsField;
+        
+        private LogicalOperator filterOperatorField;
+        
+        private bool filterOperatorFieldSpecified;
+        
+        private FilterExpression[] filtersField;
+        
+        private bool isQuickFindFilterField;
+        
+        private bool isQuickFindFilterFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        public ConditionExpression[] Conditions {
+            get {
+                return this.conditionsField;
+            }
+            set {
+                this.conditionsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public LogicalOperator FilterOperator {
+            get {
+                return this.filterOperatorField;
+            }
+            set {
+                this.filterOperatorField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool FilterOperatorSpecified {
+            get {
+                return this.filterOperatorFieldSpecified;
+            }
+            set {
+                this.filterOperatorFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        public FilterExpression[] Filters {
+            get {
+                return this.filtersField;
+            }
+            set {
+                this.filtersField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsQuickFindFilter {
+            get {
+                return this.isQuickFindFilterField;
+            }
+            set {
+                this.isQuickFindFilterField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool IsQuickFindFilterSpecified {
+            get {
+                return this.isQuickFindFilterFieldSpecified;
+            }
+            set {
+                this.isQuickFindFilterFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public partial class ConditionExpression {
+        
+        private string attributeNameField;
+        
+        private ConditionOperator operatorField;
+        
+        private bool operatorFieldSpecified;
+        
+        private object[] valuesField;
+        
+        private string entityNameField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string AttributeName {
+            get {
+                return this.attributeNameField;
+            }
+            set {
+                this.attributeNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public ConditionOperator Operator {
+            get {
+                return this.operatorField;
+            }
+            set {
+                this.operatorField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool OperatorSpecified {
+            get {
+                return this.operatorFieldSpecified;
+            }
+            set {
+                this.operatorFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays")]
+        public object[] Values {
+            get {
+                return this.valuesField;
+            }
+            set {
+                this.valuesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string EntityName {
+            get {
+                return this.entityNameField;
+            }
+            set {
+                this.entityNameField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public enum ConditionOperator {
+        
+        /// <remarks/>
+        Equal,
+        
+        /// <remarks/>
+        NotEqual,
+        
+        /// <remarks/>
+        GreaterThan,
+        
+        /// <remarks/>
+        LessThan,
+        
+        /// <remarks/>
+        GreaterEqual,
+        
+        /// <remarks/>
+        LessEqual,
+        
+        /// <remarks/>
+        Like,
+        
+        /// <remarks/>
+        NotLike,
+        
+        /// <remarks/>
+        In,
+        
+        /// <remarks/>
+        NotIn,
+        
+        /// <remarks/>
+        Between,
+        
+        /// <remarks/>
+        NotBetween,
+        
+        /// <remarks/>
+        Null,
+        
+        /// <remarks/>
+        NotNull,
+        
+        /// <remarks/>
+        Yesterday,
+        
+        /// <remarks/>
+        Today,
+        
+        /// <remarks/>
+        Tomorrow,
+        
+        /// <remarks/>
+        Last7Days,
+        
+        /// <remarks/>
+        Next7Days,
+        
+        /// <remarks/>
+        LastWeek,
+        
+        /// <remarks/>
+        ThisWeek,
+        
+        /// <remarks/>
+        NextWeek,
+        
+        /// <remarks/>
+        LastMonth,
+        
+        /// <remarks/>
+        ThisMonth,
+        
+        /// <remarks/>
+        NextMonth,
+        
+        /// <remarks/>
+        On,
+        
+        /// <remarks/>
+        OnOrBefore,
+        
+        /// <remarks/>
+        OnOrAfter,
+        
+        /// <remarks/>
+        LastYear,
+        
+        /// <remarks/>
+        ThisYear,
+        
+        /// <remarks/>
+        NextYear,
+        
+        /// <remarks/>
+        LastXHours,
+        
+        /// <remarks/>
+        NextXHours,
+        
+        /// <remarks/>
+        LastXDays,
+        
+        /// <remarks/>
+        NextXDays,
+        
+        /// <remarks/>
+        LastXWeeks,
+        
+        /// <remarks/>
+        NextXWeeks,
+        
+        /// <remarks/>
+        LastXMonths,
+        
+        /// <remarks/>
+        NextXMonths,
+        
+        /// <remarks/>
+        LastXYears,
+        
+        /// <remarks/>
+        NextXYears,
+        
+        /// <remarks/>
+        EqualUserId,
+        
+        /// <remarks/>
+        NotEqualUserId,
+        
+        /// <remarks/>
+        EqualBusinessId,
+        
+        /// <remarks/>
+        NotEqualBusinessId,
+        
+        /// <remarks/>
+        ChildOf,
+        
+        /// <remarks/>
+        Mask,
+        
+        /// <remarks/>
+        NotMask,
+        
+        /// <remarks/>
+        MasksSelect,
+        
+        /// <remarks/>
+        Contains,
+        
+        /// <remarks/>
+        DoesNotContain,
+        
+        /// <remarks/>
+        EqualUserLanguage,
+        
+        /// <remarks/>
+        NotOn,
+        
+        /// <remarks/>
+        OlderThanXMonths,
+        
+        /// <remarks/>
+        BeginsWith,
+        
+        /// <remarks/>
+        DoesNotBeginWith,
+        
+        /// <remarks/>
+        EndsWith,
+        
+        /// <remarks/>
+        DoesNotEndWith,
+        
+        /// <remarks/>
+        ThisFiscalYear,
+        
+        /// <remarks/>
+        ThisFiscalPeriod,
+        
+        /// <remarks/>
+        NextFiscalYear,
+        
+        /// <remarks/>
+        NextFiscalPeriod,
+        
+        /// <remarks/>
+        LastFiscalYear,
+        
+        /// <remarks/>
+        LastFiscalPeriod,
+        
+        /// <remarks/>
+        LastXFiscalYears,
+        
+        /// <remarks/>
+        LastXFiscalPeriods,
+        
+        /// <remarks/>
+        NextXFiscalYears,
+        
+        /// <remarks/>
+        NextXFiscalPeriods,
+        
+        /// <remarks/>
+        InFiscalYear,
+        
+        /// <remarks/>
+        InFiscalPeriod,
+        
+        /// <remarks/>
+        InFiscalPeriodAndYear,
+        
+        /// <remarks/>
+        InOrBeforeFiscalPeriodAndYear,
+        
+        /// <remarks/>
+        InOrAfterFiscalPeriodAndYear,
+        
+        /// <remarks/>
+        EqualUserTeams,
+        
+        /// <remarks/>
+        EqualUserOrUserTeams,
+        
+        /// <remarks/>
+        Under,
+        
+        /// <remarks/>
+        NotUnder,
+        
+        /// <remarks/>
+        UnderOrEqual,
+        
+        /// <remarks/>
+        Above,
+        
+        /// <remarks/>
+        AboveOrEqual,
+        
+        /// <remarks/>
+        EqualUserOrUserHierarchy,
+        
+        /// <remarks/>
+        EqualUserOrUserHierarchyAndTeams,
+        
+        /// <remarks/>
+        OlderThanXYears,
+        
+        /// <remarks/>
+        OlderThanXWeeks,
+        
+        /// <remarks/>
+        OlderThanXDays,
+        
+        /// <remarks/>
+        OlderThanXHours,
+        
+        /// <remarks/>
+        OlderThanXMinutes,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public partial class PagingInfo {
+        
+        private int countField;
+        
+        private bool countFieldSpecified;
+        
+        private int pageNumberField;
+        
+        private bool pageNumberFieldSpecified;
+        
+        private string pagingCookieField;
+        
+        private bool returnTotalRecordCountField;
+        
+        private bool returnTotalRecordCountFieldSpecified;
+        
+        /// <remarks/>
+        public int Count {
+            get {
+                return this.countField;
+            }
+            set {
+                this.countField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CountSpecified {
+            get {
+                return this.countFieldSpecified;
+            }
+            set {
+                this.countFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int PageNumber {
+            get {
+                return this.pageNumberField;
+            }
+            set {
+                this.pageNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool PageNumberSpecified {
+            get {
+                return this.pageNumberFieldSpecified;
+            }
+            set {
+                this.pageNumberFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string PagingCookie {
+            get {
+                return this.pagingCookieField;
+            }
+            set {
+                this.pagingCookieField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool ReturnTotalRecordCount {
+            get {
+                return this.returnTotalRecordCountField;
+            }
+            set {
+                this.returnTotalRecordCountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ReturnTotalRecordCountSpecified {
+            get {
+                return this.returnTotalRecordCountFieldSpecified;
+            }
+            set {
+                this.returnTotalRecordCountFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public partial class OrderExpression {
+        
+        private string attributeNameField;
+        
+        private OrderType orderTypeField;
+        
+        private bool orderTypeFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string AttributeName {
+            get {
+                return this.attributeNameField;
+            }
+            set {
+                this.attributeNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public OrderType OrderType {
+            get {
+                return this.orderTypeField;
+            }
+            set {
+                this.orderTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool OrderTypeSpecified {
+            get {
+                return this.orderTypeFieldSpecified;
+            }
+            set {
+                this.orderTypeFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public enum OrderType {
+        
+        /// <remarks/>
+        Ascending,
+        
+        /// <remarks/>
+        Descending,
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(QueryExpression))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(QueryByAttribute))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(FetchExpression))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public partial class QueryBase {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public partial class QueryExpression : QueryBase {
+        
+        private ColumnSet columnSetField;
+        
+        private FilterExpression criteriaField;
+        
+        private bool distinctField;
+        
+        private bool distinctFieldSpecified;
+        
+        private string entityNameField;
+        
+        private LinkEntity[] linkEntitiesField;
+        
+        private OrderExpression[] ordersField;
+        
+        private PagingInfo pageInfoField;
+        
+        private bool noLockField;
+        
+        private bool noLockFieldSpecified;
+        
+        private System.Nullable<int> topCountField;
+        
+        private bool topCountFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public ColumnSet ColumnSet {
+            get {
+                return this.columnSetField;
+            }
+            set {
+                this.columnSetField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public FilterExpression Criteria {
+            get {
+                return this.criteriaField;
+            }
+            set {
+                this.criteriaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Distinct {
+            get {
+                return this.distinctField;
+            }
+            set {
+                this.distinctField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DistinctSpecified {
+            get {
+                return this.distinctFieldSpecified;
+            }
+            set {
+                this.distinctFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string EntityName {
+            get {
+                return this.entityNameField;
+            }
+            set {
+                this.entityNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        public LinkEntity[] LinkEntities {
+            get {
+                return this.linkEntitiesField;
+            }
+            set {
+                this.linkEntitiesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        public OrderExpression[] Orders {
+            get {
+                return this.ordersField;
+            }
+            set {
+                this.ordersField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public PagingInfo PageInfo {
+            get {
+                return this.pageInfoField;
+            }
+            set {
+                this.pageInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool NoLock {
+            get {
+                return this.noLockField;
+            }
+            set {
+                this.noLockField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool NoLockSpecified {
+            get {
+                return this.noLockFieldSpecified;
+            }
+            set {
+                this.noLockFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<int> TopCount {
+            get {
+                return this.topCountField;
+            }
+            set {
+                this.topCountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TopCountSpecified {
+            get {
+                return this.topCountFieldSpecified;
+            }
+            set {
+                this.topCountFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public partial class QueryByAttribute : QueryBase {
+        
+        private string[] attributesField;
+        
+        private ColumnSet columnSetField;
+        
+        private string entityNameField;
+        
+        private OrderExpression[] ordersField;
+        
+        private PagingInfo pageInfoField;
+        
+        private object[] valuesField;
+        
+        private System.Nullable<int> topCountField;
+        
+        private bool topCountFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays")]
+        public string[] Attributes {
+            get {
+                return this.attributesField;
+            }
+            set {
+                this.attributesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public ColumnSet ColumnSet {
+            get {
+                return this.columnSetField;
+            }
+            set {
+                this.columnSetField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string EntityName {
+            get {
+                return this.entityNameField;
+            }
+            set {
+                this.entityNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        public OrderExpression[] Orders {
+            get {
+                return this.ordersField;
+            }
+            set {
+                this.ordersField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public PagingInfo PageInfo {
+            get {
+                return this.pageInfoField;
+            }
+            set {
+                this.pageInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays")]
+        public object[] Values {
+            get {
+                return this.valuesField;
+            }
+            set {
+                this.valuesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<int> TopCount {
+            get {
+                return this.topCountField;
+            }
+            set {
+                this.topCountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool TopCountSpecified {
+            get {
+                return this.topCountFieldSpecified;
+            }
+            set {
+                this.topCountFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts")]
+    public partial class FetchExpression : QueryBase {
+        
+        private string queryField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Query {
+            get {
+                return this.queryField;
+            }
+            set {
+                this.queryField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic")]
+    public partial class KeyValuePairOfRelationshipQueryBaseX_PsK4FkN {
+        
+        private Relationship keyField;
+        
+        private QueryBase valueField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public Relationship key {
+            get {
+                return this.keyField;
+            }
+            set {
+                this.keyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public QueryBase value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
     }
     
     /// <remarks/>

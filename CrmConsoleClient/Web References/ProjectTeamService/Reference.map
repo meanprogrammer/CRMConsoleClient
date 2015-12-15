@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd2" filename="ConnectionService.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?wsdl" filename="ConnectionService.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd0" filename="ConnectionService0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd1" filename="ConnectionService1.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>
