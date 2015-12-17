@@ -9,11 +9,21 @@
   <xs:element name="ArrayOfProxySOVCovenant" nillable="true" type="tns:ArrayOfProxySOVCovenant" />
   <xs:complexType name="ProxySOVCovenant">
     <xs:sequence>
+      <xs:element minOccurs="0" name="AgreementSectionNo" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="CompliedDate" nillable="true" type="xs:dateTime" />
       <xs:element minOccurs="0" name="CovenantDescription" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="CovenantID" type="ser:guid" />
+      <xs:element minOccurs="0" name="CovenantType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DueDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EffectiveEndDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="EffectiveStartDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID" type="ser:guid" />
       <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParagraphNo" nillable="true" type="xs:int" />
       <xs:element minOccurs="0" name="ParentID" type="ser:guid" />
       <xs:element minOccurs="0" name="ParentIDString" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Rating" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Remarks" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ProxySOVCovenant" nillable="true" type="tns:ProxySOVCovenant" />
@@ -27,6 +37,7 @@
     <xs:sequence>
       <xs:element minOccurs="0" name="CovenantDescription" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="CovenantID" type="ser:guid" />
+      <xs:element minOccurs="0" name="ID" type="ser:guid" />
       <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ParentID" type="ser:guid" />
       <xs:element minOccurs="0" name="ParentIDString" nillable="true" type="xs:string" />

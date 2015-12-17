@@ -232,15 +232,91 @@ namespace CrmConsoleClient.CovenantService {
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity")]
     public partial class ProxySOVCovenant {
         
+        private System.Nullable<double> agreementSectionNoField;
+        
+        private bool agreementSectionNoFieldSpecified;
+        
+        private System.Nullable<System.DateTime> compliedDateField;
+        
+        private bool compliedDateFieldSpecified;
+        
         private string covenantDescriptionField;
         
         private string covenantIDField;
         
+        private string covenantTypeField;
+        
+        private System.Nullable<System.DateTime> dueDateField;
+        
+        private bool dueDateFieldSpecified;
+        
+        private System.Nullable<System.DateTime> effectiveEndDateField;
+        
+        private bool effectiveEndDateFieldSpecified;
+        
+        private System.Nullable<System.DateTime> effectiveStartDateField;
+        
+        private bool effectiveStartDateFieldSpecified;
+        
+        private string idField;
+        
         private string nameField;
+        
+        private System.Nullable<int> paragraphNoField;
+        
+        private bool paragraphNoFieldSpecified;
         
         private string parentIDField;
         
         private string parentIDStringField;
+        
+        private string ratingField;
+        
+        private string remarksField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<double> AgreementSectionNo {
+            get {
+                return this.agreementSectionNoField;
+            }
+            set {
+                this.agreementSectionNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool AgreementSectionNoSpecified {
+            get {
+                return this.agreementSectionNoFieldSpecified;
+            }
+            set {
+                this.agreementSectionNoFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<System.DateTime> CompliedDate {
+            get {
+                return this.compliedDateField;
+            }
+            set {
+                this.compliedDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CompliedDateSpecified {
+            get {
+                return this.compliedDateFieldSpecified;
+            }
+            set {
+                this.compliedDateFieldSpecified = value;
+            }
+        }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -265,12 +341,121 @@ namespace CrmConsoleClient.CovenantService {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string CovenantType {
+            get {
+                return this.covenantTypeField;
+            }
+            set {
+                this.covenantTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<System.DateTime> DueDate {
+            get {
+                return this.dueDateField;
+            }
+            set {
+                this.dueDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DueDateSpecified {
+            get {
+                return this.dueDateFieldSpecified;
+            }
+            set {
+                this.dueDateFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<System.DateTime> EffectiveEndDate {
+            get {
+                return this.effectiveEndDateField;
+            }
+            set {
+                this.effectiveEndDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool EffectiveEndDateSpecified {
+            get {
+                return this.effectiveEndDateFieldSpecified;
+            }
+            set {
+                this.effectiveEndDateFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<System.DateTime> EffectiveStartDate {
+            get {
+                return this.effectiveStartDateField;
+            }
+            set {
+                this.effectiveStartDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool EffectiveStartDateSpecified {
+            get {
+                return this.effectiveStartDateFieldSpecified;
+            }
+            set {
+                this.effectiveStartDateFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string Name {
             get {
                 return this.nameField;
             }
             set {
                 this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<int> ParagraphNo {
+            get {
+                return this.paragraphNoField;
+            }
+            set {
+                this.paragraphNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool ParagraphNoSpecified {
+            get {
+                return this.paragraphNoFieldSpecified;
+            }
+            set {
+                this.paragraphNoFieldSpecified = value;
             }
         }
         
@@ -294,6 +479,28 @@ namespace CrmConsoleClient.CovenantService {
                 this.parentIDStringField = value;
             }
         }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Rating {
+            get {
+                return this.ratingField;
+            }
+            set {
+                this.ratingField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Remarks {
+            get {
+                return this.remarksField;
+            }
+            set {
+                this.remarksField = value;
+            }
+        }
     }
     
     /// <remarks/>
@@ -307,6 +514,8 @@ namespace CrmConsoleClient.CovenantService {
         private string covenantDescriptionField;
         
         private string covenantIDField;
+        
+        private string idField;
         
         private string nameField;
         
@@ -332,6 +541,16 @@ namespace CrmConsoleClient.CovenantService {
             }
             set {
                 this.covenantIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
             }
         }
         
