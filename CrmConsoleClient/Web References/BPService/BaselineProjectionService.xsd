@@ -9,8 +9,31 @@
   <xs:element name="ArrayOfCustomBaselineProjection" nillable="true" type="tns:ArrayOfCustomBaselineProjection" />
   <xs:complexType name="CustomBaselineProjection">
     <xs:sequence>
+      <xs:element minOccurs="0" name="CA_Q1_A" type="xs:double" />
+      <xs:element minOccurs="0" name="CA_Q1_P" type="xs:double" />
+      <xs:element minOccurs="0" name="CA_Q2_A" type="xs:double" />
+      <xs:element minOccurs="0" name="CA_Q2_P" type="xs:double" />
+      <xs:element minOccurs="0" name="CA_Q3_A" type="xs:double" />
+      <xs:element minOccurs="0" name="CA_Q3_P" type="xs:double" />
+      <xs:element minOccurs="0" name="CA_Q4_A" type="xs:double" />
+      <xs:element minOccurs="0" name="CA_Q4_P" type="xs:double" />
+      <xs:element minOccurs="0" name="DB_Q1_A" type="xs:double" />
+      <xs:element minOccurs="0" name="DB_Q1_P" type="xs:double" />
+      <xs:element minOccurs="0" name="DB_Q2_A" type="xs:double" />
+      <xs:element minOccurs="0" name="DB_Q2_P" type="xs:double" />
+      <xs:element minOccurs="0" name="DB_Q3_A" type="xs:double" />
+      <xs:element minOccurs="0" name="DB_Q3_P" type="xs:double" />
+      <xs:element minOccurs="0" name="DB_Q4_A" type="xs:double" />
+      <xs:element minOccurs="0" name="DB_Q4_P" type="xs:double" />
       <xs:element minOccurs="0" name="Id" type="ser:guid" />
       <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ParentID" type="ser:guid" />
+      <xs:element minOccurs="0" name="ParentIDString" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Total_CA_Per_Year_A" type="xs:double" />
+      <xs:element minOccurs="0" name="Total_CA_Per_Year_P" type="xs:double" />
+      <xs:element minOccurs="0" name="Total_DB_Per_Year_A" type="xs:double" />
+      <xs:element minOccurs="0" name="Total_DB_Per_Year_P" type="xs:double" />
+      <xs:element minOccurs="0" name="Year" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="CustomBaselineProjection" nillable="true" type="tns:CustomBaselineProjection" />

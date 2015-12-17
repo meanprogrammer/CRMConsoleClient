@@ -262,9 +262,433 @@ namespace CrmConsoleClient.BPService {
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/WebAppWalkthrough")]
     public partial class CustomBaselineProjection {
         
+        private double cA_Q1_AField;
+        
+        private bool cA_Q1_AFieldSpecified;
+        
+        private double cA_Q1_PField;
+        
+        private bool cA_Q1_PFieldSpecified;
+        
+        private double cA_Q2_AField;
+        
+        private bool cA_Q2_AFieldSpecified;
+        
+        private double cA_Q2_PField;
+        
+        private bool cA_Q2_PFieldSpecified;
+        
+        private double cA_Q3_AField;
+        
+        private bool cA_Q3_AFieldSpecified;
+        
+        private double cA_Q3_PField;
+        
+        private bool cA_Q3_PFieldSpecified;
+        
+        private double cA_Q4_AField;
+        
+        private bool cA_Q4_AFieldSpecified;
+        
+        private double cA_Q4_PField;
+        
+        private bool cA_Q4_PFieldSpecified;
+        
+        private double dB_Q1_AField;
+        
+        private bool dB_Q1_AFieldSpecified;
+        
+        private double dB_Q1_PField;
+        
+        private bool dB_Q1_PFieldSpecified;
+        
+        private double dB_Q2_AField;
+        
+        private bool dB_Q2_AFieldSpecified;
+        
+        private double dB_Q2_PField;
+        
+        private bool dB_Q2_PFieldSpecified;
+        
+        private double dB_Q3_AField;
+        
+        private bool dB_Q3_AFieldSpecified;
+        
+        private double dB_Q3_PField;
+        
+        private bool dB_Q3_PFieldSpecified;
+        
+        private double dB_Q4_AField;
+        
+        private bool dB_Q4_AFieldSpecified;
+        
+        private double dB_Q4_PField;
+        
+        private bool dB_Q4_PFieldSpecified;
+        
         private string idField;
         
         private string nameField;
+        
+        private string parentIDField;
+        
+        private string parentIDStringField;
+        
+        private double total_CA_Per_Year_AField;
+        
+        private bool total_CA_Per_Year_AFieldSpecified;
+        
+        private double total_CA_Per_Year_PField;
+        
+        private bool total_CA_Per_Year_PFieldSpecified;
+        
+        private double total_DB_Per_Year_AField;
+        
+        private bool total_DB_Per_Year_AFieldSpecified;
+        
+        private double total_DB_Per_Year_PField;
+        
+        private bool total_DB_Per_Year_PFieldSpecified;
+        
+        private int yearField;
+        
+        private bool yearFieldSpecified;
+        
+        /// <remarks/>
+        public double CA_Q1_A {
+            get {
+                return this.cA_Q1_AField;
+            }
+            set {
+                this.cA_Q1_AField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CA_Q1_ASpecified {
+            get {
+                return this.cA_Q1_AFieldSpecified;
+            }
+            set {
+                this.cA_Q1_AFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double CA_Q1_P {
+            get {
+                return this.cA_Q1_PField;
+            }
+            set {
+                this.cA_Q1_PField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CA_Q1_PSpecified {
+            get {
+                return this.cA_Q1_PFieldSpecified;
+            }
+            set {
+                this.cA_Q1_PFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double CA_Q2_A {
+            get {
+                return this.cA_Q2_AField;
+            }
+            set {
+                this.cA_Q2_AField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CA_Q2_ASpecified {
+            get {
+                return this.cA_Q2_AFieldSpecified;
+            }
+            set {
+                this.cA_Q2_AFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double CA_Q2_P {
+            get {
+                return this.cA_Q2_PField;
+            }
+            set {
+                this.cA_Q2_PField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CA_Q2_PSpecified {
+            get {
+                return this.cA_Q2_PFieldSpecified;
+            }
+            set {
+                this.cA_Q2_PFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double CA_Q3_A {
+            get {
+                return this.cA_Q3_AField;
+            }
+            set {
+                this.cA_Q3_AField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CA_Q3_ASpecified {
+            get {
+                return this.cA_Q3_AFieldSpecified;
+            }
+            set {
+                this.cA_Q3_AFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double CA_Q3_P {
+            get {
+                return this.cA_Q3_PField;
+            }
+            set {
+                this.cA_Q3_PField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CA_Q3_PSpecified {
+            get {
+                return this.cA_Q3_PFieldSpecified;
+            }
+            set {
+                this.cA_Q3_PFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double CA_Q4_A {
+            get {
+                return this.cA_Q4_AField;
+            }
+            set {
+                this.cA_Q4_AField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CA_Q4_ASpecified {
+            get {
+                return this.cA_Q4_AFieldSpecified;
+            }
+            set {
+                this.cA_Q4_AFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double CA_Q4_P {
+            get {
+                return this.cA_Q4_PField;
+            }
+            set {
+                this.cA_Q4_PField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CA_Q4_PSpecified {
+            get {
+                return this.cA_Q4_PFieldSpecified;
+            }
+            set {
+                this.cA_Q4_PFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double DB_Q1_A {
+            get {
+                return this.dB_Q1_AField;
+            }
+            set {
+                this.dB_Q1_AField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DB_Q1_ASpecified {
+            get {
+                return this.dB_Q1_AFieldSpecified;
+            }
+            set {
+                this.dB_Q1_AFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double DB_Q1_P {
+            get {
+                return this.dB_Q1_PField;
+            }
+            set {
+                this.dB_Q1_PField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DB_Q1_PSpecified {
+            get {
+                return this.dB_Q1_PFieldSpecified;
+            }
+            set {
+                this.dB_Q1_PFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double DB_Q2_A {
+            get {
+                return this.dB_Q2_AField;
+            }
+            set {
+                this.dB_Q2_AField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DB_Q2_ASpecified {
+            get {
+                return this.dB_Q2_AFieldSpecified;
+            }
+            set {
+                this.dB_Q2_AFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double DB_Q2_P {
+            get {
+                return this.dB_Q2_PField;
+            }
+            set {
+                this.dB_Q2_PField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DB_Q2_PSpecified {
+            get {
+                return this.dB_Q2_PFieldSpecified;
+            }
+            set {
+                this.dB_Q2_PFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double DB_Q3_A {
+            get {
+                return this.dB_Q3_AField;
+            }
+            set {
+                this.dB_Q3_AField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DB_Q3_ASpecified {
+            get {
+                return this.dB_Q3_AFieldSpecified;
+            }
+            set {
+                this.dB_Q3_AFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double DB_Q3_P {
+            get {
+                return this.dB_Q3_PField;
+            }
+            set {
+                this.dB_Q3_PField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DB_Q3_PSpecified {
+            get {
+                return this.dB_Q3_PFieldSpecified;
+            }
+            set {
+                this.dB_Q3_PFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double DB_Q4_A {
+            get {
+                return this.dB_Q4_AField;
+            }
+            set {
+                this.dB_Q4_AField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DB_Q4_ASpecified {
+            get {
+                return this.dB_Q4_AFieldSpecified;
+            }
+            set {
+                this.dB_Q4_AFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double DB_Q4_P {
+            get {
+                return this.dB_Q4_PField;
+            }
+            set {
+                this.dB_Q4_PField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool DB_Q4_PSpecified {
+            get {
+                return this.dB_Q4_PFieldSpecified;
+            }
+            set {
+                this.dB_Q4_PFieldSpecified = value;
+            }
+        }
         
         /// <remarks/>
         public string Id {
@@ -284,6 +708,132 @@ namespace CrmConsoleClient.BPService {
             }
             set {
                 this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ParentID {
+            get {
+                return this.parentIDField;
+            }
+            set {
+                this.parentIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ParentIDString {
+            get {
+                return this.parentIDStringField;
+            }
+            set {
+                this.parentIDStringField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Total_CA_Per_Year_A {
+            get {
+                return this.total_CA_Per_Year_AField;
+            }
+            set {
+                this.total_CA_Per_Year_AField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool Total_CA_Per_Year_ASpecified {
+            get {
+                return this.total_CA_Per_Year_AFieldSpecified;
+            }
+            set {
+                this.total_CA_Per_Year_AFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Total_CA_Per_Year_P {
+            get {
+                return this.total_CA_Per_Year_PField;
+            }
+            set {
+                this.total_CA_Per_Year_PField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool Total_CA_Per_Year_PSpecified {
+            get {
+                return this.total_CA_Per_Year_PFieldSpecified;
+            }
+            set {
+                this.total_CA_Per_Year_PFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Total_DB_Per_Year_A {
+            get {
+                return this.total_DB_Per_Year_AField;
+            }
+            set {
+                this.total_DB_Per_Year_AField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool Total_DB_Per_Year_ASpecified {
+            get {
+                return this.total_DB_Per_Year_AFieldSpecified;
+            }
+            set {
+                this.total_DB_Per_Year_AFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Total_DB_Per_Year_P {
+            get {
+                return this.total_DB_Per_Year_PField;
+            }
+            set {
+                this.total_DB_Per_Year_PField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool Total_DB_Per_Year_PSpecified {
+            get {
+                return this.total_DB_Per_Year_PFieldSpecified;
+            }
+            set {
+                this.total_DB_Per_Year_PFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Year {
+            get {
+                return this.yearField;
+            }
+            set {
+                this.yearField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool YearSpecified {
+            get {
+                return this.yearFieldSpecified;
+            }
+            set {
+                this.yearFieldSpecified = value;
             }
         }
     }

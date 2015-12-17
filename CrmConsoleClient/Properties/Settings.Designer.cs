@@ -26,16 +26,6 @@ namespace CrmConsoleClient.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://adbcrm.apphb.com/NSOCovenantService.svc")]
-        public string CrmConsoleClient_NSOCovenantService_NSOCovenantService {
-            get {
-                return ((string)(this["CrmConsoleClient_NSOCovenantService_NSOCovenantService"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
         [global::System.Configuration.DefaultSettingValueAttribute("http://adbcrm.apphb.com/BaselineProjectionService.svc")]
         public string CrmConsoleClient_BPService_BaselineProjectionService {
             get {
@@ -80,6 +70,16 @@ namespace CrmConsoleClient.Properties {
         public string CrmConsoleClient_ProjectTeamService_ConnectionService {
             get {
                 return ((string)(this["CrmConsoleClient_ProjectTeamService_ConnectionService"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc")]
+        public string CrmConsoleClient_CovenantService_CovenantService {
+            get {
+                return ((string)(this["CrmConsoleClient_CovenantService_CovenantService"]));
             }
         }
     }

@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountExecutor.cs" />
+    <Compile Include="CovenantExecutor.cs" />
     <Compile Include="OpportunityExecutor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProjectTeamExecutor.cs" />
@@ -63,12 +64,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
-    <Compile Include="Web References\LocalOpportunityService\Reference.cs">
+    <Compile Include="Web References\CovenantService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
-    <Compile Include="Web References\NSOCovenantService\Reference.cs">
+    <Compile Include="Web References\LocalOpportunityService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
@@ -124,6 +125,26 @@
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Web References\CovenantService\CovenantService.wsdl" />
+    <None Include="Web References\CovenantService\CovenantService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\CovenantService\CovenantService0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\CovenantService\CovenantService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\CovenantService\ProxyNSOCovenant.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CovenantService\ProxySOVCovenant.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CovenantService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <None Include="Web References\LocalOpportunityService\OpportunityService.wsdl" />
     <None Include="Web References\LocalOpportunityService\OpportunityService.xsd">
       <SubType>Designer</SubType>
@@ -138,23 +159,6 @@
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\LocalOpportunityService\Reference.map">
-      <Generator>MSDiscoCodeGenerator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
-    <None Include="Web References\NSOCovenantService\CustomNSOCovenant.datasource">
-      <DependentUpon>Reference.map</DependentUpon>
-    </None>
-    <None Include="Web References\NSOCovenantService\NSOCovenantService.wsdl" />
-    <None Include="Web References\NSOCovenantService\NSOCovenantService.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\NSOCovenantService\NSOCovenantService0.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\NSOCovenantService\NSOCovenantService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\NSOCovenantService\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -250,17 +254,6 @@
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>CrmConsoleClient_BPService_BaselineProjectionService</CachedSettingsPropName>
     </WebReferenceUrl>
-    <WebReferenceUrl Include="http://adbcrm.apphb.com/NSOCovenantService.svc%3fwsdl">
-      <UrlBehavior>Dynamic</UrlBehavior>
-      <RelPath>Web References\NSOCovenantService\</RelPath>
-      <UpdateFromURL>http://adbcrm.apphb.com/NSOCovenantService.svc%3fwsdl</UpdateFromURL>
-      <ServiceLocationURL>
-      </ServiceLocationURL>
-      <CachedDynamicPropName>
-      </CachedDynamicPropName>
-      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
-      <CachedSettingsPropName>CrmConsoleClient_NSOCovenantService_NSOCovenantService</CachedSettingsPropName>
-    </WebReferenceUrl>
     <WebReferenceUrl Include="http://dynamicscrmproxy.apphb.com/Services/AccountService.svc">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\AccountService\</RelPath>
@@ -282,6 +275,17 @@
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>CrmConsoleClient_ProjectTeamService_ConnectionService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CovenantService\</RelPath>
+      <UpdateFromURL>http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CrmConsoleClient_CovenantService_CovenantService</CachedSettingsPropName>
     </WebReferenceUrl>
     <WebReferenceUrl Include="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc%3fwsdl">
       <UrlBehavior>Dynamic</UrlBehavior>

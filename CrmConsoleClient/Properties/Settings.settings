@@ -2,9 +2,6 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CrmConsoleClient.Properties" GeneratedClassName="Settings">
   <Profiles />
   <Settings>
-    <Setting Name="CrmConsoleClient_NSOCovenantService_NSOCovenantService" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">http://adbcrm.apphb.com/NSOCovenantService.svc</Value>
-    </Setting>
     <Setting Name="CrmConsoleClient_BPService_BaselineProjectionService" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">http://adbcrm.apphb.com/BaselineProjectionService.svc</Value>
     </Setting>
@@ -19,6 +16,9 @@
     </Setting>
     <Setting Name="CrmConsoleClient_ProjectTeamService_ConnectionService" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc</Value>
+    </Setting>
+    <Setting Name="CrmConsoleClient_CovenantService_CovenantService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc</Value>
     </Setting>
   </Settings>
 </SettingsFile>
