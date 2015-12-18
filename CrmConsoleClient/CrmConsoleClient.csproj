@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="AccountExecutor.cs" />
     <Compile Include="CovenantExecutor.cs" />
+    <Compile Include="DMFExecutor.cs" />
     <Compile Include="OpportunityExecutor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProjectTeamExecutor.cs" />
@@ -65,6 +66,11 @@
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
     <Compile Include="Web References\CovenantService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\DMFService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
@@ -142,6 +148,29 @@
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\CovenantService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\DMFService\DMFService.wsdl" />
+    <None Include="Web References\DMFService\DMFService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\DMFService\DMFService0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\DMFService\DMFService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\DMFService\ProxyNSOImpact.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\DMFService\ProxyNSOOutcome.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\DMFService\ProxyNSOOutput.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\DMFService\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -286,6 +315,17 @@
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>CrmConsoleClient_CovenantService_CovenantService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://dynamicscrmproxy.apphb.com/Services/DMFService.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\DMFService\</RelPath>
+      <UpdateFromURL>http://dynamicscrmproxy.apphb.com/Services/DMFService.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CrmConsoleClient_DMFService_DMFService</CachedSettingsPropName>
     </WebReferenceUrl>
     <WebReferenceUrl Include="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc%3fwsdl">
       <UrlBehavior>Dynamic</UrlBehavior>

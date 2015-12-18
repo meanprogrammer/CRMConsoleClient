@@ -11,7 +11,8 @@ namespace CrmConsoleClient
     {
         static void Main(string[] args)
         {
-            
+            DMFExecutor dmf = new DMFExecutor();
+            dmf.Execute();
             /*
             OpportunityExecutor ex = new OpportunityExecutor();
             ex.GetOpportunity();
@@ -27,9 +28,11 @@ namespace CrmConsoleClient
             pte.GetAllTeamMembers();
             */
 
+            /*
             CovenantExecutor ce = new CovenantExecutor();
             ce.Execute();
-
+            */
+             
             /*
             BPService.BaselineProjectionService client = new BPService.BaselineProjectionService();
             var bps = client.GetAllBaselineProjection();

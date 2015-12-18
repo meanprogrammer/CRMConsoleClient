@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/DMFService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOfProxyNSOImpact">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProxyNSOImpact" nillable="true" type="tns:ProxyNSOImpact" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProxyNSOImpact" nillable="true" type="tns:ArrayOfProxyNSOImpact" />
+  <xs:complexType name="ProxyNSOImpact">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AchievedByYear" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AchievementValue" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="ActionTaken" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AssessmentOfCurrentStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Assumptions" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BaselineValue" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="BaselineYear" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Classification" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CumulativeValue" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Date" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID" type="ser:guid" />
+      <xs:element minOccurs="0" name="ImpactNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ImpactStatement" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Indicators" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedOn" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="PerformanceTargets" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="Problems" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProgressStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecentDevelopment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReportingEndDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ReportingStartDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RiskAssessmentOfCurrentStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Risks" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UnitOfMeasurement" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProxyNSOImpact" nillable="true" type="tns:ProxyNSOImpact" />
+  <xs:complexType name="ArrayOfProxyNSOOutcome">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProxyNSOOutcome" nillable="true" type="tns:ProxyNSOOutcome" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProxyNSOOutcome" nillable="true" type="tns:ArrayOfProxyNSOOutcome" />
+  <xs:complexType name="ProxyNSOOutcome">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AchievedByYear" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AchievementValue" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="ActionTaken" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AssessmentOfCurrentStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Assumptions" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BaselineValue" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="BaselineYear" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Classification" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CumulativeValue" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Date" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID" type="ser:guid" />
+      <xs:element minOccurs="0" name="Indicators" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedOn" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="OutcomeNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OutcomeStatement" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PerformanceTargets" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="Problems" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProgressStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecentDevelopment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReportingEndDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ReportingStartDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RiskAssessmentOfCurrentStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Risks" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UnitOfMeasurement" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProxyNSOOutcome" nillable="true" type="tns:ProxyNSOOutcome" />
+  <xs:complexType name="ArrayOfProxyNSOOutput">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProxyNSOOutput" nillable="true" type="tns:ProxyNSOOutput" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProxyNSOOutput" nillable="true" type="tns:ArrayOfProxyNSOOutput" />
+  <xs:complexType name="ProxyNSOOutput">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AchievedByYear" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AchievementValue" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="ActionTaken" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AssessmentOfCurrentStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Assumptions" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BaselineValue" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="BaselineYear" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Classification" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CumulativeValue" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Date" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ID" type="ser:guid" />
+      <xs:element minOccurs="0" name="Indicators" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedOn" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="OutputNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OutputStatement" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PerformanceTargets" nillable="true" type="xs:double" />
+      <xs:element minOccurs="0" name="Problems" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProgressStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecentDevelopment" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReportingEndDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ReportingStartDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="RiskAssessmentOfCurrentStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Risks" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UnitOfMeasurement" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProxyNSOOutput" nillable="true" type="tns:ProxyNSOOutput" />
+</xs:schema>
