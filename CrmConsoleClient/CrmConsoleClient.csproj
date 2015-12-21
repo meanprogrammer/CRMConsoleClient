@@ -161,6 +161,12 @@
     <None Include="Web References\DMFService\DMFService1.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Web References\DMFService\DMFService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\DMFService\DMFService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Web References\DMFService\ProxyNSOImpact.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>

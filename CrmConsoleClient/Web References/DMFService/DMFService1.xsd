@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/DMFService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/xrm/2011/Contracts" />
   <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/DMFService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
   <xs:complexType name="ArrayOfProxyNSOImpact">
     <xs:sequence>
@@ -19,6 +20,7 @@
       <xs:element minOccurs="0" name="Classification" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="CumulativeValue" nillable="true" type="xs:boolean" />
       <xs:element minOccurs="0" name="Date" nillable="true" type="xs:dateTime" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/xrm/2011/Contracts" minOccurs="0" name="FV" nillable="true" type="q1:FormattedValueCollection" />
       <xs:element minOccurs="0" name="ID" type="ser:guid" />
       <xs:element minOccurs="0" name="ImpactNo" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ImpactStatement" nillable="true" type="xs:string" />

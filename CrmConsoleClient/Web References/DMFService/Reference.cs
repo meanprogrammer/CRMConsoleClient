@@ -329,6 +329,8 @@ namespace CrmConsoleClient.DMFService {
         
         private bool dateFieldSpecified;
         
+        private KeyValuePairOfstringstring[] fvField;
+        
         private string idField;
         
         private string impactNoField;
@@ -520,6 +522,18 @@ namespace CrmConsoleClient.DMFService {
             }
             set {
                 this.dateFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts", IsNullable=false)]
+        public KeyValuePairOfstringstring[] FV {
+            get {
+                return this.fvField;
+            }
+            set {
+                this.fvField = value;
             }
         }
         
@@ -739,6 +753,41 @@ namespace CrmConsoleClient.DMFService {
             }
             set {
                 this.valueFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic")]
+    public partial class KeyValuePairOfstringstring {
+        
+        private string keyField;
+        
+        private string valueField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string key {
+            get {
+                return this.keyField;
+            }
+            set {
+                this.keyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
             }
         }
     }
