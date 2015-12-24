@@ -5,6 +5,20 @@
       <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Xrm" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/xrm/2011/Contracts" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd6" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd7" namespace="http://schemas.microsoft.com/xrm/7.1/Contracts" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd8" namespace="http://schemas.microsoft.com/xrm/2011/Metadata" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd9" namespace="http://schemas.microsoft.com/xrm/2013/Metadata" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/xrm/7.1/Metadata" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd11" namespace="http://schemas.microsoft.com/xrm/2014/Contracts" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd12" namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd13" namespace="http://schemas.microsoft.com/xrm/2012/Contracts" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd14" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Xrm.Sdk" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd15" namespace="http://schemas.microsoft.com/crm/2011/Contracts" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd16" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Crm.Sdk.Messages" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IConnectionService_GetAllConnection_InputMessage">

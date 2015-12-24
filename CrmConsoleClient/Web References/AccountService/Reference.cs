@@ -165,7 +165,19 @@ namespace CrmConsoleClient.AccountService {
         
         private string accountNameField;
         
-        private string addressField;
+        private string address1_CityField;
+        
+        private string address1_CountryRegionField;
+        
+        private string address1_StateProvinceField;
+        
+        private string address1_Street1Field;
+        
+        private string address1_Street2Field;
+        
+        private string address1_Street3Field;
+        
+        private string address1_ZipCodeField;
         
         private string countryField;
         
@@ -176,6 +188,8 @@ namespace CrmConsoleClient.AccountService {
         private string idField;
         
         private string iDstringField;
+        
+        private string involvementInProjectField;
         
         private string parentIDField;
         
@@ -196,12 +210,78 @@ namespace CrmConsoleClient.AccountService {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string Address {
+        public string Address1_City {
             get {
-                return this.addressField;
+                return this.address1_CityField;
             }
             set {
-                this.addressField = value;
+                this.address1_CityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Address1_CountryRegion {
+            get {
+                return this.address1_CountryRegionField;
+            }
+            set {
+                this.address1_CountryRegionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Address1_StateProvince {
+            get {
+                return this.address1_StateProvinceField;
+            }
+            set {
+                this.address1_StateProvinceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Address1_Street1 {
+            get {
+                return this.address1_Street1Field;
+            }
+            set {
+                this.address1_Street1Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Address1_Street2 {
+            get {
+                return this.address1_Street2Field;
+            }
+            set {
+                this.address1_Street2Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Address1_Street3 {
+            get {
+                return this.address1_Street3Field;
+            }
+            set {
+                this.address1_Street3Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Address1_ZipCode {
+            get {
+                return this.address1_ZipCodeField;
+            }
+            set {
+                this.address1_ZipCodeField = value;
             }
         }
         
@@ -256,6 +336,17 @@ namespace CrmConsoleClient.AccountService {
             }
             set {
                 this.iDstringField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string InvolvementInProject {
+            get {
+                return this.involvementInProjectField;
+            }
+            set {
+                this.involvementInProjectField = value;
             }
         }
         

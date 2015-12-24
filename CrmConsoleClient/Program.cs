@@ -11,22 +11,28 @@ namespace CrmConsoleClient
     {
         static void Main(string[] args)
         {
+            /*
             DMFExecutor dmf = new DMFExecutor();
             dmf.Execute();
+            */
+ 
+
+
+            
             /*
             OpportunityExecutor ex = new OpportunityExecutor();
             ex.GetOpportunity();
             */
             
-            /*      
+/*                
             AccountExecutor aex = new AccountExecutor();
             aex.GetAllAccounts();
-            */
+*/            
 
-            /*
+            
             ProjectTeamExecutor pte = new ProjectTeamExecutor();
             pte.GetAllTeamMembers();
-            */
+            
 
             /*
             CovenantExecutor ce = new CovenantExecutor();

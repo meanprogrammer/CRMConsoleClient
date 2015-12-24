@@ -16,6 +16,10 @@ namespace CrmConsoleClient
             foreach (ProxyConnection item in all)
             {
                 Console.WriteLine(item.Name);
+                if (item.Name.Contains("Chen"))
+                { 
+
+                }
             }
             Console.ReadLine();
         }

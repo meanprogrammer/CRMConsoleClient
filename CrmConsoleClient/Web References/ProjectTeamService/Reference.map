@@ -1,9 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Results>
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd2" filename="ConnectionService.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd11" filename="ConnectionService.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd15" filename="ConnectionService0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd12" filename="ConnectionService1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd13" filename="ConnectionService2.xsd" />
     <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?wsdl" filename="ConnectionService.wsdl" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd0" filename="ConnectionService0.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd1" filename="ConnectionService1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd16" filename="ConnectionService3.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd6" filename="ConnectionService4.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd7" filename="ConnectionService5.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd4" filename="ConnectionService6.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd5" filename="ConnectionService7.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd2" filename="ConnectionService8.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd3" filename="ConnectionService9.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd0" filename="ConnectionService10.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd1" filename="ConnectionService11.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd10" filename="ConnectionService12.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd14" filename="ConnectionService13.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd8" filename="ConnectionService14.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd9" filename="ConnectionService15.xsd" />
   </Results>
 </DiscoveryClientResultsFile>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Xrm" />
+  <xs:complexType name="ArrayOfProxyConnection">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProxyConnection" nillable="true" type="tns:ProxyConnection" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProxyConnection" nillable="true" type="tns:ArrayOfProxyConnection" />
+  <xs:complexType name="ProxyConnection">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address1_City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address1_CountryRegion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address1_StateProvince" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address1_Street1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address1_Street2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address1_Street3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Address1_ZipCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BusinessPhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fullname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="ser:guid" />
+      <xs:element minOccurs="0" name="JobTitle" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MobilePhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OpportunityId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PreferedMethodofContact" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Xrm" minOccurs="0" name="RealConnection" nillable="true" type="q1:Connection" />
+      <xs:element minOccurs="0" name="Role" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProxyConnection" nillable="true" type="tns:ProxyConnection" />
+</xs:schema>
