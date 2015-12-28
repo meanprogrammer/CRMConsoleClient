@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.microsoft.com/xrm/2014/Contracts" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/xrm/2014/Contracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd6" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
   <xs:simpleType name="EndpointAccessType">
     <xs:restriction base="xs:string">
       <xs:enumeration value="Default" />

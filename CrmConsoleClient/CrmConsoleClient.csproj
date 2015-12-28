@@ -183,10 +183,10 @@
     <None Include="Web References\CovenantService\CovenantService9.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Web References\CovenantService\ProxyNSOCovenant.datasource">
+    <None Include="Web References\CovenantService\ProxyNSOCovenant1.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
-    <None Include="Web References\CovenantService\ProxySOVCovenant.datasource">
+    <None Include="Web References\CovenantService\ProxySOVCovenant1.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\CovenantService\Reference.map">

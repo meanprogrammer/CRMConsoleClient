@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.microsoft.com/xrm/2011/Contracts" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/xrm/2011/Contracts" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
   <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd6" namespace="http://schemas.microsoft.com/xrm/7.1/Contracts" />
-  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd7" namespace="http://schemas.microsoft.com/xrm/2011/Metadata" />
-  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd5" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/xrm/2014/Contracts" />
+  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd7" namespace="http://schemas.microsoft.com/xrm/7.1/Contracts" />
+  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd8" namespace="http://schemas.microsoft.com/xrm/2011/Metadata" />
+  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd6" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd11" namespace="http://schemas.microsoft.com/xrm/2014/Contracts" />
+  <xs:complexType name="CrmEntity">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:Entity">
+        <xs:sequence />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="CrmEntity" nillable="true" type="tns:CrmEntity" />
+  <xs:complexType name="Entity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Attributes" nillable="true" type="tns:AttributeCollection" />
+      <xs:element minOccurs="0" name="EntityState" nillable="true" type="tns:EntityState" />
+      <xs:element minOccurs="0" name="FormattedValues" nillable="true" type="tns:FormattedValueCollection" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/xrm/7.1/Contracts" minOccurs="0" name="KeyAttributes" nillable="true" type="q1:KeyAttributeCollection" />
+      <xs:element minOccurs="0" name="LogicalName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RelatedEntities" nillable="true" type="tns:RelatedEntityCollection" />
+      <xs:element minOccurs="0" name="RowVersion" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Entity" nillable="true" type="tns:Entity" />
   <xs:complexType name="AttributeCollection">
     <xs:sequence>
-      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" maxOccurs="unbounded" name="KeyValuePairOfstringanyType" type="q1:KeyValuePairOfstringanyType" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" maxOccurs="unbounded" name="KeyValuePairOfstringanyType" type="q2:KeyValuePairOfstringanyType" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="AttributeCollection" nillable="true" type="tns:AttributeCollection" />
@@ -27,7 +48,7 @@
   <xs:complexType name="EntityReference">
     <xs:sequence>
       <xs:element minOccurs="0" name="Id" type="ser:guid" />
-      <xs:element xmlns:q2="http://schemas.microsoft.com/xrm/7.1/Contracts" minOccurs="0" name="KeyAttributes" nillable="true" type="q2:KeyAttributeCollection" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/xrm/7.1/Contracts" minOccurs="0" name="KeyAttributes" nillable="true" type="q3:KeyAttributeCollection" />
       <xs:element minOccurs="0" name="LogicalName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="RowVersion" nillable="true" type="xs:string" />
@@ -70,53 +91,6 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ArrayOfEntity" nillable="true" type="tns:ArrayOfEntity" />
-  <xs:complexType name="Entity">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="Attributes" nillable="true" type="tns:AttributeCollection" />
-      <xs:element minOccurs="0" name="EntityState" nillable="true" type="tns:EntityState" />
-      <xs:element minOccurs="0" name="FormattedValues" nillable="true" type="tns:FormattedValueCollection" />
-      <xs:element minOccurs="0" name="Id" type="ser:guid" />
-      <xs:element xmlns:q3="http://schemas.microsoft.com/xrm/7.1/Contracts" minOccurs="0" name="KeyAttributes" nillable="true" type="q3:KeyAttributeCollection" />
-      <xs:element minOccurs="0" name="LogicalName" nillable="true" type="xs:string" />
-      <xs:element minOccurs="0" name="RelatedEntities" nillable="true" type="tns:RelatedEntityCollection" />
-      <xs:element minOccurs="0" name="RowVersion" nillable="true" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="Entity" nillable="true" type="tns:Entity" />
-  <xs:simpleType name="EntityState">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="Unchanged" />
-      <xs:enumeration value="Created" />
-      <xs:enumeration value="Changed" />
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:element name="EntityState" nillable="true" type="tns:EntityState" />
-  <xs:complexType name="FormattedValueCollection">
-    <xs:sequence>
-      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" maxOccurs="unbounded" name="KeyValuePairOfstringstring" type="q4:KeyValuePairOfstringstring" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="FormattedValueCollection" nillable="true" type="tns:FormattedValueCollection" />
-  <xs:complexType name="RelatedEntityCollection">
-    <xs:sequence>
-      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" maxOccurs="unbounded" name="KeyValuePairOfRelationshipEntityCollectionX_PsK4FkN" type="q5:KeyValuePairOfRelationshipEntityCollectionX_PsK4FkN" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="RelatedEntityCollection" nillable="true" type="tns:RelatedEntityCollection" />
-  <xs:complexType name="Relationship">
-    <xs:sequence>
-      <xs:element minOccurs="0" name="PrimaryEntityRole" nillable="true" type="tns:EntityRole" />
-      <xs:element minOccurs="0" name="SchemaName" nillable="true" type="xs:string" />
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="Relationship" nillable="true" type="tns:Relationship" />
-  <xs:simpleType name="EntityRole">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="Referencing" />
-      <xs:enumeration value="Referenced" />
-    </xs:restriction>
-  </xs:simpleType>
-  <xs:element name="EntityRole" nillable="true" type="tns:EntityRole" />
   <xs:complexType name="Label">
     <xs:sequence>
       <xs:element minOccurs="0" name="LocalizedLabels" nillable="true" type="tns:LocalizedLabelCollection" />
@@ -132,7 +106,7 @@
   <xs:element name="LocalizedLabelCollection" nillable="true" type="tns:LocalizedLabelCollection" />
   <xs:complexType name="LocalizedLabel">
     <xs:complexContent mixed="false">
-      <xs:extension xmlns:q6="http://schemas.microsoft.com/xrm/2011/Metadata" base="q6:MetadataBase">
+      <xs:extension xmlns:q4="http://schemas.microsoft.com/xrm/2011/Metadata" base="q4:MetadataBase">
         <xs:sequence>
           <xs:element minOccurs="0" name="IsManaged" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="0" name="Label" nillable="true" type="xs:string" />
@@ -176,7 +150,7 @@
     <xs:sequence>
       <xs:element minOccurs="0" name="CanBeChanged" type="xs:boolean" />
       <xs:element minOccurs="0" name="ManagedPropertyLogicalName" nillable="true" type="xs:string" />
-      <xs:element xmlns:q7="http://schemas.microsoft.com/xrm/2011/Metadata" minOccurs="0" name="Value" type="q7:AttributeRequiredLevel" />
+      <xs:element xmlns:q5="http://schemas.microsoft.com/xrm/2011/Metadata" minOccurs="0" name="Value" type="q5:AttributeRequiredLevel" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ManagedPropertyAttributeRequiredLevel" nillable="true" type="tns:ManagedPropertyAttributeRequiredLevel" />
@@ -191,7 +165,7 @@
   <xs:complexType name="ColumnSet">
     <xs:sequence>
       <xs:element minOccurs="0" name="AllColumns" type="xs:boolean" />
-      <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Columns" nillable="true" type="q8:ArrayOfstring" />
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Columns" nillable="true" type="q6:ArrayOfstring" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ColumnSet" nillable="true" type="tns:ColumnSet" />
@@ -219,12 +193,12 @@
     <xs:complexContent mixed="false">
       <xs:extension base="tns:QueryBase">
         <xs:sequence>
-          <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Attributes" nillable="true" type="q9:ArrayOfstring" />
+          <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Attributes" nillable="true" type="q7:ArrayOfstring" />
           <xs:element minOccurs="0" name="ColumnSet" nillable="true" type="tns:ColumnSet" />
           <xs:element minOccurs="0" name="EntityName" nillable="true" type="xs:string" />
           <xs:element minOccurs="0" name="Orders" nillable="true" type="tns:ArrayOfOrderExpression" />
           <xs:element minOccurs="0" name="PageInfo" nillable="true" type="tns:PagingInfo" />
-          <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Values" nillable="true" type="q10:ArrayOfanyType" />
+          <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Values" nillable="true" type="q8:ArrayOfanyType" />
           <xs:element minOccurs="0" name="TopCount" nillable="true" type="xs:int" />
         </xs:sequence>
       </xs:extension>
@@ -309,7 +283,7 @@
     <xs:sequence>
       <xs:element minOccurs="0" name="AttributeName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Operator" type="tns:ConditionOperator" />
-      <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Values" nillable="true" type="q11:ArrayOfanyType" />
+      <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Values" nillable="true" type="q9:ArrayOfanyType" />
       <xs:element minOccurs="0" name="EntityName" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
@@ -459,6 +433,20 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ArrayOfLocalizedLabel" nillable="true" type="tns:ArrayOfLocalizedLabel" />
+  <xs:complexType name="Relationship">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="PrimaryEntityRole" nillable="true" type="tns:EntityRole" />
+      <xs:element minOccurs="0" name="SchemaName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Relationship" nillable="true" type="tns:Relationship" />
+  <xs:simpleType name="EntityRole">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Referencing" />
+      <xs:enumeration value="Referenced" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="EntityRole" nillable="true" type="tns:EntityRole" />
   <xs:complexType name="AttributePrivilegeCollection">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="AttributePrivilege" nillable="true" type="tns:AttributePrivilege" />
@@ -476,13 +464,13 @@
   <xs:element name="AttributePrivilege" nillable="true" type="tns:AttributePrivilege" />
   <xs:complexType name="RelationshipQueryCollection">
     <xs:sequence>
-      <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" maxOccurs="unbounded" name="KeyValuePairOfRelationshipQueryBaseX_PsK4FkN" type="q12:KeyValuePairOfRelationshipQueryBaseX_PsK4FkN" />
+      <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" maxOccurs="unbounded" name="KeyValuePairOfRelationshipQueryBaseX_PsK4FkN" type="q10:KeyValuePairOfRelationshipQueryBaseX_PsK4FkN" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="RelationshipQueryCollection" nillable="true" type="tns:RelationshipQueryCollection" />
   <xs:complexType name="EntityMetadataCollection">
     <xs:sequence>
-      <xs:element xmlns:q13="http://schemas.microsoft.com/xrm/2011/Metadata" minOccurs="0" maxOccurs="unbounded" name="EntityMetadata" nillable="true" type="q13:EntityMetadata" />
+      <xs:element xmlns:q11="http://schemas.microsoft.com/xrm/2011/Metadata" minOccurs="0" maxOccurs="unbounded" name="EntityMetadata" nillable="true" type="q11:EntityMetadata" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="EntityMetadataCollection" nillable="true" type="tns:EntityMetadataCollection" />
@@ -496,7 +484,7 @@
   <xs:element name="OrganizationRequest" nillable="true" type="tns:OrganizationRequest" />
   <xs:complexType name="ParameterCollection">
     <xs:sequence>
-      <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" maxOccurs="unbounded" name="KeyValuePairOfstringanyType" type="q14:KeyValuePairOfstringanyType" />
+      <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" maxOccurs="unbounded" name="KeyValuePairOfstringanyType" type="q12:KeyValuePairOfstringanyType" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ParameterCollection" nillable="true" type="tns:ParameterCollection" />
@@ -529,7 +517,7 @@
   <xs:element name="BaseServiceFault" nillable="true" type="tns:BaseServiceFault" />
   <xs:complexType name="ErrorDetailCollection">
     <xs:sequence>
-      <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" maxOccurs="unbounded" name="KeyValuePairOfstringanyType" type="q15:KeyValuePairOfstringanyType" />
+      <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" maxOccurs="unbounded" name="KeyValuePairOfstringanyType" type="q13:KeyValuePairOfstringanyType" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ErrorDetailCollection" nillable="true" type="tns:ErrorDetailCollection" />
@@ -553,14 +541,34 @@
     <xs:sequence>
       <xs:element minOccurs="0" name="Data" nillable="true" type="tns:EntityCollection" />
       <xs:element minOccurs="0" name="ErrorCode" type="xs:int" />
-      <xs:element xmlns:q16="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="QueryColumnSet" nillable="true" type="q16:ArrayOfstring" />
+      <xs:element xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="QueryColumnSet" nillable="true" type="q14:ArrayOfstring" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="QuickFindResult" nillable="true" type="tns:QuickFindResult" />
   <xs:complexType name="AttributeMappingCollection">
     <xs:sequence>
-      <xs:element xmlns:q17="http://schemas.microsoft.com/xrm/2014/Contracts" minOccurs="0" maxOccurs="unbounded" name="AttributeMapping" nillable="true" type="q17:AttributeMapping" />
+      <xs:element xmlns:q15="http://schemas.microsoft.com/xrm/2014/Contracts" minOccurs="0" maxOccurs="unbounded" name="AttributeMapping" nillable="true" type="q15:AttributeMapping" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="AttributeMappingCollection" nillable="true" type="tns:AttributeMappingCollection" />
+  <xs:simpleType name="EntityState">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Unchanged" />
+      <xs:enumeration value="Created" />
+      <xs:enumeration value="Changed" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="EntityState" nillable="true" type="tns:EntityState" />
+  <xs:complexType name="FormattedValueCollection">
+    <xs:sequence>
+      <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" maxOccurs="unbounded" name="KeyValuePairOfstringstring" type="q16:KeyValuePairOfstringstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FormattedValueCollection" nillable="true" type="tns:FormattedValueCollection" />
+  <xs:complexType name="RelatedEntityCollection">
+    <xs:sequence>
+      <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/System.Collections.Generic" minOccurs="0" maxOccurs="unbounded" name="KeyValuePairOfRelationshipEntityCollectionX_PsK4FkN" type="q17:KeyValuePairOfRelationshipEntityCollectionX_PsK4FkN" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RelatedEntityCollection" nillable="true" type="tns:RelatedEntityCollection" />
 </xs:schema>
