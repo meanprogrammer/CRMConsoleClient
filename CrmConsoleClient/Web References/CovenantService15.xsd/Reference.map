@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd3" filename="CovenantService.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd8" filename="CovenantService0.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd4" filename="CovenantService1.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd11" filename="CovenantService2.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd14" filename="CovenantService3.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd13" filename="CovenantService4.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd1" filename="CovenantService5.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd7" filename="CovenantService6.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?wsdl" filename="CovenantService.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd15" filename="CovenantService7.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd5" filename="CovenantService8.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd2" filename="CovenantService9.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd10" filename="CovenantService10.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd12" filename="CovenantService11.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd9" filename="CovenantService12.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd0" filename="CovenantService13.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd6" filename="CovenantService14.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>
