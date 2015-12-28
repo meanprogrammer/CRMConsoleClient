@@ -156,9 +156,6 @@
     <None Include="Web References\CovenantService\CovenantService14.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Web References\CovenantService\CovenantService15.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Web References\CovenantService\CovenantService2.xsd">
       <SubType>Designer</SubType>
     </None>
