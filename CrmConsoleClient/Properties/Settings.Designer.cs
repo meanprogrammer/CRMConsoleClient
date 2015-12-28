@@ -76,20 +76,20 @@ namespace CrmConsoleClient.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc")]
-        public string CrmConsoleClient_CovenantService_CovenantService {
+        [global::System.Configuration.DefaultSettingValueAttribute("http://dynamicscrmproxy.apphb.com/Services/DMFService.svc")]
+        public string CrmConsoleClient_DMFService_DMFService {
             get {
-                return ((string)(this["CrmConsoleClient_CovenantService_CovenantService"]));
+                return ((string)(this["CrmConsoleClient_DMFService_DMFService"]));
             }
         }
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://dynamicscrmproxy.apphb.com/Services/DMFService.svc")]
-        public string CrmConsoleClient_DMFService_DMFService {
+        [global::System.Configuration.DefaultSettingValueAttribute("http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc")]
+        public string CrmConsoleClient_CovenantService_CovenantService {
             get {
-                return ((string)(this["CrmConsoleClient_DMFService_DMFService"]));
+                return ((string)(this["CrmConsoleClient_CovenantService_CovenantService"]));
             }
         }
     }

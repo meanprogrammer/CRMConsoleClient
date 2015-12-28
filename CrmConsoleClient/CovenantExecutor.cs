@@ -12,8 +12,8 @@ namespace CrmConsoleClient
         {
             using (CovenantService.CovenantService service = new CovenantService.CovenantService())
             {
-                var allnso = service.GetAllNSOCovenant();
-                var allsov = service.GetAllSOVCovenant();
+                //var allnso = service.GetAllNSOCovenant().FirstOrDefault();
+                var allsov = service.GetAllSOVCovenant().FirstOrDefault();
 
             }
         }

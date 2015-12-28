@@ -30,14 +30,16 @@ namespace CrmConsoleClient
 */            
 
             
+/*
             ProjectTeamExecutor pte = new ProjectTeamExecutor();
             pte.GetAllTeamMembers();
-            
+  
+*/
 
-            /*
+            
             CovenantExecutor ce = new CovenantExecutor();
             ce.Execute();
-            */
+            
              
             /*
             BPService.BaselineProjectionService client = new BPService.BaselineProjectionService();

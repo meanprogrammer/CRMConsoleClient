@@ -5,6 +5,20 @@
       <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Xrm" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/xrm/2011/Contracts" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd6" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd7" namespace="http://schemas.microsoft.com/xrm/7.1/Contracts" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd8" namespace="http://schemas.microsoft.com/xrm/2011/Metadata" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd9" namespace="http://schemas.microsoft.com/xrm/2013/Metadata" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/xrm/7.1/Metadata" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd11" namespace="http://schemas.microsoft.com/xrm/2014/Contracts" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd12" namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd13" namespace="http://schemas.microsoft.com/xrm/2012/Contracts" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd14" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Xrm.Sdk" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd15" namespace="http://schemas.microsoft.com/crm/2011/Contracts" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc?xsd=xsd16" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Crm.Sdk.Messages" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="ICovenantService_GetAllSOVCovenant_InputMessage">
@@ -19,6 +33,12 @@
   <wsdl:message name="ICovenantService_GetOneSOVCovenant_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetOneSOVCovenantResponse" />
   </wsdl:message>
+  <wsdl:message name="ICovenantService_UpdateSOVCovenant_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSOVCovenant" />
+  </wsdl:message>
+  <wsdl:message name="ICovenantService_UpdateSOVCovenant_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateSOVCovenantResponse" />
+  </wsdl:message>
   <wsdl:message name="ICovenantService_GetAllNSOCovenant_InputMessage">
     <wsdl:part name="parameters" element="tns:GetAllNSOCovenant" />
   </wsdl:message>
@@ -31,6 +51,12 @@
   <wsdl:message name="ICovenantService_GetOneNSOCovenant_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetOneNSOCovenantResponse" />
   </wsdl:message>
+  <wsdl:message name="ICovenantService_UpdateNSOCovenant_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNSOCovenant" />
+  </wsdl:message>
+  <wsdl:message name="ICovenantService_UpdateNSOCovenant_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNSOCovenantResponse" />
+  </wsdl:message>
   <wsdl:portType name="ICovenantService">
     <wsdl:operation name="GetAllSOVCovenant">
       <wsdl:input wsaw:Action="http://tempuri.org/ICovenantService/GetAllSOVCovenant" message="tns:ICovenantService_GetAllSOVCovenant_InputMessage" />
@@ -40,6 +66,10 @@
       <wsdl:input wsaw:Action="http://tempuri.org/ICovenantService/GetOneSOVCovenant" message="tns:ICovenantService_GetOneSOVCovenant_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ICovenantService/GetOneSOVCovenantResponse" message="tns:ICovenantService_GetOneSOVCovenant_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="UpdateSOVCovenant">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICovenantService/UpdateSOVCovenant" message="tns:ICovenantService_UpdateSOVCovenant_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICovenantService/UpdateSOVCovenantResponse" message="tns:ICovenantService_UpdateSOVCovenant_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="GetAllNSOCovenant">
       <wsdl:input wsaw:Action="http://tempuri.org/ICovenantService/GetAllNSOCovenant" message="tns:ICovenantService_GetAllNSOCovenant_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ICovenantService/GetAllNSOCovenantResponse" message="tns:ICovenantService_GetAllNSOCovenant_OutputMessage" />
@@ -47,6 +77,10 @@
     <wsdl:operation name="GetOneNSOCovenant">
       <wsdl:input wsaw:Action="http://tempuri.org/ICovenantService/GetOneNSOCovenant" message="tns:ICovenantService_GetOneNSOCovenant_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/ICovenantService/GetOneNSOCovenantResponse" message="tns:ICovenantService_GetOneNSOCovenant_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNSOCovenant">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICovenantService/UpdateNSOCovenant" message="tns:ICovenantService_UpdateNSOCovenant_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICovenantService/UpdateNSOCovenantResponse" message="tns:ICovenantService_UpdateNSOCovenant_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_ICovenantService" type="tns:ICovenantService">
@@ -69,6 +103,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="UpdateSOVCovenant">
+      <soap:operation soapAction="http://tempuri.org/ICovenantService/UpdateSOVCovenant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GetAllNSOCovenant">
       <soap:operation soapAction="http://tempuri.org/ICovenantService/GetAllNSOCovenant" style="document" />
       <wsdl:input>
@@ -80,6 +123,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetOneNSOCovenant">
       <soap:operation soapAction="http://tempuri.org/ICovenantService/GetOneNSOCovenant" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNSOCovenant">
+      <soap:operation soapAction="http://tempuri.org/ICovenantService/UpdateNSOCovenant" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
