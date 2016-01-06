@@ -141,48 +141,6 @@
     <None Include="Web References\CovenantService\CovenantService1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Web References\CovenantService\CovenantService10.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\CovenantService\CovenantService11.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\CovenantService\CovenantService12.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\CovenantService\CovenantService13.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\CovenantService\CovenantService14.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\CovenantService\CovenantService15.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\CovenantService\CovenantService2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\CovenantService\CovenantService3.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\CovenantService\CovenantService4.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\CovenantService\CovenantService5.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\CovenantService\CovenantService6.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\CovenantService\CovenantService7.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\CovenantService\CovenantService8.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\CovenantService\CovenantService9.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Web References\CovenantService\ProxyNSOCovenant1.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
@@ -306,48 +264,6 @@
       <SubType>Designer</SubType>
     </None>
     <None Include="Web References\ProjectTeamService\ConnectionService1.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\ProjectTeamService\ConnectionService10.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\ProjectTeamService\ConnectionService11.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\ProjectTeamService\ConnectionService12.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\ProjectTeamService\ConnectionService13.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\ProjectTeamService\ConnectionService14.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\ProjectTeamService\ConnectionService15.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\ProjectTeamService\ConnectionService2.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\ProjectTeamService\ConnectionService3.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\ProjectTeamService\ConnectionService4.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\ProjectTeamService\ConnectionService5.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\ProjectTeamService\ConnectionService6.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\ProjectTeamService\ConnectionService7.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\ProjectTeamService\ConnectionService8.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Web References\ProjectTeamService\ConnectionService9.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Web References\ProjectTeamService\ProxyConnection.datasource">

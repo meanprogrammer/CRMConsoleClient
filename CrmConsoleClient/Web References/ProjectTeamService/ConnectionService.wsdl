@@ -5,20 +5,6 @@
       <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" />
-      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Xrm" />
-      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/xrm/2011/Contracts" />
-      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
-      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd6" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
-      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd7" namespace="http://schemas.microsoft.com/xrm/7.1/Contracts" />
-      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd8" namespace="http://schemas.microsoft.com/xrm/2011/Metadata" />
-      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd9" namespace="http://schemas.microsoft.com/xrm/2013/Metadata" />
-      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd10" namespace="http://schemas.microsoft.com/xrm/7.1/Metadata" />
-      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd11" namespace="http://schemas.microsoft.com/xrm/2014/Contracts" />
-      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd12" namespace="http://schemas.microsoft.com/xrm/2011/Metadata/Query" />
-      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd13" namespace="http://schemas.microsoft.com/xrm/2012/Contracts" />
-      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd14" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Xrm.Sdk" />
-      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd15" namespace="http://schemas.microsoft.com/crm/2011/Contracts" />
-      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc?xsd=xsd16" namespace="http://schemas.datacontract.org/2004/07/Microsoft.Crm.Sdk.Messages" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IConnectionService_GetAllConnection_InputMessage">
@@ -33,6 +19,12 @@
   <wsdl:message name="IConnectionService_GetOneConnection_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetOneConnectionResponse" />
   </wsdl:message>
+  <wsdl:message name="IConnectionService_UpdateOneConnection_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOneConnection" />
+  </wsdl:message>
+  <wsdl:message name="IConnectionService_UpdateOneConnection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateOneConnectionResponse" />
+  </wsdl:message>
   <wsdl:portType name="IConnectionService">
     <wsdl:operation name="GetAllConnection">
       <wsdl:input wsaw:Action="http://tempuri.org/IConnectionService/GetAllConnection" message="tns:IConnectionService_GetAllConnection_InputMessage" />
@@ -41,6 +33,10 @@
     <wsdl:operation name="GetOneConnection">
       <wsdl:input wsaw:Action="http://tempuri.org/IConnectionService/GetOneConnection" message="tns:IConnectionService_GetOneConnection_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IConnectionService/GetOneConnectionResponse" message="tns:IConnectionService_GetOneConnection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOneConnection">
+      <wsdl:input wsaw:Action="http://tempuri.org/IConnectionService/UpdateOneConnection" message="tns:IConnectionService_UpdateOneConnection_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IConnectionService/UpdateOneConnectionResponse" message="tns:IConnectionService_UpdateOneConnection_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IConnectionService" type="tns:IConnectionService">
@@ -56,6 +52,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetOneConnection">
       <soap:operation soapAction="http://tempuri.org/IConnectionService/GetOneConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateOneConnection">
+      <soap:operation soapAction="http://tempuri.org/IConnectionService/UpdateOneConnection" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
