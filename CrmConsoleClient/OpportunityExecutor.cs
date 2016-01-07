@@ -12,6 +12,7 @@ namespace CrmConsoleClient
         public void GetOpportunity()
         {
             OpportunityService.OpportunityService service = new OpportunityService.OpportunityService();
+            var result1 = service.GetAllOpportunity().Where(x => x.Name.Contains("Shapoorji")).FirstOrDefault();
             try
             {
                 

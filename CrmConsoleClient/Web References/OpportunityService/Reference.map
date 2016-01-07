@@ -1,23 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Results>
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd9" filename="OpportunityService.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd11" filename="OpportunityService0.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd4" filename="OpportunityService1.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd0" filename="OpportunityService2.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd8" filename="OpportunityService3.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd15" filename="OpportunityService4.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd7" filename="OpportunityService5.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd3" filename="OpportunityService6.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd10" filename="OpportunityService7.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd13" filename="OpportunityService8.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd2" filename="OpportunityService9.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd6" filename="OpportunityService10.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd12" filename="OpportunityService11.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd14" filename="OpportunityService12.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd2" filename="OpportunityService.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd1" filename="OpportunityService0.xsd" />
     <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?wsdl" filename="OpportunityService.wsdl" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd16" filename="OpportunityService13.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd5" filename="OpportunityService14.xsd" />
-    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd1" filename="OpportunityService15.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="http://dynamicscrmproxy.apphb.com/Services/OpportunityService.svc?xsd=xsd0" filename="OpportunityService1.xsd" />
   </Results>
 </DiscoveryClientResultsFile>

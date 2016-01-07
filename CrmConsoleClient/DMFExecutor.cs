@@ -11,7 +11,7 @@ namespace CrmConsoleClient
         public void Execute()
         {
             DMFService.DMFService service = new DMFService.DMFService();
-            var allimp =service.GetAllNSOImpact();
+            var allimp =service.GetAllNSOOutput();
         }
     }
 }

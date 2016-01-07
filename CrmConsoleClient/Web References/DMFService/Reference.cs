@@ -33,13 +33,19 @@ namespace CrmConsoleClient.DMFService {
         
         private System.Threading.SendOrPostCallback GetOneNSOImpactOperationCompleted;
         
+        private System.Threading.SendOrPostCallback UpdateNSOImpactOperationCompleted;
+        
         private System.Threading.SendOrPostCallback GetAllNSOOutcomeOperationCompleted;
         
         private System.Threading.SendOrPostCallback GetOneNSOOutcomeOperationCompleted;
         
+        private System.Threading.SendOrPostCallback UpdateNSOOutcomeOperationCompleted;
+        
         private System.Threading.SendOrPostCallback GetAllNSOOutputOperationCompleted;
         
         private System.Threading.SendOrPostCallback GetOneNSOOutputOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback UpdateNSOOutputOperationCompleted;
         
         private bool useDefaultCredentialsSetExplicitly;
         
@@ -86,16 +92,25 @@ namespace CrmConsoleClient.DMFService {
         public event GetOneNSOImpactCompletedEventHandler GetOneNSOImpactCompleted;
         
         /// <remarks/>
+        public event UpdateNSOImpactCompletedEventHandler UpdateNSOImpactCompleted;
+        
+        /// <remarks/>
         public event GetAllNSOOutcomeCompletedEventHandler GetAllNSOOutcomeCompleted;
         
         /// <remarks/>
         public event GetOneNSOOutcomeCompletedEventHandler GetOneNSOOutcomeCompleted;
         
         /// <remarks/>
+        public event UpdateNSOOutcomeCompletedEventHandler UpdateNSOOutcomeCompleted;
+        
+        /// <remarks/>
         public event GetAllNSOOutputCompletedEventHandler GetAllNSOOutputCompleted;
         
         /// <remarks/>
         public event GetOneNSOOutputCompletedEventHandler GetOneNSOOutputCompleted;
+        
+        /// <remarks/>
+        public event UpdateNSOOutputCompletedEventHandler UpdateNSOOutputCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IDMFService/GetAllNSOImpact", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -153,6 +168,34 @@ namespace CrmConsoleClient.DMFService {
             if ((this.GetOneNSOImpactCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.GetOneNSOImpactCompleted(this, new GetOneNSOImpactCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IDMFService/UpdateNSOImpact", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void UpdateNSOImpact([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] ProxyNSOImpact impact) {
+            this.Invoke("UpdateNSOImpact", new object[] {
+                        impact});
+        }
+        
+        /// <remarks/>
+        public void UpdateNSOImpactAsync(ProxyNSOImpact impact) {
+            this.UpdateNSOImpactAsync(impact, null);
+        }
+        
+        /// <remarks/>
+        public void UpdateNSOImpactAsync(ProxyNSOImpact impact, object userState) {
+            if ((this.UpdateNSOImpactOperationCompleted == null)) {
+                this.UpdateNSOImpactOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpdateNSOImpactOperationCompleted);
+            }
+            this.InvokeAsync("UpdateNSOImpact", new object[] {
+                        impact}, this.UpdateNSOImpactOperationCompleted, userState);
+        }
+        
+        private void OnUpdateNSOImpactOperationCompleted(object arg) {
+            if ((this.UpdateNSOImpactCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.UpdateNSOImpactCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -216,6 +259,34 @@ namespace CrmConsoleClient.DMFService {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IDMFService/UpdateNSOOutcome", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void UpdateNSOOutcome([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] ProxyNSOOutcome outcome) {
+            this.Invoke("UpdateNSOOutcome", new object[] {
+                        outcome});
+        }
+        
+        /// <remarks/>
+        public void UpdateNSOOutcomeAsync(ProxyNSOOutcome outcome) {
+            this.UpdateNSOOutcomeAsync(outcome, null);
+        }
+        
+        /// <remarks/>
+        public void UpdateNSOOutcomeAsync(ProxyNSOOutcome outcome, object userState) {
+            if ((this.UpdateNSOOutcomeOperationCompleted == null)) {
+                this.UpdateNSOOutcomeOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpdateNSOOutcomeOperationCompleted);
+            }
+            this.InvokeAsync("UpdateNSOOutcome", new object[] {
+                        outcome}, this.UpdateNSOOutcomeOperationCompleted, userState);
+        }
+        
+        private void OnUpdateNSOOutcomeOperationCompleted(object arg) {
+            if ((this.UpdateNSOOutcomeCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.UpdateNSOOutcomeCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IDMFService/GetAllNSOOutput", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity")]
@@ -275,6 +346,34 @@ namespace CrmConsoleClient.DMFService {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IDMFService/UpdateNSOOutput", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void UpdateNSOOutput([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] ProxyNSOOutput output) {
+            this.Invoke("UpdateNSOOutput", new object[] {
+                        output});
+        }
+        
+        /// <remarks/>
+        public void UpdateNSOOutputAsync(ProxyNSOOutput output) {
+            this.UpdateNSOOutputAsync(output, null);
+        }
+        
+        /// <remarks/>
+        public void UpdateNSOOutputAsync(ProxyNSOOutput output, object userState) {
+            if ((this.UpdateNSOOutputOperationCompleted == null)) {
+                this.UpdateNSOOutputOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpdateNSOOutputOperationCompleted);
+            }
+            this.InvokeAsync("UpdateNSOOutput", new object[] {
+                        output}, this.UpdateNSOOutputOperationCompleted, userState);
+        }
+        
+        private void OnUpdateNSOOutputOperationCompleted(object arg) {
+            if ((this.UpdateNSOOutputCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.UpdateNSOOutputCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -329,8 +428,6 @@ namespace CrmConsoleClient.DMFService {
         
         private bool dateFieldSpecified;
         
-        private KeyValuePairOfstringstring[] fvField;
-        
         private string idField;
         
         private string impactNoField;
@@ -342,6 +439,10 @@ namespace CrmConsoleClient.DMFService {
         private System.Nullable<System.DateTime> modifiedOnField;
         
         private bool modifiedOnFieldSpecified;
+        
+        private string opportunityIDField;
+        
+        private string opportunityIDStringField;
         
         private System.Nullable<double> performanceTargetsField;
         
@@ -526,18 +627,6 @@ namespace CrmConsoleClient.DMFService {
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
-        [System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.microsoft.com/xrm/2011/Contracts", IsNullable=false)]
-        public KeyValuePairOfstringstring[] FV {
-            get {
-                return this.fvField;
-            }
-            set {
-                this.fvField = value;
-            }
-        }
-        
-        /// <remarks/>
         public string ID {
             get {
                 return this.idField;
@@ -599,6 +688,27 @@ namespace CrmConsoleClient.DMFService {
             }
             set {
                 this.modifiedOnFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string OpportunityID {
+            get {
+                return this.opportunityIDField;
+            }
+            set {
+                this.opportunityIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string OpportunityIDString {
+            get {
+                return this.opportunityIDStringField;
+            }
+            set {
+                this.opportunityIDStringField = value;
             }
         }
         
@@ -762,41 +872,6 @@ namespace CrmConsoleClient.DMFService {
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic")]
-    public partial class KeyValuePairOfstringstring {
-        
-        private string keyField;
-        
-        private string valueField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string key {
-            get {
-                return this.keyField;
-            }
-            set {
-                this.keyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity")]
     public partial class ProxyNSOOutput {
         
@@ -835,6 +910,10 @@ namespace CrmConsoleClient.DMFService {
         private System.Nullable<System.DateTime> modifiedOnField;
         
         private bool modifiedOnFieldSpecified;
+        
+        private string opportunityIDField;
+        
+        private string opportunityIDStringField;
         
         private string outputNoField;
         
@@ -1066,6 +1145,27 @@ namespace CrmConsoleClient.DMFService {
         }
         
         /// <remarks/>
+        public string OpportunityID {
+            get {
+                return this.opportunityIDField;
+            }
+            set {
+                this.opportunityIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string OpportunityIDString {
+            get {
+                return this.opportunityIDStringField;
+            }
+            set {
+                this.opportunityIDStringField = value;
+            }
+        }
+        
+        /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string OutputNo {
             get {
@@ -1285,6 +1385,10 @@ namespace CrmConsoleClient.DMFService {
         private System.Nullable<System.DateTime> modifiedOnField;
         
         private bool modifiedOnFieldSpecified;
+        
+        private string opportunityIDField;
+        
+        private string opportunityIDStringField;
         
         private string outcomeNoField;
         
@@ -1512,6 +1616,27 @@ namespace CrmConsoleClient.DMFService {
             }
             set {
                 this.modifiedOnFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string OpportunityID {
+            get {
+                return this.opportunityIDField;
+            }
+            set {
+                this.opportunityIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string OpportunityIDString {
+            get {
+                return this.opportunityIDStringField;
+            }
+            set {
+                this.opportunityIDStringField = value;
             }
         }
         
@@ -1746,6 +1871,10 @@ namespace CrmConsoleClient.DMFService {
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.34209")]
+    public delegate void UpdateNSOImpactCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.34209")]
     public delegate void GetAllNSOOutcomeCompletedEventHandler(object sender, GetAllNSOOutcomeCompletedEventArgs e);
     
     /// <remarks/>
@@ -1798,6 +1927,10 @@ namespace CrmConsoleClient.DMFService {
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.34209")]
+    public delegate void UpdateNSOOutcomeCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.34209")]
     public delegate void GetAllNSOOutputCompletedEventHandler(object sender, GetAllNSOOutputCompletedEventArgs e);
     
     /// <remarks/>
@@ -1847,6 +1980,10 @@ namespace CrmConsoleClient.DMFService {
             }
         }
     }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.34209")]
+    public delegate void UpdateNSOOutputCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
 }
 
 #pragma warning restore 1591

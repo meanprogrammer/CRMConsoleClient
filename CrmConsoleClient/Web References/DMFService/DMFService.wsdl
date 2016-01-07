@@ -5,8 +5,6 @@
       <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/DMFService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
       <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/DMFService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
       <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/DMFService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" />
-      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/DMFService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/xrm/2011/Contracts" />
-      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/DMFService.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Collections.Generic" />
     </xsd:schema>
   </wsdl:types>
   <wsdl:message name="IDMFService_GetAllNSOImpact_InputMessage">
@@ -21,6 +19,12 @@
   <wsdl:message name="IDMFService_GetOneNSOImpact_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetOneNSOImpactResponse" />
   </wsdl:message>
+  <wsdl:message name="IDMFService_UpdateNSOImpact_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNSOImpact" />
+  </wsdl:message>
+  <wsdl:message name="IDMFService_UpdateNSOImpact_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNSOImpactResponse" />
+  </wsdl:message>
   <wsdl:message name="IDMFService_GetAllNSOOutcome_InputMessage">
     <wsdl:part name="parameters" element="tns:GetAllNSOOutcome" />
   </wsdl:message>
@@ -32,6 +36,12 @@
   </wsdl:message>
   <wsdl:message name="IDMFService_GetOneNSOOutcome_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetOneNSOOutcomeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDMFService_UpdateNSOOutcome_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNSOOutcome" />
+  </wsdl:message>
+  <wsdl:message name="IDMFService_UpdateNSOOutcome_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNSOOutcomeResponse" />
   </wsdl:message>
   <wsdl:message name="IDMFService_GetAllNSOOutput_InputMessage">
     <wsdl:part name="parameters" element="tns:GetAllNSOOutput" />
@@ -45,6 +55,12 @@
   <wsdl:message name="IDMFService_GetOneNSOOutput_OutputMessage">
     <wsdl:part name="parameters" element="tns:GetOneNSOOutputResponse" />
   </wsdl:message>
+  <wsdl:message name="IDMFService_UpdateNSOOutput_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNSOOutput" />
+  </wsdl:message>
+  <wsdl:message name="IDMFService_UpdateNSOOutput_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateNSOOutputResponse" />
+  </wsdl:message>
   <wsdl:portType name="IDMFService">
     <wsdl:operation name="GetAllNSOImpact">
       <wsdl:input wsaw:Action="http://tempuri.org/IDMFService/GetAllNSOImpact" message="tns:IDMFService_GetAllNSOImpact_InputMessage" />
@@ -54,6 +70,10 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IDMFService/GetOneNSOImpact" message="tns:IDMFService_GetOneNSOImpact_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IDMFService/GetOneNSOImpactResponse" message="tns:IDMFService_GetOneNSOImpact_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="UpdateNSOImpact">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDMFService/UpdateNSOImpact" message="tns:IDMFService_UpdateNSOImpact_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDMFService/UpdateNSOImpactResponse" message="tns:IDMFService_UpdateNSOImpact_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="GetAllNSOOutcome">
       <wsdl:input wsaw:Action="http://tempuri.org/IDMFService/GetAllNSOOutcome" message="tns:IDMFService_GetAllNSOOutcome_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IDMFService/GetAllNSOOutcomeResponse" message="tns:IDMFService_GetAllNSOOutcome_OutputMessage" />
@@ -62,6 +82,10 @@
       <wsdl:input wsaw:Action="http://tempuri.org/IDMFService/GetOneNSOOutcome" message="tns:IDMFService_GetOneNSOOutcome_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IDMFService/GetOneNSOOutcomeResponse" message="tns:IDMFService_GetOneNSOOutcome_OutputMessage" />
     </wsdl:operation>
+    <wsdl:operation name="UpdateNSOOutcome">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDMFService/UpdateNSOOutcome" message="tns:IDMFService_UpdateNSOOutcome_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDMFService/UpdateNSOOutcomeResponse" message="tns:IDMFService_UpdateNSOOutcome_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="GetAllNSOOutput">
       <wsdl:input wsaw:Action="http://tempuri.org/IDMFService/GetAllNSOOutput" message="tns:IDMFService_GetAllNSOOutput_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IDMFService/GetAllNSOOutputResponse" message="tns:IDMFService_GetAllNSOOutput_OutputMessage" />
@@ -69,6 +93,10 @@
     <wsdl:operation name="GetOneNSOOutput">
       <wsdl:input wsaw:Action="http://tempuri.org/IDMFService/GetOneNSOOutput" message="tns:IDMFService_GetOneNSOOutput_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IDMFService/GetOneNSOOutputResponse" message="tns:IDMFService_GetOneNSOOutput_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNSOOutput">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDMFService/UpdateNSOOutput" message="tns:IDMFService_UpdateNSOOutput_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDMFService/UpdateNSOOutputResponse" message="tns:IDMFService_UpdateNSOOutput_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IDMFService" type="tns:IDMFService">
@@ -84,6 +112,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetOneNSOImpact">
       <soap:operation soapAction="http://tempuri.org/IDMFService/GetOneNSOImpact" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNSOImpact">
+      <soap:operation soapAction="http://tempuri.org/IDMFService/UpdateNSOImpact" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -109,6 +146,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="UpdateNSOOutcome">
+      <soap:operation soapAction="http://tempuri.org/IDMFService/UpdateNSOOutcome" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GetAllNSOOutput">
       <soap:operation soapAction="http://tempuri.org/IDMFService/GetAllNSOOutput" style="document" />
       <wsdl:input>
@@ -120,6 +166,15 @@
     </wsdl:operation>
     <wsdl:operation name="GetOneNSOOutput">
       <soap:operation soapAction="http://tempuri.org/IDMFService/GetOneNSOOutput" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateNSOOutput">
+      <soap:operation soapAction="http://tempuri.org/IDMFService/UpdateNSOOutput" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

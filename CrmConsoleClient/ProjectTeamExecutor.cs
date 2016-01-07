@@ -12,7 +12,15 @@ namespace CrmConsoleClient
         public void GetAllTeamMembers()
         {
             ProjectTeamService.ConnectionService service = new ProjectTeamService.ConnectionService();
-            var all = service.GetAllConnection();
+            try
+            {
+                var all = service.GetAllConnection();
+            }
+            catch
+            { 
+
+            }
+            /*
             foreach (ProxyConnection item in all)
             {
                 Console.WriteLine(item.Name);
@@ -21,6 +29,7 @@ namespace CrmConsoleClient
 
                 }
             }
+             * */
             Console.ReadLine();
         }
     }

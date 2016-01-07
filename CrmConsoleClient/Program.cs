@@ -11,10 +11,10 @@ namespace CrmConsoleClient
     {
         static void Main(string[] args)
         {
-            /*
+            
             DMFExecutor dmf = new DMFExecutor();
             dmf.Execute();
-            */
+            
  
 
 
@@ -30,10 +30,10 @@ namespace CrmConsoleClient
 */            
 
             
-
+            /*
             ProjectTeamExecutor pte = new ProjectTeamExecutor();
             pte.GetAllTeamMembers();
-  
+  */
 
 
       
