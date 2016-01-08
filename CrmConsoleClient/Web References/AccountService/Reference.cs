@@ -33,6 +33,8 @@ namespace CrmConsoleClient.AccountService {
         
         private System.Threading.SendOrPostCallback GetOneAccountOperationCompleted;
         
+        private System.Threading.SendOrPostCallback UpdateOneAccountOperationCompleted;
+        
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
@@ -76,6 +78,9 @@ namespace CrmConsoleClient.AccountService {
         
         /// <remarks/>
         public event GetOneAccountCompletedEventHandler GetOneAccountCompleted;
+        
+        /// <remarks/>
+        public event UpdateOneAccountCompletedEventHandler UpdateOneAccountCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IAccountService/GetAllAccounts", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -133,6 +138,34 @@ namespace CrmConsoleClient.AccountService {
             if ((this.GetOneAccountCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.GetOneAccountCompleted(this, new GetOneAccountCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IAccountService/UpdateOneAccount", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void UpdateOneAccount([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] ProxyAccount account) {
+            this.Invoke("UpdateOneAccount", new object[] {
+                        account});
+        }
+        
+        /// <remarks/>
+        public void UpdateOneAccountAsync(ProxyAccount account) {
+            this.UpdateOneAccountAsync(account, null);
+        }
+        
+        /// <remarks/>
+        public void UpdateOneAccountAsync(ProxyAccount account, object userState) {
+            if ((this.UpdateOneAccountOperationCompleted == null)) {
+                this.UpdateOneAccountOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpdateOneAccountOperationCompleted);
+            }
+            this.InvokeAsync("UpdateOneAccount", new object[] {
+                        account}, this.UpdateOneAccountOperationCompleted, userState);
+        }
+        
+        private void OnUpdateOneAccountOperationCompleted(object arg) {
+            if ((this.UpdateOneAccountCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.UpdateOneAccountCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -435,6 +468,10 @@ namespace CrmConsoleClient.AccountService {
             }
         }
     }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.34209")]
+    public delegate void UpdateOneAccountCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
 }
 
 #pragma warning restore 1591

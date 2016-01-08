@@ -18,7 +18,8 @@ namespace CrmConsoleClient
             {
                 if (a.ParentID == "573b99ed-bf50-e511-80ee-3863bb2eb8d8")
                 {
-                    Console.WriteLine(a.AccountName);
+                    Console.WriteLine(string.Format("{0} - {1}", a.AccountName, a.EntityRole));
+
                 }
             }
 

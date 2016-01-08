@@ -12,9 +12,10 @@ namespace CrmConsoleClient
         static void Main(string[] args)
         {
             
+            /*
             DMFExecutor dmf = new DMFExecutor();
             dmf.Execute();
-            
+            */
  
 
 
@@ -24,10 +25,10 @@ namespace CrmConsoleClient
             ex.GetOpportunity();
             */
             
-/*                
+               
             AccountExecutor aex = new AccountExecutor();
             aex.GetAllAccounts();
-*/            
+          
 
             
             /*
