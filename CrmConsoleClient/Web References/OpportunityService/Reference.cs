@@ -240,6 +240,12 @@ namespace CrmConsoleClient.OpportunityService {
         
         private string modeOfFinancialAssistanceField;
         
+        private string nSCoreSectorField;
+        
+        private string nSOProcessingCategoryField;
+        
+        private string nSProjectTypeField;
+        
         private string nameField;
         
         private string opportunityIdField;
@@ -247,6 +253,8 @@ namespace CrmConsoleClient.OpportunityService {
         private string processingCategoryField;
         
         private string projectDescriptionField;
+        
+        private string projectNoField;
         
         private string projectRationaleField;
         
@@ -482,6 +490,39 @@ namespace CrmConsoleClient.OpportunityService {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string NSCoreSector {
+            get {
+                return this.nSCoreSectorField;
+            }
+            set {
+                this.nSCoreSectorField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string NSOProcessingCategory {
+            get {
+                return this.nSOProcessingCategoryField;
+            }
+            set {
+                this.nSOProcessingCategoryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string NSProjectType {
+            get {
+                return this.nSProjectTypeField;
+            }
+            set {
+                this.nSProjectTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string Name {
             get {
                 return this.nameField;
@@ -521,6 +562,17 @@ namespace CrmConsoleClient.OpportunityService {
             }
             set {
                 this.projectDescriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ProjectNo {
+            get {
+                return this.projectNoField;
+            }
+            set {
+                this.projectNoField = value;
             }
         }
         

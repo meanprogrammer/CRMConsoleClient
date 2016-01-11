@@ -26,10 +26,14 @@
       <xs:element minOccurs="0" name="Guarantee" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Id" type="ser:guid" />
       <xs:element minOccurs="0" name="ModeOfFinancialAssistance" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NSCoreSector" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NSOProcessingCategory" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NSProjectType" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="OpportunityId" nillable="true" type="ser:guid" />
       <xs:element minOccurs="0" name="ProcessingCategory" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ProjectDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProjectNo" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ProjectRationale" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ProjectStage" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ProjectStatus" nillable="true" type="xs:string" />

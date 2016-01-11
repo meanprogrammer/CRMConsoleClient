@@ -20,15 +20,15 @@ namespace CrmConsoleClient
 
 
             
-            /*
+            
             OpportunityExecutor ex = new OpportunityExecutor();
             ex.GetOpportunity();
-            */
             
-               
+            
+               /*
             AccountExecutor aex = new AccountExecutor();
             aex.GetAllAccounts();
-          
+          */
 
             
             /*
