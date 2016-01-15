@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="TradeFinanceService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/TradeFinanceService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/TradeFinanceService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/TradeFinanceService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ITradeFinanceService_AddTradeFinance_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddTradeFinance" />
+  </wsdl:message>
+  <wsdl:message name="ITradeFinanceService_AddTradeFinance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddTradeFinanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradeFinanceService_GetAllTradeFinanace_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllTradeFinanace" />
+  </wsdl:message>
+  <wsdl:message name="ITradeFinanceService_GetAllTradeFinanace_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllTradeFinanaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradeFinanceService_GetOneTradeFinance_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetOneTradeFinance" />
+  </wsdl:message>
+  <wsdl:message name="ITradeFinanceService_GetOneTradeFinance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetOneTradeFinanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="ITradeFinanceService_UpdateTradeFinance_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTradeFinance" />
+  </wsdl:message>
+  <wsdl:message name="ITradeFinanceService_UpdateTradeFinance_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateTradeFinanceResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ITradeFinanceService">
+    <wsdl:operation name="AddTradeFinance">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradeFinanceService/AddTradeFinance" message="tns:ITradeFinanceService_AddTradeFinance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradeFinanceService/AddTradeFinanceResponse" message="tns:ITradeFinanceService_AddTradeFinance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTradeFinanace">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradeFinanceService/GetAllTradeFinanace" message="tns:ITradeFinanceService_GetAllTradeFinanace_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradeFinanceService/GetAllTradeFinanaceResponse" message="tns:ITradeFinanceService_GetAllTradeFinanace_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetOneTradeFinance">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradeFinanceService/GetOneTradeFinance" message="tns:ITradeFinanceService_GetOneTradeFinance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradeFinanceService/GetOneTradeFinanceResponse" message="tns:ITradeFinanceService_GetOneTradeFinance_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTradeFinance">
+      <wsdl:input wsaw:Action="http://tempuri.org/ITradeFinanceService/UpdateTradeFinance" message="tns:ITradeFinanceService_UpdateTradeFinance_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ITradeFinanceService/UpdateTradeFinanceResponse" message="tns:ITradeFinanceService_UpdateTradeFinance_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ITradeFinanceService" type="tns:ITradeFinanceService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddTradeFinance">
+      <soap:operation soapAction="http://tempuri.org/ITradeFinanceService/AddTradeFinance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllTradeFinanace">
+      <soap:operation soapAction="http://tempuri.org/ITradeFinanceService/GetAllTradeFinanace" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetOneTradeFinance">
+      <soap:operation soapAction="http://tempuri.org/ITradeFinanceService/GetOneTradeFinance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateTradeFinance">
+      <soap:operation soapAction="http://tempuri.org/ITradeFinanceService/UpdateTradeFinance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TradeFinanceService">
+    <wsdl:port name="BasicHttpBinding_ITradeFinanceService" binding="tns:BasicHttpBinding_ITradeFinanceService">
+      <soap:address location="http://dynamicscrmproxy.apphb.com/Services/TradeFinanceService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

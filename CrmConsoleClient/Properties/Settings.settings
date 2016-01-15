@@ -23,5 +23,8 @@
     <Setting Name="CrmConsoleClient_CovenantService_CovenantService" Type="(Web Service URL)" Scope="Application">
       <Value Profile="(Default)">http://dynamicscrmproxy.apphb.com/Services/CovenantService.svc</Value>
     </Setting>
+    <Setting Name="CrmConsoleClient_TradeFinanceService_TradeFinanceService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://dynamicscrmproxy.apphb.com/Services/TradeFinanceService.svc</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -11,7 +11,10 @@ namespace CrmConsoleClient
     {
         static void Main(string[] args)
         {
-            
+
+            TradeFinanceServiceExecutor tf = new TradeFinanceServiceExecutor();
+            tf.GetAllCreditGuaranteeRequest();
+
             /*
             DMFExecutor dmf = new DMFExecutor();
             dmf.Execute();
@@ -20,10 +23,10 @@ namespace CrmConsoleClient
 
 
             
-            
+            /*
             OpportunityExecutor ex = new OpportunityExecutor();
             ex.GetOpportunity();
-            
+            */
             
                /*
             AccountExecutor aex = new AccountExecutor();

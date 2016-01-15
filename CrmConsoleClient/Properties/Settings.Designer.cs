@@ -92,5 +92,15 @@ namespace CrmConsoleClient.Properties {
                 return ((string)(this["CrmConsoleClient_CovenantService_CovenantService"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://dynamicscrmproxy.apphb.com/Services/TradeFinanceService.svc")]
+        public string CrmConsoleClient_TradeFinanceService_TradeFinanceService {
+            get {
+                return ((string)(this["CrmConsoleClient_TradeFinanceService_TradeFinanceService"]));
+            }
+        }
     }
 }
