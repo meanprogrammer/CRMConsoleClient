@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://dynamicscrmproxy.apphb.com/Services/TradeFinanceService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
   <xs:complexType name="ProxyCreditGuaranteeRequest">
     <xs:sequence>
       <xs:element minOccurs="0" name="ADBAmountCovered" nillable="true" type="xs:double" />
@@ -7,6 +8,7 @@
       <xs:element minOccurs="0" name="BeneficiaryName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ConfirmingBankName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Goods" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="ser:guid" />
       <xs:element minOccurs="0" name="IssuingBankName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="RequestNo" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Tenor" nillable="true" type="xs:string" />

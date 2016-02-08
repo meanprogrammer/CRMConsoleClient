@@ -241,6 +241,8 @@ namespace CrmConsoleClient.TradeFinanceService {
         
         private string goodsField;
         
+        private string idField;
+        
         private string issuingBankNameField;
         
         private string requestNoField;
@@ -320,6 +322,16 @@ namespace CrmConsoleClient.TradeFinanceService {
             }
             set {
                 this.goodsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
             }
         }
         
