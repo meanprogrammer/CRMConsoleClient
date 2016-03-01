@@ -231,7 +231,7 @@
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
-    <None Include="Web References\TradeFinanceService\ProxyCreditGuaranteeRequest.datasource">
+    <None Include="Web References\TradeFinanceService\ProxyCreditGuaranteeInquiry.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\TradeFinanceService\Reference.map">

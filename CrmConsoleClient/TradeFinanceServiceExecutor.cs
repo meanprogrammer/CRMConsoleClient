@@ -24,28 +24,34 @@ namespace CrmConsoleClient
 
         public void AddSomething()
         {
-            TradeFinanceService.ProxyCreditGuaranteeRequest p = new TradeFinanceService.ProxyCreditGuaranteeRequest();
+            TradeFinanceService.ProxyCreditGuaranteeInquiry p = new TradeFinanceService.ProxyCreditGuaranteeInquiry();
             p.ADBAmountCovered = 200;
             p.ApplicantName = "Vdydab";
             p.BeneficiaryName = "duduy";
-            p.ConfirmingBankName = "BeefyEye";
+            p.ConfirmingBankNameIDString = "403646c1-7b7c-e511-80fb-3863bb2e7cd8";
+            p.ConfirmingBankNameID = "403646c1-7b7c-e511-80fb-3863bb2e7cd8";
+            p.IssuingBankNameIDString = "d721b05c-3027-e511-80e3-3863bb2e7c20";
+            p.IssuingBankNameID = "d721b05c-3027-e511-80e3-3863bb2e7c20";
             p.Goods = "okay";
             p.IssuingBankName = "East west";
-            p.RequestNo = "ST-12383";
+            p.InquiryReferenceNo = "ST-12383";
             p.Tenor = "voice";
-            p.TotalTransactionValue = 2;
+            p.TotalTransactionValue = 432423;
+            p.TotalTransactionValueSpecified = true;
             p.TypeOfTradeTransactionID = 100000003;
+            p.TypeOfTradeTransactionIDSpecified = true;
 
             TradeFinanceService.TradeFinanceService service = new TradeFinanceService.TradeFinanceService();
             try
             {
                 service.AddTradeFinance(p);
+            
             }
             catch
             {
 
             }
-            Console.ReadLine();
+            //Console.ReadLine();
 
         }
     }

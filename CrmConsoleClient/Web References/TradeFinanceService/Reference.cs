@@ -89,18 +89,18 @@ namespace CrmConsoleClient.TradeFinanceService {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ITradeFinanceService/AddTradeFinance", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void AddTradeFinance([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] ProxyCreditGuaranteeRequest entity) {
+        public void AddTradeFinance([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] ProxyCreditGuaranteeInquiry entity) {
             this.Invoke("AddTradeFinance", new object[] {
                         entity});
         }
         
         /// <remarks/>
-        public void AddTradeFinanceAsync(ProxyCreditGuaranteeRequest entity) {
+        public void AddTradeFinanceAsync(ProxyCreditGuaranteeInquiry entity) {
             this.AddTradeFinanceAsync(entity, null);
         }
         
         /// <remarks/>
-        public void AddTradeFinanceAsync(ProxyCreditGuaranteeRequest entity, object userState) {
+        public void AddTradeFinanceAsync(ProxyCreditGuaranteeInquiry entity, object userState) {
             if ((this.AddTradeFinanceOperationCompleted == null)) {
                 this.AddTradeFinanceOperationCompleted = new System.Threading.SendOrPostCallback(this.OnAddTradeFinanceOperationCompleted);
             }
@@ -119,9 +119,9 @@ namespace CrmConsoleClient.TradeFinanceService {
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ITradeFinanceService/GetAllTradeFinanace", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
         [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity")]
-        public ProxyCreditGuaranteeRequest[] GetAllTradeFinanace() {
+        public ProxyCreditGuaranteeInquiry[] GetAllTradeFinanace() {
             object[] results = this.Invoke("GetAllTradeFinanace", new object[0]);
-            return ((ProxyCreditGuaranteeRequest[])(results[0]));
+            return ((ProxyCreditGuaranteeInquiry[])(results[0]));
         }
         
         /// <remarks/>
@@ -147,10 +147,10 @@ namespace CrmConsoleClient.TradeFinanceService {
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ITradeFinanceService/GetOneTradeFinance", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public ProxyCreditGuaranteeRequest GetOneTradeFinance(string id) {
+        public ProxyCreditGuaranteeInquiry GetOneTradeFinance(string id) {
             object[] results = this.Invoke("GetOneTradeFinance", new object[] {
                         id});
-            return ((ProxyCreditGuaranteeRequest)(results[0]));
+            return ((ProxyCreditGuaranteeInquiry)(results[0]));
         }
         
         /// <remarks/>
@@ -176,18 +176,18 @@ namespace CrmConsoleClient.TradeFinanceService {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ITradeFinanceService/UpdateTradeFinance", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void UpdateTradeFinance([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] ProxyCreditGuaranteeRequest entity) {
+        public void UpdateTradeFinance([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] ProxyCreditGuaranteeInquiry entity) {
             this.Invoke("UpdateTradeFinance", new object[] {
                         entity});
         }
         
         /// <remarks/>
-        public void UpdateTradeFinanceAsync(ProxyCreditGuaranteeRequest entity) {
+        public void UpdateTradeFinanceAsync(ProxyCreditGuaranteeInquiry entity) {
             this.UpdateTradeFinanceAsync(entity, null);
         }
         
         /// <remarks/>
-        public void UpdateTradeFinanceAsync(ProxyCreditGuaranteeRequest entity, object userState) {
+        public void UpdateTradeFinanceAsync(ProxyCreditGuaranteeInquiry entity, object userState) {
             if ((this.UpdateTradeFinanceOperationCompleted == null)) {
                 this.UpdateTradeFinanceOperationCompleted = new System.Threading.SendOrPostCallback(this.OnUpdateTradeFinanceOperationCompleted);
             }
@@ -222,12 +222,12 @@ namespace CrmConsoleClient.TradeFinanceService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34283")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity")]
-    public partial class ProxyCreditGuaranteeRequest {
+    public partial class ProxyCreditGuaranteeInquiry {
         
         private System.Nullable<double> aDBAmountCoveredField;
         
@@ -239,13 +239,21 @@ namespace CrmConsoleClient.TradeFinanceService {
         
         private string confirmingBankNameField;
         
+        private string confirmingBankNameIDField;
+        
+        private string confirmingBankNameIDStringField;
+        
         private string goodsField;
         
         private string idField;
         
+        private string inquiryReferenceNoField;
+        
         private string issuingBankNameField;
         
-        private string requestNoField;
+        private string issuingBankNameIDField;
+        
+        private string issuingBankNameIDStringField;
         
         private string tenorField;
         
@@ -316,6 +324,28 @@ namespace CrmConsoleClient.TradeFinanceService {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ConfirmingBankNameID {
+            get {
+                return this.confirmingBankNameIDField;
+            }
+            set {
+                this.confirmingBankNameIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ConfirmingBankNameIDString {
+            get {
+                return this.confirmingBankNameIDStringField;
+            }
+            set {
+                this.confirmingBankNameIDStringField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string Goods {
             get {
                 return this.goodsField;
@@ -337,6 +367,17 @@ namespace CrmConsoleClient.TradeFinanceService {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string InquiryReferenceNo {
+            get {
+                return this.inquiryReferenceNoField;
+            }
+            set {
+                this.inquiryReferenceNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string IssuingBankName {
             get {
                 return this.issuingBankNameField;
@@ -348,12 +389,23 @@ namespace CrmConsoleClient.TradeFinanceService {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string RequestNo {
+        public string IssuingBankNameID {
             get {
-                return this.requestNoField;
+                return this.issuingBankNameIDField;
             }
             set {
-                this.requestNoField = value;
+                this.issuingBankNameIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string IssuingBankNameIDString {
+            get {
+                return this.issuingBankNameIDStringField;
+            }
+            set {
+                this.issuingBankNameIDStringField = value;
             }
         }
         
@@ -446,10 +498,10 @@ namespace CrmConsoleClient.TradeFinanceService {
         }
         
         /// <remarks/>
-        public ProxyCreditGuaranteeRequest[] Result {
+        public ProxyCreditGuaranteeInquiry[] Result {
             get {
                 this.RaiseExceptionIfNecessary();
-                return ((ProxyCreditGuaranteeRequest[])(this.results[0]));
+                return ((ProxyCreditGuaranteeInquiry[])(this.results[0]));
             }
         }
     }
@@ -472,10 +524,10 @@ namespace CrmConsoleClient.TradeFinanceService {
         }
         
         /// <remarks/>
-        public ProxyCreditGuaranteeRequest Result {
+        public ProxyCreditGuaranteeInquiry Result {
             get {
                 this.RaiseExceptionIfNecessary();
-                return ((ProxyCreditGuaranteeRequest)(this.results[0]));
+                return ((ProxyCreditGuaranteeInquiry)(this.results[0]));
             }
         }
     }

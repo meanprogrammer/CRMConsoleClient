@@ -12,11 +12,11 @@ namespace CrmConsoleClient
         static void Main(string[] args)
         {
 
-            /*
+            
             TradeFinanceServiceExecutor tf = new TradeFinanceServiceExecutor();
-            tf.GetAllCreditGuaranteeRequest();
-            //tf.AddSomething();
-            */
+            //tf.GetAllCreditGuaranteeRequest();
+            tf.AddSomething();
+            
              
             /*
             DMFExecutor dmf = new DMFExecutor();
@@ -37,10 +37,10 @@ namespace CrmConsoleClient
          */
 
             
-            
+            /*
             ProjectTeamExecutor pte = new ProjectTeamExecutor();
             pte.GetAllTeamMembers();
-  
+  */
 
 
       
