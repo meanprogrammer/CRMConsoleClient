@@ -6,6 +6,8 @@
       <xs:element minOccurs="0" name="ADBAmountCovered" nillable="true" type="xs:double" />
       <xs:element minOccurs="0" name="ApplicantName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="BeneficiaryName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ConfirmingBankName" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ConfirmingBankNameID" nillable="true" type="ser:guid" />
       <xs:element minOccurs="0" name="ConfirmingBankNameIDString" nillable="true" type="xs:string" />

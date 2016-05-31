@@ -13,9 +13,9 @@ namespace CrmConsoleClient
         {
 
             
-            TradeFinanceServiceExecutor tf = new TradeFinanceServiceExecutor();
+            //TradeFinanceServiceExecutor tf = new TradeFinanceServiceExecutor();
             //tf.GetAllCreditGuaranteeRequest();
-            tf.AddSomething();
+            //tf.AddSomething();
             
              
             /*
@@ -37,10 +37,9 @@ namespace CrmConsoleClient
          */
 
             
-            /*
+           
             ProjectTeamExecutor pte = new ProjectTeamExecutor();
             pte.GetAllTeamMembers();
-  */
 
 
       

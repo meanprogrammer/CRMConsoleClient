@@ -237,6 +237,10 @@ namespace CrmConsoleClient.TradeFinanceService {
         
         private string beneficiaryNameField;
         
+        private string clientEmailField;
+        
+        private string clientNameField;
+        
         private string confirmingBankNameField;
         
         private string confirmingBankNameIDField;
@@ -308,6 +312,28 @@ namespace CrmConsoleClient.TradeFinanceService {
             }
             set {
                 this.beneficiaryNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ClientEmail {
+            get {
+                return this.clientEmailField;
+            }
+            set {
+                this.clientEmailField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ClientName {
+            get {
+                return this.clientNameField;
+            }
+            set {
+                this.clientNameField = value;
             }
         }
         

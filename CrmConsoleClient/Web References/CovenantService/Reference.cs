@@ -291,7 +291,7 @@ namespace CrmConsoleClient.CovenantService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34283")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -583,7 +583,7 @@ namespace CrmConsoleClient.CovenantService {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34234")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.0.30319.34283")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -591,6 +591,10 @@ namespace CrmConsoleClient.CovenantService {
     public partial class ProxyNSOCovenant {
         
         private string compliedWithField;
+        
+        private System.Nullable<int> compliedWithIDField;
+        
+        private bool compliedWithIDFieldSpecified;
         
         private string covenantDescriptionField;
         
@@ -618,6 +622,10 @@ namespace CrmConsoleClient.CovenantService {
         
         private string statusField;
         
+        private System.Nullable<int> statusIDField;
+        
+        private bool statusIDFieldSpecified;
+        
         private System.Nullable<System.DateTime> submissionDateField;
         
         private bool submissionDateFieldSpecified;
@@ -630,6 +638,28 @@ namespace CrmConsoleClient.CovenantService {
             }
             set {
                 this.compliedWithField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<int> CompliedWithID {
+            get {
+                return this.compliedWithIDField;
+            }
+            set {
+                this.compliedWithIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool CompliedWithIDSpecified {
+            get {
+                return this.compliedWithIDFieldSpecified;
+            }
+            set {
+                this.compliedWithIDFieldSpecified = value;
             }
         }
         
@@ -770,6 +800,28 @@ namespace CrmConsoleClient.CovenantService {
             }
             set {
                 this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<int> StatusID {
+            get {
+                return this.statusIDField;
+            }
+            set {
+                this.statusIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool StatusIDSpecified {
+            get {
+                return this.statusIDFieldSpecified;
+            }
+            set {
+                this.statusIDFieldSpecified = value;
             }
         }
         
