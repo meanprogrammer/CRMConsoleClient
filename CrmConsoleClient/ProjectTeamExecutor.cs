@@ -9,6 +9,22 @@ namespace CrmConsoleClient
 {
     public class ProjectTeamExecutor
     {
+
+        public List<ProxyConnection> GetAllTeamMembers(string id) 
+        {
+            List<ProxyConnection> team = new List<ProxyConnection>();
+            ProjectTeamService.ConnectionService service = new ProjectTeamService.ConnectionService();
+            try
+            {
+                team = service.GetAllConnection().Where(x=>x.OpportunityId == id).ToList();
+            }
+            catch
+            {
+
+            }
+            return team;
+        }
+
         public void GetAllTeamMembers()
         {
             ProjectTeamService.ConnectionService service = new ProjectTeamService.ConnectionService();

@@ -268,6 +268,8 @@ namespace CrmConsoleClient.OpportunityService {
         
         private string subSectorField;
         
+        private string taskStatusField;
+        
         private string processingScenarioField;
         
         /// <remarks/>
@@ -639,6 +641,17 @@ namespace CrmConsoleClient.OpportunityService {
             }
             set {
                 this.subSectorField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string TaskStatus {
+            get {
+                return this.taskStatusField;
+            }
+            set {
+                this.taskStatusField = value;
             }
         }
         

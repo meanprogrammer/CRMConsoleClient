@@ -31,6 +31,10 @@ namespace CrmConsoleClient.AccountService {
         
         private System.Threading.SendOrPostCallback GetAllAccountsOperationCompleted;
         
+        private System.Threading.SendOrPostCallback GetAllIssuingBanksOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback GetAllConfirmingBanksOperationCompleted;
+        
         private System.Threading.SendOrPostCallback GetOneAccountOperationCompleted;
         
         private System.Threading.SendOrPostCallback UpdateOneAccountOperationCompleted;
@@ -77,6 +81,12 @@ namespace CrmConsoleClient.AccountService {
         public event GetAllAccountsCompletedEventHandler GetAllAccountsCompleted;
         
         /// <remarks/>
+        public event GetAllIssuingBanksCompletedEventHandler GetAllIssuingBanksCompleted;
+        
+        /// <remarks/>
+        public event GetAllConfirmingBanksCompletedEventHandler GetAllConfirmingBanksCompleted;
+        
+        /// <remarks/>
         public event GetOneAccountCompletedEventHandler GetOneAccountCompleted;
         
         /// <remarks/>
@@ -108,6 +118,64 @@ namespace CrmConsoleClient.AccountService {
             if ((this.GetAllAccountsCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.GetAllAccountsCompleted(this, new GetAllAccountsCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IAccountService/GetAllIssuingBanks", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity")]
+        public ProxyAccount[] GetAllIssuingBanks() {
+            object[] results = this.Invoke("GetAllIssuingBanks", new object[0]);
+            return ((ProxyAccount[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetAllIssuingBanksAsync() {
+            this.GetAllIssuingBanksAsync(null);
+        }
+        
+        /// <remarks/>
+        public void GetAllIssuingBanksAsync(object userState) {
+            if ((this.GetAllIssuingBanksOperationCompleted == null)) {
+                this.GetAllIssuingBanksOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetAllIssuingBanksOperationCompleted);
+            }
+            this.InvokeAsync("GetAllIssuingBanks", new object[0], this.GetAllIssuingBanksOperationCompleted, userState);
+        }
+        
+        private void OnGetAllIssuingBanksOperationCompleted(object arg) {
+            if ((this.GetAllIssuingBanksCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetAllIssuingBanksCompleted(this, new GetAllIssuingBanksCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IAccountService/GetAllConfirmingBanks", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/CRMProxyService.Entity")]
+        public ProxyAccount[] GetAllConfirmingBanks() {
+            object[] results = this.Invoke("GetAllConfirmingBanks", new object[0]);
+            return ((ProxyAccount[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void GetAllConfirmingBanksAsync() {
+            this.GetAllConfirmingBanksAsync(null);
+        }
+        
+        /// <remarks/>
+        public void GetAllConfirmingBanksAsync(object userState) {
+            if ((this.GetAllConfirmingBanksOperationCompleted == null)) {
+                this.GetAllConfirmingBanksOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetAllConfirmingBanksOperationCompleted);
+            }
+            this.InvokeAsync("GetAllConfirmingBanks", new object[0], this.GetAllConfirmingBanksOperationCompleted, userState);
+        }
+        
+        private void OnGetAllConfirmingBanksOperationCompleted(object arg) {
+            if ((this.GetAllConfirmingBanksCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.GetAllConfirmingBanksCompleted(this, new GetAllConfirmingBanksCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -430,6 +498,58 @@ namespace CrmConsoleClient.AccountService {
         private object[] results;
         
         internal GetAllAccountsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public ProxyAccount[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ProxyAccount[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.34209")]
+    public delegate void GetAllIssuingBanksCompletedEventHandler(object sender, GetAllIssuingBanksCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.34209")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetAllIssuingBanksCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetAllIssuingBanksCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public ProxyAccount[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((ProxyAccount[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.34209")]
+    public delegate void GetAllConfirmingBanksCompletedEventHandler(object sender, GetAllConfirmingBanksCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.0.30319.34209")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class GetAllConfirmingBanksCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal GetAllConfirmingBanksCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
                 base(exception, cancelled, userState) {
             this.results = results;
         }

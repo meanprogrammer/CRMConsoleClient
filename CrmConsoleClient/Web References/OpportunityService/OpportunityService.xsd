@@ -40,6 +40,7 @@
       <xs:element minOccurs="0" name="Region" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Sector" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="SubSector" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TaskStatus" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="processingScenario" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
