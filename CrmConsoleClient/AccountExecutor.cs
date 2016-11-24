@@ -25,5 +25,22 @@ namespace CrmConsoleClient
 
             Console.ReadLine();
         }
+
+        public List<ProxyAccount> GetAccountsByParentIDAndRole(string parentId, string role)
+        {
+            AccountService.AccountService service = new AccountService.AccountService();
+            List<ProxyAccount> accs = new List<ProxyAccount>();
+            var all = service.GetAllAccounts();
+
+            foreach (ProxyAccount a in all)
+            {
+                if (a.ParentID == parentId && a.EntityRole == role)
+                {
+                    accs.Add(a);
+                }
+            }
+
+            return accs;
+        }
     }
 }

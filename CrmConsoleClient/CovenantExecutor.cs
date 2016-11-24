@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CrmConsoleClient.CovenantService;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,19 @@ namespace CrmConsoleClient
                 var allsov = service.GetAllSOVCovenant().FirstOrDefault();
 
             }
+        }
+
+
+        public List<ProxyNSOCovenant> GetNSOCovenants(string oppId)
+        {
+            List<ProxyNSOCovenant> list = new List<ProxyNSOCovenant>();
+            using (CovenantService.CovenantService service = new CovenantService.CovenantService())
+            {
+                list = service.GetAllNSOCovenant().Where(x => x.ParentID == oppId).ToList();
+                //var allsov = service.GetAllSOVCovenant().FirstOrDefault();
+
+            }
+            return list;
         }
     }
 }

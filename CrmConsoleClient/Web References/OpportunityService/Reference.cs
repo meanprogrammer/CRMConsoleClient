@@ -214,6 +214,8 @@ namespace CrmConsoleClient.OpportunityService {
         
         private bool budgetAmountFieldSpecified;
         
+        private string cRPICMField;
+        
         private string categoryTypeField;
         
         private System.Nullable<System.DateTime> closingDateField;
@@ -232,11 +234,17 @@ namespace CrmConsoleClient.OpportunityService {
         
         private string divisionRoleField;
         
+        private string effectivenessDateField;
+        
         private string expectedApprovalYearField;
+        
+        private string finalReviewICMField;
         
         private string guaranteeField;
         
         private string idField;
+        
+        private string letterOfNoObjectionField;
         
         private string modeOfFinancialAssistanceField;
         
@@ -250,9 +258,13 @@ namespace CrmConsoleClient.OpportunityService {
         
         private string opportunityIdField;
         
+        private string pRFApprovalField;
+        
         private string processingCategoryField;
         
         private string projectDescriptionField;
+        
+        private string projectEndDateField;
         
         private string projectNoField;
         
@@ -262,13 +274,19 @@ namespace CrmConsoleClient.OpportunityService {
         
         private string projectStatusField;
         
+        private string rRPApprovalField;
+        
         private string regionField;
         
         private string sectorField;
         
+        private string signingDateField;
+        
         private string subSectorField;
         
         private string taskStatusField;
+        
+        private string xARRDateField;
         
         private string processingScenarioField;
         
@@ -345,6 +363,17 @@ namespace CrmConsoleClient.OpportunityService {
             }
             set {
                 this.budgetAmountFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string CRPICM {
+            get {
+                return this.cRPICMField;
+            }
+            set {
+                this.cRPICMField = value;
             }
         }
         
@@ -449,12 +478,34 @@ namespace CrmConsoleClient.OpportunityService {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string EffectivenessDate {
+            get {
+                return this.effectivenessDateField;
+            }
+            set {
+                this.effectivenessDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string ExpectedApprovalYear {
             get {
                 return this.expectedApprovalYearField;
             }
             set {
                 this.expectedApprovalYearField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string FinalReviewICM {
+            get {
+                return this.finalReviewICMField;
+            }
+            set {
+                this.finalReviewICMField = value;
             }
         }
         
@@ -476,6 +527,17 @@ namespace CrmConsoleClient.OpportunityService {
             }
             set {
                 this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string LetterOfNoObjection {
+            get {
+                return this.letterOfNoObjectionField;
+            }
+            set {
+                this.letterOfNoObjectionField = value;
             }
         }
         
@@ -547,6 +609,17 @@ namespace CrmConsoleClient.OpportunityService {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string PRFApproval {
+            get {
+                return this.pRFApprovalField;
+            }
+            set {
+                this.pRFApprovalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string ProcessingCategory {
             get {
                 return this.processingCategoryField;
@@ -564,6 +637,17 @@ namespace CrmConsoleClient.OpportunityService {
             }
             set {
                 this.projectDescriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string ProjectEndDate {
+            get {
+                return this.projectEndDateField;
+            }
+            set {
+                this.projectEndDateField = value;
             }
         }
         
@@ -613,6 +697,17 @@ namespace CrmConsoleClient.OpportunityService {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string RRPApproval {
+            get {
+                return this.rRPApprovalField;
+            }
+            set {
+                this.rRPApprovalField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string Region {
             get {
                 return this.regionField;
@@ -635,6 +730,17 @@ namespace CrmConsoleClient.OpportunityService {
         
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string SigningDate {
+            get {
+                return this.signingDateField;
+            }
+            set {
+                this.signingDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
         public string SubSector {
             get {
                 return this.subSectorField;
@@ -652,6 +758,17 @@ namespace CrmConsoleClient.OpportunityService {
             }
             set {
                 this.taskStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string XARRDate {
+            get {
+                return this.xARRDateField;
+            }
+            set {
+                this.xARRDateField = value;
             }
         }
         

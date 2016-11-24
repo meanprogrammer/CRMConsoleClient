@@ -14,6 +14,7 @@
       <xs:element minOccurs="0" name="ApprovalLevel" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Borrower" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="BudgetAmount" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="0" name="CRPICM" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="CategoryType" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ClosingDate" nillable="true" type="xs:dateTime" />
       <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
@@ -22,25 +23,33 @@
       <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Division" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="DivisionRole" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EffectivenessDate" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ExpectedApprovalYear" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FinalReviewICM" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Guarantee" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="LetterOfNoObjection" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ModeOfFinancialAssistance" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="NSCoreSector" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="NSOProcessingCategory" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="NSProjectType" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="OpportunityId" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="PRFApproval" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ProcessingCategory" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ProjectDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProjectEndDate" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ProjectNo" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ProjectRationale" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ProjectStage" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="ProjectStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RRPApproval" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Region" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Sector" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SigningDate" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="SubSector" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="TaskStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="XARRDate" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="processingScenario" nillable="true" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
