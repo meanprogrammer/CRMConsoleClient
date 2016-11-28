@@ -102,5 +102,25 @@ namespace CrmConsoleClient.Properties {
                 return ((string)(this["CrmConsoleClient_TradeFinanceService_TradeFinanceService"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://dynamicscrmproxy.apphb.com/Services/CofinancingService.svc")]
+        public string CrmConsoleClient_CofinancingService_CofinancingService {
+            get {
+                return ((string)(this["CrmConsoleClient_CofinancingService_CofinancingService"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:57324/Services/CofinancingService.svc")]
+        public string CrmConsoleClient_LocalCofinancingService_CofinancingService {
+            get {
+                return ((string)(this["CrmConsoleClient_LocalCofinancingService_CofinancingService"]));
+            }
+        }
     }
 }

@@ -78,7 +78,40 @@ namespace CrmConsoleClient
                 infoWorksheet.Cell("B18").Value = result1.Division;
 
                 infoWorksheet.Cell("A19").Value = "Division Role";
-                infoWorksheet.Cell("B19").Value = result1.PRFApproval;
+                infoWorksheet.Cell("B19").Value = result1.DivisionRole;
+
+
+                infoWorksheet.Cell("A21").Value = "Milestones";
+
+                infoWorksheet.Cell("A22").Value = "PRF Approval";
+                infoWorksheet.Cell("B22").Value = result1.PRFApproval;
+
+                infoWorksheet.Cell("A23").Value = "CRP ICM";
+                infoWorksheet.Cell("B23").Value = result1.CRPICM;
+                
+                infoWorksheet.Cell("A24").Value = "Letter of No-Objection";
+                infoWorksheet.Cell("B24").Value = result1.LetterOfNoObjection;
+    
+                infoWorksheet.Cell("A25").Value = "Final Review ICM";
+                infoWorksheet.Cell("B25").Value = result1.FinalReviewICM;
+        
+                infoWorksheet.Cell("A26").Value = "RRP Approval";
+                infoWorksheet.Cell("B26").Value = result1.RRPApproval;
+
+                infoWorksheet.Cell("A27").Value = "Signing Date";
+                infoWorksheet.Cell("B27").Value = result1.SigningDate;
+
+                infoWorksheet.Cell("A28").Value = "Effectiveness Date";
+                infoWorksheet.Cell("B28").Value = result1.EffectivenessDate;
+            
+                infoWorksheet.Cell("A29").Value = "XARR Date";
+                infoWorksheet.Cell("B29").Value = result1.XARRDate;
+
+                infoWorksheet.Cell("A30").Value = "Project End Date";
+                infoWorksheet.Cell("B30").Value = result1.ProjectEndDate;                    
+                                        
+                                            
+                                                
 
                 var teamWorksheet = workbook.Worksheets.Add("Project Team");
 

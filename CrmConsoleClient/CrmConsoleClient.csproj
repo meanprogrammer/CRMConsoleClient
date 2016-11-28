@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AccountExecutor.cs" />
+    <Compile Include="ConfinancingExecutor.cs" />
     <Compile Include="CovenantExecutor.cs" />
     <Compile Include="DMFExecutor.cs" />
     <Compile Include="OpportunityExecutor.cs" />
@@ -77,12 +78,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
+    <Compile Include="Web References\CofinancingService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
     <Compile Include="Web References\CovenantService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
     </Compile>
     <Compile Include="Web References\DMFService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\LocalCofinancingService\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.map</DependentUpon>
@@ -149,6 +160,23 @@
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
+    <None Include="Web References\CofinancingService\CofinancingService.wsdl" />
+    <None Include="Web References\CofinancingService\CofinancingService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\CofinancingService\CofinancingService0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\CofinancingService\CofinancingService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\CofinancingService\ProxyCommercialCofinancing.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\CofinancingService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
     <None Include="Web References\CovenantService\CovenantService.wsdl" />
     <None Include="Web References\CovenantService\CovenantService.xsd">
       <SubType>Designer</SubType>
@@ -189,6 +217,23 @@
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\DMFService\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\LocalCofinancingService\CofinancingService.wsdl" />
+    <None Include="Web References\LocalCofinancingService\CofinancingService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\LocalCofinancingService\CofinancingService0.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\LocalCofinancingService\CofinancingService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\LocalCofinancingService\ProxyCommercialCofinancing.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\LocalCofinancingService\Reference.map">
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -287,6 +332,17 @@
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>CrmConsoleClient_AccountService_AccountService</CachedSettingsPropName>
     </WebReferenceUrl>
+    <WebReferenceUrl Include="http://dynamicscrmproxy.apphb.com/Services/CofinancingService.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\CofinancingService\</RelPath>
+      <UpdateFromURL>http://dynamicscrmproxy.apphb.com/Services/CofinancingService.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CrmConsoleClient_CofinancingService_CofinancingService</CachedSettingsPropName>
+    </WebReferenceUrl>
     <WebReferenceUrl Include="http://dynamicscrmproxy.apphb.com/Services/ConnectionService.svc%3fwsdl">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\ProjectTeamService\</RelPath>
@@ -341,6 +397,17 @@
       </CachedDynamicPropName>
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>CrmConsoleClient_TradeFinanceService_TradeFinanceService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://localhost:57324/Services/CofinancingService.svc%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\LocalCofinancingService\</RelPath>
+      <UpdateFromURL>http://localhost:57324/Services/CofinancingService.svc%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CrmConsoleClient_LocalCofinancingService_CofinancingService</CachedSettingsPropName>
     </WebReferenceUrl>
     <WebReferenceUrl Include="http://localhost:57324/Services/OpportunityService.svc%3fwsdl">
       <UrlBehavior>Dynamic</UrlBehavior>

@@ -26,10 +26,14 @@ namespace CrmConsoleClient
 
 
             
-            
+            /*
             OpportunityExecutor ex = new OpportunityExecutor();
             ex.GetOpportunity();
-            
+            */
+
+
+            ConfinancingExecutor cex = new ConfinancingExecutor();
+            cex.Execute();
             
             
             //AccountExecutor aex = new AccountExecutor();
